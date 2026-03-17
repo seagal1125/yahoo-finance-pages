@@ -1,0 +1,37 @@
+# Digest sources (edit this file to add/remove sources)
+#
+# Fields:
+# - id: stable identifier used in code/instructions
+# - label: section title shown in the HTML digest
+# - urls: list of URLs to fetch
+# - notes: optional hints (e.g. paywall/anti-bot)
+
+sources:
+  - id: yahoo_finance_global
+    label: Yahoo Finance (Global)
+    urls:
+      - https://finance.yahoo.com/
+
+  - id: yahoo_finance_tw
+    label: Yahoo Finance (台灣)
+    urls:
+      - https://tw.stock.yahoo.com/
+      - https://tw.stock.yahoo.com/news
+
+  - id: cna_tw_stock
+    label: CNA 中央社｜股市
+    urls:
+      - https://www.cna.com.tw/list/ass.aspx
+
+  - id: cnyes_home
+    label: 鉅亨網
+    urls:
+      - https://www.cnyes.com/
+      - https://news.cnyes.com/news/cat/headline
+    notes: "首頁偏動態；必要時用 browser 抓重點。"
+
+  - id: ptt_stock_index
+    label: PTT 股市版
+    urls:
+      - https://www.ptt.cc/bbs/Stock/index.html
+    notes: "若遇 18+ / 403 / 反爬，改用 browser。"
