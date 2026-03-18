@@ -9,10 +9,9 @@ For each scheduled run:
    - Sources: `config/digest_sources.yaml`
    - Behavior/format rules: `config/digest_behavior.md`
 2. Fetch and summarize all configured sources in **Traditional Chinese**.
-3. Use model (preferred): `nvidia/minimaxai/minimax-m2.5` (fallback jobs may override).
-4. Produce a complete HTML digest under `digests/`.
-5. Update `index.html` so it links to the newest digest first and keeps a history list.
-6. Commit and push the changes to `main`.
+3. Produce a complete HTML digest under `digests/`.
+4. Update `index.html` so it links to the newest digest first and keeps a history list.
+5. Commit and push the changes to `main`.
 
 ## Output naming
 Use: `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time)
@@ -25,6 +24,7 @@ Use: `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time)
 - Cross-market takeaways
 - Risk watch / things to monitor
 - Source links
+- At the bottom of the HTML, record which model was used to generate it.
 
 ## Index rules
 - Show newest digest as a highlighted card near the top
