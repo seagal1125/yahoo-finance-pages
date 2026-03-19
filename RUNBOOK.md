@@ -26,6 +26,13 @@ Use: `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time)
 - Source links
 - At the bottom of the HTML, record which model was used to generate it.
 
+## HTML layout requirements
+- Visual style must feel stylish, modern, and clean rather than plain default document styling.
+- Prioritize readability: clear information hierarchy, strong section headings, good spacing, easy scanning, and mobile-friendly layout.
+- Keep the writing easy for readers to understand at a glance; avoid cluttered blocks and confusing visual density.
+- Content must remain complete: do not omit important facts, reasoning, market context, risks, or source-backed details just to make the page shorter.
+- When simplifying presentation, simplify wording and layout only — never cut essential information.
+
 ## Index rules
 - Show newest digest as a highlighted card near the top
 - History section should list all digest files, newest first
