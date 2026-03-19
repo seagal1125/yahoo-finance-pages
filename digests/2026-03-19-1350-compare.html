@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-03-19 13:50 Compare</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.72);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:220px;height:220px;border-radius:999px;
+      background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%);
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.72);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:820px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid,.links-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{
+      border:1px solid #fecdd3;
+      background:linear-gradient(180deg,#fff8f8,#fff1f2);
+    }
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid,.two-col,.links-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Midday Digest</span>
+        <span class="pill">Asia/Taipei 13:50</span>
+        <span class="pill">Comparison Version</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">午盤主線很明確：市場同時被 <strong>偏鷹利率預期、油價衝高、記憶體／AI 輪動</strong> 拉扯。台股指數面被權值與總體風險壓住，但題材資金沒有熄火，甚至沿著記憶體、塑化、AI 基建持續擴散。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 3 月 19 日 13:50（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>不是全面 risk-off，而是指數弱、題材強</strong>
+        <p>Fed 不降、油價上行與美元偏硬壓著大盤估值，但記憶體、AI 儲存、塑化仍吸走短線資金。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>重挫 600 點、台積電回檔、記憶體續熱</strong>
+        <p>市場不是在找新故事，而是在驗證舊主線能不能撐過總體利空與權值修正。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今晚變數</div>
+        <strong>油價與高利率若一起被放大交易，波動會再升高</strong>
+        <p>中東能源設施受襲與 Fed 偏鷹口徑重新回到交易中心，晚間美股可能延續大震盪。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li>這個時段市場不是單純 risk-off，而是「<strong>指數弱、題材強</strong>」：Fed 不降、能源風險升溫壓著大盤估值；但記憶體、AI 儲存、塑化受題材與報價刺激，仍吸走短線資金。</li>
+          <li>台灣線最明確的三個午盤關鍵字是：<strong>台股一度重挫約 600 點、台積電回檔、記憶體鏈續熱</strong>。市場現在不是在找新故事，而是在驗證舊主線能不能撐過總體利空。</li>
+          <li>鉅亨與 CNA 都把 <strong>中東能源設施受襲、油價上行、美元與通膨壓力</strong> 放回交易中心；這代表今天午後到今晚，美股若再把油價與高利率一起交易，波動還會被放大。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>中東若再擴大打到更多能源基礎設施，油價與運價可能繼續上修，市場會重新調高通膨風險，不利高本益比資產。</li>
+          <li>若今晚美股把「油價上漲 + Fed 不急著降息」一起擴大解讀，明天亞股與台股的高價電子仍會承壓。</li>
+          <li>若午後只剩記憶體與少數題材股撐盤、台積電與金融權值續弱，短線雖仍有個股行情，但整體風險承受度會下降。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance Global</div>
+        <h2>全球市場</h2>
+        <ul class="list">
+          <li>已先依規則對 <a href="https://finance.yahoo.com/">finance.yahoo.com</a> 做 <code>web_fetch</code>，但可讀內容幾乎被首頁導覽與腳本噪音淹沒；改用 browser 時又被導向廣告／同步頁，代表這個來源本次抽取品質偏弱。</li>
+          <li>即使首頁抽取品質不理想，從 Yahoo 體系與其他同步來源能對上的全球市場主軸仍一致：<strong>Fed 按兵不動但口徑偏鷹、油價與地緣衝突推升通膨擔憂、資金仍偏好 AI／半導體延伸鏈</strong>。</li>
+          <li>全球市場現在比較像在重新定價「高利率撐更久」而不是期待寬鬆，所以成長股不是不能做，而是更仰賴財報與基本面兌現。</li>
+          <li>這一段要保守解讀：<strong>本來源本次以宏觀輪廓為主，不把未成功抽出的首頁雜訊硬寫成具體 headline</strong>。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance Taiwan</div>
+        <h2>台灣市場</h2>
+        <ul class="list">
+          <li>Yahoo 股市台灣首頁與新聞頁午盤最集中的敘事，是<strong>大盤重挫約 600 點、台積電壓回、但強勢題材沒有全倒</strong>；這是很典型的高檔震盪結構，不是全面退潮。</li>
+          <li>首頁可見的熱門新聞集中在：<strong>券商提出分散卡位名單、油價衝破百美元、威剛等記憶體股大漲、光碟片報價也被帶動</strong>。這說明市場把記憶體漲價視為可以跨品類外溢的實體景氣訊號。</li>
+          <li>區域市場欄位顯示日經、韓股、港股、上證同步走揚或震盪，但台股新聞端更強調台積電與指數失守整數關卡的壓力，表示台灣投資人此刻最在意的仍是<strong>權值股能否穩盤</strong>。</li>
+          <li>如果午後權值續弱、只剩中小型股與題材股活躍，短線會變成更明顯的選股盤，而不是安全的指數盤。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA</div>
+        <h2>中央社｜股市</h2>
+        <ul class="list">
+          <li>中央社把今天市場重點寫得很直白：<strong>通膨疑慮再起，台股一度跌逾 600 點，但月線附近出現支撐、跌幅收斂</strong>。這表示盤面不是無條件崩，而是在高位做壓力測試。</li>
+          <li>另一條很重要的線是<strong>美光財報報喜，但記憶體族群漲跌互見</strong>。意思是資金願意追景氣題材，但已經開始分辨誰能真正吃到獲利，不再是全面亂買。</li>
+          <li>中央社同時把<strong>新台幣午盤貶至 31.921、油價上揚、中東供應疑慮</strong>放進同一個市場框架裡，代表今天的股市壓力不是單一事件，而是匯率、能源、利率三者一起施壓。</li>
+          <li>若只看中央社的盤勢敘事，台股目前比較像「<strong>基本面題材仍在，但總體條件不配合</strong>」，所以節奏比方向更重要。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Cnyes</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>中油虧損與油價壓力：</strong>鉅亨把「中油近 2 週配合平穩機制虧 33 億、8 年累虧破 800 億並報請增資」放到頭條，這不只是政策新聞，也是在提醒高油價的壓力已開始往企業與財政端外溢。</li>
+          <li><strong>日本央行按兵不動：</strong>鉅亨首頁與頭條頁都強調日銀維持 0.75% 利率，市場關注日圓疲弱與中東局勢交織下的政策兩難。這讓亞洲資產的波動不只來自 Fed，也來自日本資金成本與匯率。</li>
+          <li><strong>塑化鏈受惠供給風險：</strong>「塑化鏈供給告急、台聚集團 4 檔亮燈漲停」是很典型的油價衝擊下的受惠股交易，代表市場已經在做更細的二階受益人布局。</li>
+          <li><strong>AI／基建題材還在跑：</strong>「營邦於輝達 GTC 秀最新 AI 儲存平台、股價亮燈」說明只要能跟 AI 供應鏈或資料中心基建掛上勾，資金仍願意追。</li>
+          <li><strong>跨資產價格訊號偏緊：</strong>鉅亨首頁顯示台積電 1850 元附近、美元／台幣 31.921、倫敦原油約 112、美元指數重回 100 上方、比特幣下跌。這是一個很標準的「能源偏強、美元偏硬、風險資產分化」組合。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT Stock</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>首頁前 30 篇文章（實際可抓取 7 篇）</h3>
+          <ul class="list">
+            <li><strong>—</strong>｜Re: [新聞] 台股交易「千股改1股」？前證交所電腦室</li>
+            <li><strong>31</strong>｜[新聞] 李在明：「為什麼賣出股票後要等兩天才…」</li>
+            <li><strong>29</strong>｜Re: [新聞] 馬斯克7天內公布世界最大晶片廠計畫「這…」</li>
+            <li><strong>3</strong>｜Re: [新聞] 快訊／免發票時代終結！財政部祭大絕</li>
+            <li><strong>—</strong>｜[公告] 股票板板規 v4.7 (2024/10/06 修正)</li>
+            <li><strong>6</strong>｜[公告] 4-6-1罰則將在1/22開始到年底加重至30天</li>
+            <li><strong>爆</strong>｜[閒聊] 2026/03/19 盤中閒聊</li>
+          </ul>
+          <div class="ptt-note">註：依規則以 browser + <code>.r-ent</code> 抽取；本次頁面實際只回傳 7 筆可見條目，未硬補不存在的 30 筆。</div>
+        </div>
+        <div>
+          <h3>熱門主題 3 則</h3>
+          <ul class="list">
+            <li><strong>盤中情緒高度集中在即時波動：</strong>盤中閒聊直接到「爆」，代表散戶注意力集中在當天震盪，而不是長篇基本面討論。這通常意味著短線節奏快、追價與殺低都容易放大。</li>
+            <li><strong>制度／交易規則題仍有人看：</strong>「千股改 1 股」與交割時差類話題持續出現，表示市場熱度高到連制度門檻都成為可交易討論。這種時候散戶參與度高，但噪音也會變多。</li>
+            <li><strong>科技與政策新聞仍搶版面：</strong>馬斯克大型晶片廠、免發票時代等標題都有互動，說明版上討論不是只盯台股指數，還在找能延伸到半導體、消費與政策變化的次級題材。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>今天最重要的不是漲跌，而是分化。</strong> 能源、塑化、記憶體、AI 基建相對強；廣泛指數與高權值承受利率、油價與匯率壓力。</li>
+          <li><strong>台股沒有失去主線，只是主線從指數轉到族群。</strong> 若你只盯大盤，會覺得很弱；若你看資金分布，會發現市場仍在用很高效率做輪動。</li>
+          <li><strong>全球與台灣敘事開始同步：</strong>Fed 偏鷹、油價高、美元偏強、AI 題材沒死。這種同步通常代表夜盤與隔夜美股還可能延續大波動，而不是下午收盤就結束。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://www.cna.com.tw/list/ass.aspx">CNA 股市</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div>
+      <div><strong>Fetcher：</strong><code>web_fetch first; browser fallback used for dynamic/low-yield sources and PTT DOM extraction</code></div>
+    </footer>
+  </main>
+</body>
+</html>
