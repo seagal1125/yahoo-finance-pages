@@ -27,8 +27,10 @@ Use: `digests/YYYY-MM-DD-HHMM.html` (Asia/Taipei time)
 - At the bottom of the HTML, record which model was used to generate it.
 
 ## HTML layout requirements
+- Use the visual direction of `digests/2026-03-19-1350-compare.html` as the default house style for future digest pages.
 - Visual style must feel stylish, modern, and clean rather than plain default document styling.
 - Prioritize readability: clear information hierarchy, strong section headings, good spacing, easy scanning, and mobile-friendly layout.
+- Prefer a polished hero section, compact summary cards near the top, card-based content sections, a visually distinct risk box, and chip-style source links when appropriate.
 - Keep the writing easy for readers to understand at a glance; avoid cluttered blocks and confusing visual density.
 - Content must remain complete: do not omit important facts, reasoning, market context, risks, or source-backed details just to make the page shorter.
 - When simplifying presentation, simplify wording and layout only — never cut essential information.
