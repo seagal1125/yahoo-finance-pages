@@ -12,6 +12,14 @@
    - 需要動態渲染才有內容
 3. 抓取時請保留「來源連結」供 digest 末尾列出。
 
+### 來源特例：Yahoo Finance（Global / 台灣，強制用 browser）
+- 只要來源是以下任一個，就**不要**先走 `web_fetch`，一律直接用 **`browser`**：
+  - `https://finance.yahoo.com/`
+  - `https://tw.stock.yahoo.com/`
+  - `https://tw.stock.yahoo.com/news`
+- 原因：Yahoo Finance 內容與版位常有動態渲染、地區版差異、反爬限制與 DOM 不穩定問題；直接走 browser 較穩定。
+- 抓取時應等待主要內容完成渲染後再整理重點，並保留原始來源連結。
+
 ### 來源特例：PTT 股市版（強制用 browser + selector 抽取）
 - PTT 不要用「快照文字抽取」的方式（很容易抽不到推文數/標題對應）。
 - 直接用 `browser` 開 `https://www.ptt.cc/bbs/Stock/index.html`，用 DOM selector 抽取：
