@@ -21,7 +21,7 @@ sources:
   - id: cna_tw_stock
     label: CNA 中央社｜股市
     urls:
-      - https://www.cna.com.tw/list/ass.aspx
+      - https://feeds.feedburner.com/rsscna/finance
 
   - id: cnyes_home
     label: 鉅亨網
