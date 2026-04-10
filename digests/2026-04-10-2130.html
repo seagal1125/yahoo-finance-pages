@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yahoo Finance Digest｜2026-04-10 21:30</title>
+<style>
+:root{
+color-scheme:light;
+--bg:#f3f6fb;
+--panel:#ffffff;
+--panel-soft:rgba(255,255,255,.72);
+--text:#132033;
+--muted:#607086;
+--line:#d8e1ec;
+--accent:#2563eb;
+--accent-2:#0f766e;
+--success:#16a34a;
+--success-bg:#f0fdf4;
+--danger:#b91c1c;
+--danger-bg:#fff1f2;
+--shadow:0 18px 48px rgba(15,23,42,.08);
+--radius-xl:28px;
+--radius-lg:22px;
+--radius-md:16px;
+--max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+color:var(--text);
+background: radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%), radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%), linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+line-height:1.72;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+.hero{
+position:relative;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.6);
+background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(240,247,255,.86));
+backdrop-filter:blur(12px);
+border-radius:var(--radius-xl);
+box-shadow:var(--shadow);
+padding:34px;
+}
+.hero:before{
+content:"";
+position:absolute;
+inset:auto -60px -60px auto;
+width:220px;height:220px;border-radius:999px;
+background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%);
+}
+.eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.pill{
+display:inline-flex;align-items:center;gap:8px;
+padding:8px 14px;border-radius:999px;
+background:rgba(255,255,255,.72);border:1px solid var(--line);
+color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;
+}
+h1,h2,h3{margin:0;line-height:1.18}
+h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+.lead{max-width:820px;font-size:1.08rem;color:#213246;margin:0}
+.meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+.meta strong{color:var(--text)}
+.summary-grid,.top-grid,.section-grid,.links-grid{display:grid;gap:18px;margin-top:22px}
+.summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.top-grid{grid-template-columns:1.15fr .85fr}
+.section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{
+background:var(--panel-soft);
+border:1px solid rgba(255,255,255,.7);
+border-radius:var(--radius-lg);
+box-shadow:var(--shadow);
+padding:24px;
+backdrop-filter:blur(10px);
+}
+.card.compact{padding:20px}
+.kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+.summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+.summary-item p{margin:0;color:#33465d}
+.list{margin:0;padding-left:22px}
+.list li{margin:0 0 12px}
+.list li:last-child{margin-bottom:0}
+.source-block{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+display:inline-flex;align-items:center;gap:8px;
+padding:10px 14px;border-radius:999px;
+background:#fff;border:1px solid var(--line);
+color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+}
+.risk{
+border:1px solid #fecdd3;
+background:linear-gradient(180deg,#fff8f8,#fff1f2);
+}
+.risk h2{color:var(--danger)}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+.footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+.highlight{background:linear-gradient(135deg, rgba(22,163,74,.08), rgba(15,118,110,.04));border-color:#86efac}
+.marker{color:var(--success);font-weight:700}
+@media (max-width:900px){
+.summary-grid,.top-grid,.section-grid,.two-col,.links-grid{grid-template-columns:1fr}
+.hero{padding:26px}
+}
+@media (max-width:640px){
+.shell{padding:18px 14px 56px}
+.hero,.card{padding:20px}
+h1{font-size:2rem}
+.lead{font-size:1rem}
+}
+</style>
+</head>
+<body>
+<main class="shell">
+<section class="hero">
+<div class="eyebrow">
+<span class="pill">Evening Digest</span>
+<span class="pill">Asia/Taipei 21:30</span>
+</div>
+<h1>Yahoo Finance Digest</h1>
+<p class="lead">美伊停火談判露曙光，台股大漲 <strong>556 點創收盤歷史新高 35,417 點</strong>，本週飆漲 2,845 點。外資連 4 買回補台積電，記憶體、面板、網通族群持續吸睛。美國 CPI 通膨創近兩年新高，Fed 利率政策與伊朗局勢仍是晚間焦點。</p>
+<p class="meta"><strong>時間：</strong>2026 年 4 月 10 日 21:30（Asia/Taipei）</p>
+</section>
+
+<section class="summary-grid">
+<article class="card summary-item compact highlight">
+<div class="kicker">台股里程碑</div>
+<strong>35,417 點收盤新高 本週飆漲 2,845 點</strong>
+<p>美伊戰爭宣布暫時停火 2 週，全球股市翻揚。台股本週大漲 8.74%，上市公司總市值飆升至 115.55 兆元。</p>
+</article>
+<article class="card summary-item compact">
+<div class="kicker">外资動態</div>
+<strong>連 4 買回補台積電 8,159 張</strong>
+<p>外资买超 288.08 億元，主要加码电子权值股、ETF 与记忆体族群，买超元大台湾 50 达 5.93 万张。</p>
+</article>
+<article class="card summary-item compact">
+<div class="kicker">通膨警訊</div>
+<strong>CPI 年增 3.3% 創近兩年新高</strong>
+<p>美国 3 月 CPI 通膨超预期，主要受能源价格衝击。伊朗战争油价衝击推升通膨压力，为近两年最高水準。</p>
+</article>
+</section>
+
+<section class="top-grid">
+<article class="card">
+<div class="kicker">Executive summary</div>
+<h2>重點摘要</h2>
+<ul class="list">
+<li><strong>台股創歷史新高：</strong>美伊停火 2 週進入協商期，台股大漲 556.67 點收 35,417.83 點，本週暴漲 2,845 點（+8.74%），總市值突破 115 兆元。市場氣勢如虹，但需留意短線漲多震盪。</li>
+<li><strong>外资連續回補：</strong>外资连 4 买台積電 8,159 张，买超元大台湾 50 达 5.93 万张，整体买超 288 亿元，显示对权值股与 ETF 的青睐。惟面板双虎（友達、群創）遭外资连日抛售，2 天失血 10 万张。</li>
+<li><strong>美国通膨数据：</strong>3 月 CPI 年增 3.3% 为 2022 年以来最大增幅，能源价格是主要推手。核心 CPI 年增 2.6%，显示通膨压力仍在，Fed 利率政策走向仍需观察。</li>
+<li><strong>产业亮点：</strong>聯發科 3 月營收 632 億創新高；台積電首季營收創歷史同期高；日月光高雄仁武新廠投資逾千億；記憶體、網通、面板族群持續吸金。</li>
+</ul>
+</article>
+<article class="card risk">
+<div class="kicker">Risk watch</div>
+<h2>風險／變數</h2>
+<ul class="list">
+<li><strong>美伊談判結果：</strong>雖然目前暫時停火 2 週進入談判，若談判破局，油价可能再度飙升，衝击全球股市与通膨预期。</li>
+<li><strong>通膨压力：</strong>CPI 数据高于预期，若油价持续高档，Fed 可能延缓降息时程，成长股面临本益比修正压力。</li>
+<li><strong>外资买卖分化：</strong>外资虽连续买入台积电，但近期对面板双虎翻脸抛售，显示筹码快速轮动，题材股操作难度升高。</li>
+<li><strong>财报旺季：</strong>台積電法说会将于下週登场，市场聚焦营收获利展望与 AI 需求动能，将牵动电子族群走势。</li>
+</ul>
+</article>
+</section>
+
+<section class="section-grid">
+<article class="card">
+<div class="kicker">Yahoo Finance Global</div>
+<h2>全球市場</h2>
+<ul class="list">
+<li><strong>美股多空交杂：</strong>道瓊小跌 43 点（-0.09%）至 48,142，标普 500 与那斯达克分别上涨 0.26% 与 0.56%。市场聚焦即将公布的 CPI 数据与美伊谈判进展。</li>
+<li><strong>TSMC 销售创纪录：</strong>台积电 Q1 营收年增 35%，尽管地缘冲突升温，AI 需求丝毫未受影响，持续支撑半导体产业链动能。</li>
+<li><strong>通膨数据：</strong>3 月 CPI 年增 3.3%（2022 年以来最大增幅），核心 CPI 年增 2.6%。能源价格是主要通膨推手，显示地缘风险对物价的传导效应。</li>
+<li><strong>能源与原物料：</strong>布兰特原油小跌 0.25%，但过去一个月因伊朗攻击沙特能源设施而大涨。黄金回檔 0.35% 至 4,801 美元。</li>
+<li><strong>加密货币：</strong>比特币上涨 1.67% 回到 72,285 美元，显示风险情绪回温。</li>
+</ul>
+</article>
+<article class="card">
+<div class="kicker">Yahoo Finance Taiwan</div>
+<h2>台灣市場</h2>
+<ul class="list">
+<li><strong>台股创里程碑：</strong>收盘 35,417.83 点创新高，本週涨幅 8.74% 写纪录。成交金额 8,295 亿元，显示资金积极进场。</li>
+<li><strong>权值股表现：</strong>台积电领涨电子权值，联发科 3 月营收 632 亿元创新高。面板族群友達、群创虽然短线被外资调节，但整体人气仍高。</li>
+<li><strong>重点新闻：</strong>联电携英特尔攻 12 纳米制程，外资砸 14.8 亿元回补 2.3 万张。日月光高雄仁武新厂动土，投资逾 1,083 亿元抢 AI 商机。</li>
+<li><strong>传产与金融：</strong>永丰金首季赚逾百亿元创同期新高。台塑、南亚看好 Q2 景气，台塑化担忧面临极大挑战。</li>
+<li><strong>国际局势：</strong>SpaceX 上市倒数，台股网络通讯族群受惠。兆丰银行获美国解除裁罚，8 年努力终获成果。</li>
+</ul>
+</article>
+<article class="card">
+<div class="kicker">CNA</div>
+<h2>中央社｜股市</h2>
+<ul class="list">
+<li><strong>台股本週大放异彩：</strong>台股本週大涨 2,845.4 点（+8.74%），上市公司总市值升至 115 兆 5,589 亿元，写下历史新猷。</li>
+<li><strong>外资连 4 买：</strong>外资及陆资买超 288.08 亿元，连续 4 个交易日买超，主要加码电子权值股、ETF 与记忆体族群，回补台积电 8,159 张。</li>
+<li><strong>出口创新高：</strong>第 1 季出口创单季新高，年增 51.1% 为全球主要经济体唯一增幅超过 5 成者。对美出口 285.4 亿美元创高，美国取代中港成为台湾最大贸易伙伴。</li>
+<li><strong>餐饮业报喜：</strong>瓦城、全家餐饮、御嵿、展开餐饮集团 3 月和首季营收都写同期新高，显示消费需求回温。</li>
+<li><strong>资安事件：</strong>半导体设备厂弘塑公告遭勒索病毒攻击，目前仍在抢救中，损失影响评估中。</li>
+</ul>
+</article>
+<article class="card">
+<div class="kicker">Cnyes</div>
+<h2>鉅亨網</h2>
+<ul class="list">
+<li><strong>台股创历史新高：</strong>鉅亨网头条报导台股站上 35,417 点创新高，本週涨幅居全球前列，受惠美伊停火与资金回流。</li>
+<li><strong>面板双虎遭抛售：</strong>外资翻脸抛售友達、群创，2 天失血 10 万张。台塑四宝中台塑化遭回收 20 亿元，显示筹码快速轮动。</li>
+<li><strong>网通族群受惠 SpaceX：</strong>SpaceX 上市倒数，OTC 通讯网络指数近一个月上涨 24.37%，持有网通股较高的台股科技基金受注目。</li>
+<li><strong>主战 ETF 报到：</strong>摩根「台湾鑫收益主动式 ETF」(00401A) 正式挂牌，主打主动选股策略抢收益。</li>
+<li><strong>传产展望：</strong>台塑、南亚看好 Q2 传统需求旺季，价格可望维持高档。台塑化则认为 Q2 将面临极大经营挑战。</li>
+</ul>
+</article>
+</section>
+
+<section class="card">
+<div class="kicker">PTT Stock</div>
+<h2>PTT 股市版</h2>
+<div class="two-col">
+<div>
+<h3>首页热门文章</h3>
+<ul class="list">
+<li><strong>94 推</strong>｜[标的] 4167 松瑞药 长线多</li>
+<li><strong>96 推</strong>｜[请益] 左侧交易 股票一直涨怎么办？</li>
+<li><strong>37 推</strong>｜[新闻] TACO被精准预测！白宫警告工作人员在伊朗</li>
+<li><strong>91 推</strong>｜[新闻] Intel加入马斯克 Terafab 计划</li>
+<li><strong>14 推</strong>｜[新闻] 机构预测 2026 年英伟达高端 GPU 出货比例下降</li>
+<li><strong>61 推</strong>｜[新闻] 国安基金 13 日召开例会第十度进场护盘？</li>
+<li><strong>13 推</strong>｜[新闻] 腾云营收／3月 8,171 万元 年增 22.44%</li>
+</ul>
+<div class="ptt-note">註：本来源使用 browser + DOM selector 抽取，列出可见热门文章。</div>
+</div>
+<div>
+<h3>热门主题</h3>
+<ul class="list">
+<li><strong>左侧交易 vs 右侧交易：</strong>「股票一直涨怎么办？」引发高达 96 则讨论，显示散户面对强势盘时的心态矛盾。许多人询问左侧交易策略，担忧追高风险。</li>
+<li><strong>国安基金护盘议题：</strong>国安基金第 13 次例会将于 13 日召开，市场关注是否再度进场护盘。历史经验显示国安基金通常在重大危机时出手，这次引发讨论是否「该退场了」。</li>
+<li><strong>半导体与 AI 题材：</strong>Intel 加入马斯克 Terafab 计划、辉达高端 GPU 出货比例变化等话题受关注，反映散户外溢到全球科技趋势讨论，但台积电法说会与基本面仍是核心。</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section-grid">
+<article class="card">
+<div class="kicker">Cross-market takeaways</div>
+<h2>跨市場觀察</h2>
+<ul class="list">
+<li><strong>台股创历史新高的背后：</strong>本週台股涨幅傲视全球，主要受惠美伊停火、中东局势缓和、外资回补与 AI 需求强劲。但短线涨幅已大，后续需观察获利了结压力。</li>
+<li><strong>外资筹码快速轮动：</strong>一边回补台积电，一边抛售面板双虎，显示外资操作聚焦基本面与利差，题材股若无量能支撑可能快速退潮。</li>
+<li><strong>美国通膨 vs 股市上涨：</strong>CPI 数据虽高于预期，但美股仍走扬，反映市场对「停火」利多的乐观情绪暂时超过通膨担忧。晚间美股走势将是关键考验。</li>
+<li><strong>资金持续追逐成长股：</strong>联发科、TSMC 营收创新高，日月光投资千亿，显示 AI 与半导体仍是资金首选。基本面与题材双轨并进。</li>
+</ul>
+</article>
+<article class="card">
+<div class="kicker">Source links</div>
+<h2>來源連結</h2>
+<div class="source-block">
+<a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+<a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+<a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新闻</a>
+<a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 股市 RSS</a>
+<a class="chip" href="https://www.cnyes.com/">鉅亨首页</a>
+<a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨头条</a>
+<a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+</div>
+</article>
+</section>
+
+<footer class="footer">
+<div><strong>Model：</strong><code>nvidia/minimaxai/minimax-m2.5</code></div>
+<div><strong>Fetcher：</strong><code>browser for Yahoo/TW/PTT; web_fetch for CNA RSS</code></div>
+</footer>
+</main>
+</body>
+</html>
