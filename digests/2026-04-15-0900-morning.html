@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Finance 晨間摘要 2026-04-15</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6; color: #333; background: #f5f7fa;
+            max-width: 800px; margin: 0 auto; padding: 20px;
+        }
+        .header { 
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white; padding: 30px; border-radius: 16px; margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .header h1 { font-size: 28px; margin-bottom: 8px; }
+        .header .subtitle { opacity: 0.9; font-size: 14px; }
+        .section { 
+            background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .section-title { 
+            font-size: 18px; font-weight: 600; margin-bottom: 16px; padding-bottom: 10px;
+            border-bottom: 2px solid #1a237e; color: #1a237e;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .section-title::before { content: ""; display: inline-block; width: 4px; height: 20px; background: #1a237e; border-radius: 2px; }
+        
+        /* Market Overview Grid */
+        .market-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+        .market-card {
+            background: #f8f9fa; border-radius: 10px; padding: 14px; text-align: center;
+            border: 1px solid #e0e0e0; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .market-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        .market-card .name { font-size: 12px; color: #666; margin-bottom: 6px; }
+        .market-card .value { font-size: 18px; font-weight: 700; color: #1a237e; }
+        .market-card .change { font-size: 13px; font-weight: 500; }
+        .positive { color: #d32f2f; }
+        .negative { color: #388e3c; }
+        
+        /* Taiwan Market */
+        .tw-market { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+        .tw-card {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            border-radius: 10px; padding: 14px; text-align: center;
+            border: 1px solid #ffc107;
+        }
+        .tw-card .name { font-size: 12px; color: #f57c00; margin-bottom: 6px; }
+        .tw-card .value { font-size: 20px; font-weight: 700; color: #e65100; }
+        .tw-card .change { font-size: 14px; font-weight: 600; color: #d84315; }
+        
+        /* News List */
+        .news-list { list-style: none; }
+        .news-list li { 
+            padding: 14px 0; border-bottom: 1px solid #eee;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            gap: 12px;
+        }
+        .news-list li:last-child { border-bottom: none; }
+        .news-list .tag {
+            font-size: 11px; padding: 3px 8px; border-radius: 4px; white-space: nowrap;
+            font-weight: 500; flex-shrink: 0;
+        }
+        .tag-taiwan { background: #e3f2fd; color: #1565c0; }
+        .tag-us { background: #fce4ec; color: #c62828; }
+        .tag-global { background: #e8f5e9; color: #2e7d32; }
+        .tag-tech { background: #f3e5f5; color: #7b1fa2; }
+        .tag-energy { background: #fff3e0; color: #e65100; }
+        .tag-gold { background: #fffde7; color: #f9a825; }
+        
+        .news-list .title { 
+            flex: 1; font-size: 14px; color: #333; line-height: 1.5;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .news-list .title a { color: inherit; text-decoration: none; }
+        .news-list .title a:hover { color: #1a237e; text-decoration: underline; }
+        
+        /* Hot Stocks */
+        .hot-stocks { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+        .stock-item {
+            background: #f8f9fa; border-radius: 8px; padding: 12px 8px; text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        .stock-item .symbol { font-size: 13px; font-weight: 700; color: #1a237e; }
+        .stock-item .price { font-size: 14px; font-weight: 600; margin: 4px 0; }
+        .stock-item .change { font-size: 12px; }
+        
+        /* Summary */
+        .summary { 
+            background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+            border-radius: 12px; padding: 20px; border-left: 4px solid #1a237e;
+        }
+        .summary h3 { font-size: 16px; color: #1a237e; margin-bottom: 12px; }
+        .summary p { font-size: 14px; color: #333; line-height: 1.7; }
+        
+        /* Footer */
+        .footer { 
+            text-align: center; padding: 20px; color: #666; font-size: 12px;
+            opacity: 0.7;
+        }
+        .footer a { color: #1a237e; text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .market-grid { grid-template-columns: repeat(2, 1fr); }
+            .tw-market { grid-template-columns: 1fr; }
+            .hot-stocks { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📈 Yahoo Finance 晨間摘要</h1>
+        <div class="subtitle">2026年4月15日 星期三 · 自動生成</div>
+    </div>
+
+    <!-- 台股市場 -->
+    <div class="section">
+        <div class="section-title">台股市場</div>
+        <div class="tw-market">
+            <div class="tw-card">
+                <div class="name">上市加權</div>
+                <div class="value">36,699.64</div>
+                <div class="change">▲ 403.52 (+1.11%)</div>
+            </div>
+            <div class="tw-card">
+                <div class="name">上櫃</div>
+                <div class="value">360.99</div>
+                <div class="change">▲ 4.99 (+1.40%)</div>
+            </div>
+            <div class="tw-card">
+                <div class="name">成交金額</div>
+                <div class="value">457.51億</div>
+                <div class="change">人氣熱絡</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 美股期貨 -->
+    <div class="section">
+        <div class="section-title">美股期貨 / 全球市場</div>
+        <div class="market-grid">
+            <div class="market-card">
+                <div class="name">S&P 500 期貨</div>
+                <div class="value">7,007.00</div>
+                <div class="change positive">▲ +2.25 (+0.03%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">道瓊期貨</div>
+                <div class="value">48,760.00</div>
+                <div class="change positive">▲ +5.00 (+0.01%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">那斯達克期貨</div>
+                <div class="value">26,007.25</div>
+                <div class="change positive">▲ +10.50 (+0.04%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">VIX</div>
+                <div class="value">18.36</div>
+                <div class="change negative">▼ -0.76 (-3.97%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">黃金</div>
+                <div class="value">4,854.70</div>
+                <div class="change positive">▲ +4.60 (+0.09%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">比特幣</div>
+                <div class="value">74,580.55</div>
+                <div class="change positive">▲ +386.86 (+0.52%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">原油 (WTI)</div>
+                <div class="value">90.22</div>
+                <div class="change negative">▼ -1.06 (-1.16%)</div>
+            </div>
+            <div class="market-card">
+                <div class="name">10年殖利率</div>
+                <div class="value">4.25%</div>
+                <div class="change negative">▼ -4.54bp</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 熱門股票 -->
+    <div class="section">
+        <div class="section-title">🔥 熱門個股</div>
+        <div class="hot-stocks">
+            <div class="stock-item">
+                <div class="symbol">NVDA</div>
+                <div class="price">196.51</div>
+                <div class="change positive">▲ +3.80%</div>
+            </div>
+            <div class="stock-item">
+                <div class="symbol">META</div>
+                <div class="price">662.49</div>
+                <div class="change positive">▲ +4.41%</div>
+            </div>
+            <div class="stock-item">
+                <div class="symbol">AMZN</div>
+                <div class="price">--</div>
+                <div class="change positive">▲ +3.81%</div>
+            </div>
+            <div class="stock-item">
+                <div class="symbol">TSM</div>
+                <div class="price">ADR 379.89</div>
+                <div class="change positive">▲ +2.79%</div>
+            </div>
+            <div class="stock-item">
+                <div class="symbol">INTC</div>
+                <div class="price">63.81</div>
+                <div class="change negative">▼ -2.13%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重點新聞 -->
+    <div class="section">
+        <div class="section-title">📰 重點新聞</div>
+        <ul class="news-list">
+            <li>
+                <span class="tag tag-us">美股</span>
+                <span class="title"><a href="https://finance.yahoo.com/markets/stocks/article/stock-market-today-sp-500-nasdaq-dow-futures-hover-amid-renewed-hopes-for-us-iran-talks-231104868.html" target="_blank">美伊恢復談判露曙光！那指、費半與輝達連十紅</a></span>
+            </li>
+            <li>
+                <span class="tag tag-us">美股</span>
+                <span class="title"><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-draws-offers-vcs-invest-234946772.html" target="_blank">Anthropic 估值上看 8,000 億美元，獲 VC 投資興趣</a></span>
+            </li>
+            <li>
+                <span class="tag tag-tech">科技</span>
+                <span class="title"><a href="https://finance.yahoo.com/sectors/technology/articles/meta-extends-custom-chips-deal-with-broadcom-to-power-ai-ambitions-211850406.html" target="_blank">Meta 與 Broadcom 延長客製化晶片合作，強化 AI 佈局</a></span>
+            </li>
+            <li>
+                <span class="tag tag-tech">科技</span>
+                <span class="title"><a href="https://finance.yahoo.com/sectors/technology/article/tech-stocks-today-amazon-to-acquire-satellite-company-globalstar-openai-memo-lashes-out-at-rival-anthropic-144220958.html" target="_blank">亞馬遜收購 Globalstar 對抗 Starlink，布局衛星通訊</a></span>
+            </li>
+            <li>
+                <span class="tag tag-taiwan">台股</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/11%E9%87%91%E6%8E%A7%E9%A6%96%E5%AD%A3%E5%A4%A7%E8%B3%BA1-232%E5%84%84-%E4%B8%AD%E4%BF%A1%E9%87%91-%E5%8F%B0%E6%96%B0%E6%96%B0%E5%85%89%E9%87%91%E5%AF%AB%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-222853967.html" target="_blank">11 金控首季獲利增 48%，五強破紀錄</a></span>
+            </li>
+            <li>
+                <span class="tag tag-taiwan">台股</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/%E9%9F%AD%E8%8F%9C%E5%8F%88%E7%BF%BB%E8%BB%8A-%E7%9F%BD%E5%85%89%E5%AD%90%E7%86%B1%E9%96%80%E8%82%A1%E8%81%AF%E4%BA%9E%E7%88%866889%E8%90%AC%E5%85%83%E9%81%95%E7%B4%84%E4%BA%A4%E5%89%B2-214531809.html" target="_blank">矽光子夯股聯亞爆 6889 萬違約交割</a></span>
+            </li>
+            <li>
+                <span class="tag tag-taiwan">台股</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBq1%E7%87%9F%E6%94%B6%E7%AA%81%E7%A0%B4%E5%85%86%E5%85%83%E5%A4%A7%E9%97%9C-%E6%B3%95%E8%AA%AA%E6%9C%83%E5%89%8D%E5%A4%95adr%E6%BC%B22-79-%E8%87%B3%E4%B8%83%E9%80%B1%E6%96%B0%E9%AB%98-003627536.html" target="_blank">台積電 Q1 營收再破兆元大關，ADR 漲 2.79%</a></span>
+            </li>
+            <li>
+                <span class="tag tag-taiwan">台股</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/%E3%80%90%E5%8F%B0%E9%81%94%E9%9B%BB%E8%81%9A%E5%AF%B6%E7%9B%861%E3%80%91%E8%82%A1%E5%83%B9%E5%B9%B4%E6%BC%B2440%E5%8A%9B%E5%A3%93%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E3%80%8C%E5%84%84%E5%85%83%E5%AF%8C%E7%BF%81%E3%80%8D%E8%82%A1%E6%9D%B1%E9%80%BC%E8%BF%912000%E5%90%8D-003438855.html" target="_blank">台達電股價年漲 440% 力壓台積電，億元富翁股东逼近 2000 名</a></span>
+            </li>
+            <li>
+                <span class="tag tag-energy">能源</span>
+                <span class="title"><a href="https://www.cna.com.tw/news/afe/202604150012.aspx" target="_blank">投資人關注荷莫茲海峽局勢，美股收盤齊揚</a></span>
+            </li>
+            <li>
+                <span class="tag tag-energy">能源</span>
+                <span class="title"><a href="https://www.cna.com.tw/news/afe/202604150010.aspx" target="_blank">市場估美伊和談有助緩解供應疑慮，國際油價收低</a></span>
+            </li>
+            <li>
+                <span class="tag tag-gold">貴金屬</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/%E4%B8%AD%E6%9D%B1%E5%92%8C%E8%AB%87%E9%A0%90%E6%9C%9F%E7%B7%A9%E8%A7%A3%E9%80%9A%E8%86%A8%E7%96%91%E6%85%AE-%E7%B4%90%E7%B4%84%E9%87%91%E5%83%B9%E6%BC%B2%E8%BF%912-%E9%87%8D%E5%9B%9E4-800%E7%BE%8E%E5%85%83%E4%B9%8B%E4%B8%8A-002002407.html" target="_blank">中東和談預期緩解通膨疑慮，紐約金價漲近 2% 重回 4,800 美元</a></span>
+            </li>
+            <li>
+                <span class="tag tag-global">國際</span>
+                <span class="title"><a href="https://www.cna.com.tw/news/aopl/202604140348.aspx" target="_blank">IMF 下修今年全球經濟成長預測，估台灣實質 GDP 增 5.2%</a></span>
+            </li>
+            <li>
+                <span class="tag tag-global">國際</span>
+                <span class="title"><a href="https://tw.stock.yahoo.com/news/%E7%BE%8E%E6%B5%B7%E9%97%9C4-20%E8%B5%B7%E5%95%9F%E5%8B%95%E9%97%9C%E7%A8%85%E9%80%80%E6%AC%BE-%E6%B3%95%E9%99%A2%E8%A3%81%E6%B1%BA%E6%92%A4%E9%8A%B7ieepa%E6%8E%88%E6%AC%8A%E9%97%9C%E7%A8%85-001854960.html" target="_blank">美海關 4/20 起啟動關稅退款，法院裁決撤銷 IEEPA 授權關稅</a></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 市場摘要 -->
+    <div class="section">
+        <div class="section-title">📊 市場摘要</div>
+        <div class="summary">
+            <h3>今日市場觀察重點</h3>
+            <p>
+                <strong>美伊談判露曙光：</strong>川普透露美國與伊朗可能於未來兩天恢復談判，市場對荷莫茲海峽重啟充滿期待，油價應聲大跌（布蘭特原油重挫 4.6%，WTI 大跌 7.9%），美股全面走揚，道瓊漲 317 點，那指、費半與輝達皆連續十個交易日上漲。<br><br>
+                <strong>輝達 AI 量子佈局：</strong>輝達發布全球首個用於量子處理器校準與糾錯的開源 AI 模型 Ising，股價再漲 3.8% 突破 196 美元，創五個月新高，寫下連十紅紀錄。<br><br>
+                <strong>台股創歷史新高：</strong>受美股激勵，台股加權指數大漲 838.83 點，收在 36,296.12 點創歷史新高，成交量達 9,735 億元。台積電 ADR 漲 2.79% 收 379.89 美元。<br><br>
+                <strong>台達電表現亮眼：</strong>股價年漲 440% 力壓台積電，市值突破 4 兆元大關，億元富翁與準億元富翁股东從近 700 人暴增至近 2000 人。
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>資料來源：<a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a>、<a href="https://tw.stock.yahoo.com/" target="_blank">Yahoo 股市</a>、<a href="https://www.cna.com.tw/" target="_blank">中央社</a></p>
+        <p>本摘要由自動化系統生成 · <a href="https://seagal1125.github.io/yahoo-finance-pages/">返回首頁</a></p>
+    </div>
+</body>
+</html>
