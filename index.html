@@ -8,20 +8,12 @@
 :root{--bg:#f4f7fb;--panel:#fff;--text:#162234;--muted:#617084;--line:#d7dee8;--accent:#2563eb;--accent2:#0f766e;--shadow:0 18px 48px rgba(15,23,42,.08);--max:1060px}
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left, rgba(37,99,235,.09), transparent 25%),linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);color:var(--text);line-height:1.7}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 60px}
 .hero,.card{background:rgba(255,255,255,.84);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow);border-radius:24px}
-.hero{padding:30px}
-.hero p{margin:10px 0 0;color:#32465e}
-.meta{color:var(--muted);font-size:.95rem}
-.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:20px}
-.card{padding:22px}
-ul{padding-left:20px;margin:0}
-li{margin:0 0 10px}
-h1,h2{margin:0;line-height:1.2}
-h1{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.03em}
-h2{font-size:1.35rem;margin-bottom:14px}
+.hero{padding:30px} .hero p{margin:10px 0 0;color:#32465e} .meta{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:20px} .card{padding:22px}
+ul{padding-left:20px;margin:0} li{margin:0 0 10px} h1,h2{margin:0;line-height:1.2} h1{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.03em} h2{font-size:1.35rem;margin-bottom:14px}
 .pill{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#28425f;font-size:.85rem;font-weight:700;margin:0 8px 10px 0}
 .latest{background:linear-gradient(135deg, rgba(37,99,235,.11), rgba(15,118,110,.06)), rgba(255,255,255,.92)}
 @media (max-width:860px){.grid{grid-template-columns:1fr}.shell{padding:18px 14px 48px}.hero,.card{padding:18px}}
@@ -42,15 +34,18 @@ h2{font-size:1.35rem;margin-bottom:14px}
 <section class="grid">
 <article class="card latest">
 <h2>最新摘要</h2>
-<p>週一凌晨市場聚焦美伊談判、油價波動、川普關稅退稅啟動。美股四大指數上週五收盤創新高，那斯達克連13漲，但美銀Hartnett示警「多頭陷阱」；台股上週週線大漲1386點，但美伊局勢與ETF處置股仍是短線變數。</p>
-<p><a href="digests/2026-04-20-0510.html">查看完整摘要 →</a></p>
+<p>午盤主線偏向高檔分化：台股早盤續創高，但資金更集中在 PCB、科技 ETF、能源工程與 AI 題材；外部仍要盯中東局勢、油價與通膨風險。</p>
+<p><a href="digests/2026-04-20-1350.html">查看完整摘要 →</a></p>
 </article>
 <article class="card">
 <h2>歷史摘要</h2>
 <ul>
+<li><a href="digests/2026-04-20-1350.html">2026年4月20日 13:50</a></li>
+<li><a href="digests/2026-04-20-0900.html">2026年4月20日 09:00</a></li>
 <li><a href="digests/2026-04-20-0510.html">2026年4月20日 05:10</a></li>
 <li><a href="digests/2026-04-17-2130.html">2026年4月17日 21:30</a></li>
 <li><a href="digests/2026-04-17-1350.html">2026年4月17日 13:50</a></li>
+<li><a href="digests/2026-04-17-0900.html">2026年4月17日 09:00</a></li>
 <li><a href="digests/2026-04-17-0510.html">2026年4月17日 05:10</a></li>
 <li><a href="digests/2026-04-16-2130.html">2026年4月16日 21:30</a></li>
 <li><a href="digests/2026-04-16-1350.html">2026年4月16日 13:50</a></li>
@@ -58,6 +53,7 @@ h2{font-size:1.35rem;margin-bottom:14px}
 <li><a href="digests/2026-04-16-0510.html">2026年4月16日 05:10</a></li>
 <li><a href="digests/2026-04-15-2130.html">2026年4月15日 21:30</a></li>
 <li><a href="digests/2026-04-15-1350.html">2026年4月15日 13:50</a></li>
+<li><a href="digests/2026-04-15-0900-morning.html">2026年4月15日 09:00</a></li>
 <li><a href="digests/2026-04-15-0510.html">2026年4月15日 05:10</a></li>
 <li><a href="digests/2026-04-14-2130.html">2026年4月14日 21:30</a></li>
 <li><a href="digests/2026-04-14-1350.html">2026年4月14日 13:50</a></li>
@@ -67,14 +63,6 @@ h2{font-size:1.35rem;margin-bottom:14px}
 <li><a href="digests/2026-04-13-1350.html">2026年4月13日 13:50</a></li>
 <li><a href="digests/2026-04-13-0900.html">2026年4月13日 09:00</a></li>
 <li><a href="digests/2026-04-13-0510.html">2026年4月13日 05:10</a></li>
-<li><a href="digests/2026-04-12-2130.html">2026年4月12日 21:30</a></li>
-<li><a href="digests/2026-04-12-1350.html">2026年4月12日 13:50</a></li>
-<li><a href="digests/2026-04-12-0900.html">2026年4月12日 09:00</a></li>
-<li><a href="digests/2026-04-12-0510.html">2026年4月12日 05:10</a></li>
-<li><a href="digests/2026-04-11-2130.html">2026年4月11日 21:30</a></li>
-<li><a href="digests/2026-04-11-1350.html">2026年4月11日 13:50</a></li>
-<li><a href="digests/2026-04-11-0900.html">2026年4月11日 09:00</a></li>
-<li><a href="digests/2026-04-11-0510.html">2026年4月11日 05:10</a></li>
 <li><a href="digests/2026-04-10-2130.html">2026年4月10日 21:30</a></li>
 <li><a href="digests/2026-04-10-1350.html">2026年4月10日 13:50</a></li>
 <li><a href="digests/2026-04-10-0900.html">2026年4月10日 09:00</a></li>
@@ -95,14 +83,6 @@ h2{font-size:1.35rem;margin-bottom:14px}
 <li><a href="digests/2026-04-06-1350.html">2026年4月6日 13:50</a></li>
 <li><a href="digests/2026-04-06-0900.html">2026年4月6日 09:00</a></li>
 <li><a href="digests/2026-04-06-0510.html">2026年4月6日 05:10</a></li>
-<li><a href="digests/2026-04-05-2130.html">2026年4月5日 21:30</a></li>
-<li><a href="digests/2026-04-05-1350.html">2026年4月5日 13:50</a></li>
-<li><a href="digests/2026-04-05-0900.html">2026年4月5日 09:00</a></li>
-<li><a href="digests/2026-04-05-0510.html">2026年4月5日 05:10</a></li>
-<li><a href="digests/2026-04-04-2130.html">2026年4月4日 21:30</a></li>
-<li><a href="digests/2026-04-04-1350.html">2026年4月4日 13:50</a></li>
-<li><a href="digests/2026-04-04-0900.html">2026年4月4日 09:00</a></li>
-<li><a href="digests/2026-04-04-0510.html">2026年4月4日 05:10</a></li>
 <li><a href="digests/2026-04-03-2130.html">2026年4月3日 21:30</a></li>
 <li><a href="digests/2026-04-03-1350.html">2026年4月3日 13:50</a></li>
 <li><a href="digests/2026-04-03-0900.html">2026年4月3日 09:00</a></li>
@@ -119,6 +99,65 @@ h2{font-size:1.35rem;margin-bottom:14px}
 <li><a href="digests/2026-03-31-1350.html">2026年3月31日 13:50</a></li>
 <li><a href="digests/2026-03-31-0900.html">2026年3月31日 09:00</a></li>
 <li><a href="digests/2026-03-31-0510.html">2026年3月31日 05:10</a></li>
+<li><a href="digests/2026-03-30-2130.html">2026年3月30日 21:30</a></li>
+<li><a href="digests/2026-03-30-1350.html">2026年3月30日 13:50</a></li>
+<li><a href="digests/2026-03-30-0900.html">2026年3月30日 09:00</a></li>
+<li><a href="digests/2026-03-30-0510.html">2026年3月30日 05:10</a></li>
+<li><a href="digests/2026-03-27-2130.html">2026年3月27日 21:30</a></li>
+<li><a href="digests/2026-03-27-1350.html">2026年3月27日 13:50</a></li>
+<li><a href="digests/2026-03-27-0900.html">2026年3月27日 09:00</a></li>
+<li><a href="digests/2026-03-27-0510.html">2026年3月27日 05:10</a></li>
+<li><a href="digests/2026-03-26-2130.html">2026年3月26日 21:30</a></li>
+<li><a href="digests/2026-03-26-1350.html">2026年3月26日 13:50</a></li>
+<li><a href="digests/2026-03-26-0900.html">2026年3月26日 09:00</a></li>
+<li><a href="digests/2026-03-26-0510.html">2026年3月26日 05:10</a></li>
+<li><a href="digests/2026-03-25-2130.html">2026年3月25日 21:30</a></li>
+<li><a href="digests/2026-03-25-1350.html">2026年3月25日 13:50</a></li>
+<li><a href="digests/2026-03-25-0900.html">2026年3月25日 09:00</a></li>
+<li><a href="digests/2026-03-25-0510.html">2026年3月25日 05:10</a></li>
+<li><a href="digests/2026-03-24-2130.html">2026年3月24日 21:30</a></li>
+<li><a href="digests/2026-03-24-1350.html">2026年3月24日 13:50</a></li>
+<li><a href="digests/2026-03-24-0900.html">2026年3月24日 09:00</a></li>
+<li><a href="digests/2026-03-24-0510.html">2026年3月24日 05:10</a></li>
+<li><a href="digests/2026-03-23-2130.html">2026年3月23日 21:30</a></li>
+<li><a href="digests/2026-03-23-1350.html">2026年3月23日 13:50</a></li>
+<li><a href="digests/2026-03-23-0900.html">2026年3月23日 09:00</a></li>
+<li><a href="digests/2026-03-23-0510.html">2026年3月23日 05:10</a></li>
+<li><a href="digests/2026-03-21-0900.html">2026年3月21日 09:00</a></li>
+<li><a href="digests/2026-03-20-2130.html">2026年3月20日 21:30</a></li>
+<li><a href="digests/2026-03-20-2100.html">2026年3月20日 21:00</a></li>
+<li><a href="digests/2026-03-19-1350.html">2026年3月19日 13:50</a></li>
+<li><a href="digests/2026-03-19-1350-compare.html">2026年3月19日 13:50</a></li>
+<li><a href="digests/2026-03-19-0900.html">2026年3月19日 09:00</a></li>
+<li><a href="digests/2026-03-19-0510.html">2026年3月19日 05:10</a></li>
+<li><a href="digests/2026-03-18-2130.html">2026年3月18日 21:30</a></li>
+<li><a href="digests/2026-03-18-1350.html">2026年3月18日 13:50</a></li>
+<li><a href="digests/2026-03-18-1309.html">2026年3月18日 13:09</a></li>
+<li><a href="digests/2026-03-18-1253.html">2026年3月18日 12:53</a></li>
+<li><a href="digests/2026-03-18-0900.html">2026年3月18日 09:00</a></li>
+<li><a href="digests/2026-03-18-0510.html">2026年3月18日 05:10</a></li>
+<li><a href="digests/2026-03-17-2130.html">2026年3月17日 21:30</a></li>
+<li><a href="digests/2026-03-17-1524.html">2026年3月17日 15:24</a></li>
+<li><a href="digests/2026-03-17-1445.html">2026年3月17日 14:45</a></li>
+<li><a href="digests/2026-03-17-1350.html">2026年3月17日 13:50</a></li>
+<li><a href="digests/2026-03-17-0900.html">2026年3月17日 09:00</a></li>
+<li><a href="digests/2026-03-17-0510.html">2026年3月17日 05:10</a></li>
+<li><a href="digests/2026-03-16-2130.html">2026年3月16日 21:30</a></li>
+<li><a href="digests/2026-03-16-2031.html">2026年3月16日 20:31</a></li>
+<li><a href="digests/2026-03-16-1416.html">2026年3月16日 14:16</a></li>
+<li><a href="digests/2026-03-16-1350.html">2026年3月16日 13:50</a></li>
+<li><a href="digests/2026-03-16-0900.html">2026年3月16日 09:00</a></li>
+<li><a href="digests/2026-03-16-0510.html">2026年3月16日 05:10</a></li>
+<li><a href="digests/2026-03-13-2130.html">2026年3月13日 21:30</a></li>
+<li><a href="digests/2026-03-13-1350.html">2026年3月13日 13:50</a></li>
+<li><a href="digests/2026-03-13-0900.html">2026年3月13日 09:00</a></li>
+<li><a href="digests/2026-03-13-0510.html">2026年3月13日 05:10</a></li>
+<li><a href="digests/2026-03-12-2130.html">2026年3月12日 21:30</a></li>
+<li><a href="digests/2026-03-12-1412.html">2026年3月12日 14:12</a></li>
+<li><a href="digests/2026-03-12-0900.html">2026年3月12日 09:00</a></li>
+<li><a href="digests/2026-03-11-2130.html">2026年3月11日 21:30</a></li>
+<li><a href="digests/2026-03-11-1459.html">2026年3月11日 14:59</a></li>
+<li><a href="digests/2026-03-11-1447.html">2026年3月11日 14:47</a></li>
 </ul>
 </article>
 </section>
