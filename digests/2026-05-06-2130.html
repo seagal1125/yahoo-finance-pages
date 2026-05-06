@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-05-06 21:30</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#eff4fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#5c6c83;
+      --line:#d7e1ee;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b42318;
+      --danger-bg:#fff4f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.65);background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(240,247,255,.88));backdrop-filter:blur(12px);border-radius:var(--radius-xl);box-shadow:var(--shadow);padding:34px;}
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%);}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:840px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.75);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px);}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .risk{border:1px solid #fecaca;background:linear-gradient(180deg,#fff8f7,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Evening Digest</span>
+        <span class="pill">Asia/Taipei 21:30</span>
+        <span class="pill">2026-05-06</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">今晚市場主線很集中：美股續由 AI 與財報撐盤，油價自高檔回落替風險資產鬆一口氣；台股則在逼近 4 萬點後，資金開始更明顯往記憶體、衛星、CCL 與設備股集中，氣氛偏熱但分化也更大。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 5 月 6 日 21:30（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>美股續創高，但市場更依賴財報與 AI 主線</strong>
+        <p>Yahoo Finance 首頁的焦點幾乎都圍繞就業數據、半導體財報、AI 交易延續與降息路徑不確定。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>指數逼近 4 萬點，人氣最熱的還是記憶體與高波動題材</strong>
+        <p>Yahoo 台股與鉅亨同步指向聯發科、記憶體、CCL、衛星、設備鏈，資金明顯集中在能講成長故事的族群。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今晚變數</div>
+        <strong>油價回落有幫助，但利率與高估值壓力沒真正消失</strong>
+        <p>原油從高檔回跌，短線緩和通膨交易；但市場仍在盯 ADP、Fed 口風與美債配置變化。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li>全球市場今晚不是單純 risk-on，而是<strong>「風險偏好還在、但估值容錯變低」</strong>。Yahoo Finance 首頁最醒目的組合是就業數據、半導體財報、AI 交易、Fed 溝通與油價回落。</li>
+          <li>台股端的情緒更熱。Yahoo 台股首頁直接把<strong>大盤衝到 39,912.89、距離 4 萬點只差臨門一腳</strong>放在中心位置，同時量能放大到 374.39 億，代表資金不是觀望，而是持續積極追價。</li>
+          <li>今晚最值得留意的不是「有沒有題材」，而是<strong>題材是否開始過度擁擠</strong>。從 PTT、Yahoo 台股、鉅亨都看得到記憶體、AI 設備、聯發科、衛星、CCL 反覆出現，短線熱度非常高。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>Yahoo Finance 把<strong>就業數據與 Fed 指引</strong>擺在前排，代表美股雖然創高，但市場仍怕利率重新變成估值壓力。</li>
+          <li>台股若繼續只靠少數高人氣族群撐盤，像記憶體、聯發科概念、熱門電子材料股，短線很容易從加速上漲切到急速震盪。</li>
+          <li>中東衝突消息雖稍微降溫、油價也從高檔回落，但鉅亨與 CNA 都還把荷姆茲海峽與能源列成熱詞，代表這個風險沒有真正離場。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>全球市場</h2>
+        <ul class="list">
+          <li>首頁市場欄位顯示<strong>標普 500、道瓊、那指、羅素 2000 全面上漲</strong>，其中羅素 2000 漲幅最強，說明風險偏好仍在擴散，不只靠 mega-cap 撐盤。</li>
+          <li>最前面的編輯主軸是<strong>本週就業數據、半導體財報與市場動能</strong>，代表交易核心仍是「景氣有沒有撐住」與「AI 成長能不能繼續兌現」。</li>
+          <li>Yahoo Finance 也直接點出<strong>Nasdaq 與 Russell 在創高附近追價風險變高</strong>，這很像在提醒市場：多頭還在，但現在更考驗進場節奏。</li>
+          <li>從首頁內容看，<strong>AI trade 仍是美股最有延續性的敘事</strong>，Palantir、軟體股、資料中心融資、半導體財報都被串在同一條主線上。</li>
+          <li>同時又夾著<strong>Kashkari 對伊朗戰事與 Fed 指引的提醒、Treasury 市場對債務操作變化的關注、OPEC+ 象徵性增產</strong>，表示總體風險沒有消失，只是暫時沒壓過財報與 AI 熱度。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>台灣市場</h2>
+        <ul class="list">
+          <li>Yahoo 台股首頁顯示<strong>上市 39,912.89、單日上漲 986.26 點、成交 374.39 億</strong>，這不是保守墊高，而是典型的資金推升盤。</li>
+          <li>今日要聞集中在<strong>台積電龍潭建廠重啟、台股今年上看 5 萬點的樂觀論述、券商降槓桿、鴻海第二代低軌衛星升空</strong>，主線就是 AI／半導體擴產與風險控管並行。</li>
+          <li>個股與題材熱度最明顯的是<strong>旺宏、群聯、聯電、華通</strong>這類記憶體／半導體／高波動電子族群，市場顯然仍在追逐供給緊張與成長預期。</li>
+          <li>首頁也同時塞進房市被股市吸金、4 萬點過熱、30 年美債殖利率 5% 壓力線等內容，代表連偏多環境都已經開始主動討論<strong>過熱與資金分流風險</strong>。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li><strong>台股衝破 4 萬 1000 點並吸引熱錢湧入</strong>，中央社提到新台幣強升至 31.488，代表外資與風險偏好仍在支撐台股資產價格。</li>
+          <li><strong>AI 與數位轉型需求延續</strong>：精誠首季營收、淨利、EPS 全創同期高；英業達與東元 4 月營收也都受 AI 伺服器、資料中心需求推動。</li>
+          <li><strong>工業與設備鏈接單能見度高</strong>：研華預估 Q2 營收季增個位數，且 B/B ratio 超過 1.5，代表企業資本支出與半導體設備需求仍有續航。</li>
+          <li><strong>能源與地緣政治仍是總體背景板</strong>：中央社一邊寫高盛警告石腦油、航油、LPG 供應風險，一邊又提到市場傳出美伊接近協議、布倫特跌破 100 美元，顯示能源風險目前處在高波動但快速反應消息的階段。</li>
+          <li><strong>AI 強、傳產不弱、總體仍有干擾</strong>，這是中央社今晚最清楚的輪廓。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>5 則最值得看的重點</h2>
+        <ul class="list">
+          <li><strong>聯發科處置到 5/20：</strong>鉅亨直接把「有史以來最大尾」放進頭條，說明市場人氣已熱到監理層需要出手降溫。</li>
+          <li><strong>研華接單強勁：</strong>半導體與 HBM 設備需求旺，鉅亨判斷 Q2 營收可續創高，代表 AI 設備鏈不只故事熱，訂單面也還撐得住。</li>
+          <li><strong>台燿、台光電創高：</strong>CCL 族群首季營收與獲利同步創高，顯示 AI 基建不只是晶片受惠，材料與高速傳輸板材也持續吃到需求。</li>
+          <li><strong>美國 ADP 轉強：</strong>4 月 ADP 增加 10.9 萬人、創 15 個月新高，這對景氣是正面，但也會讓市場更難快速交易大幅降息。</li>
+          <li><strong>市場還在押記憶體與 AI 電源鏈：</strong>熱門排行與專家觀點裡反覆出現威剛、台塑便利家、AI 電源、光模組，表示資金目前仍在追「缺貨、漲價、擴產」三件事。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>首頁前 30 篇文章（本次實際可抓 10 篇）</h3>
+          <ul class="list">
+            <li><strong>30</strong>｜[新聞] 5月魔咒登場快逃？專家喊話1舉動恐讓你捶</li>
+            <li><strong>27</strong>｜[新聞] SCFI反彈了！法人嗨喊旺季提前 長榮、陽</li>
+            <li><strong>12</strong>｜[新聞] 委內瑞拉石油出口在馬杜羅倒台後飆升 中</li>
+            <li><strong>9</strong>｜Re: [請益] 想問大家怎麼第一時間知道科技股的動向</li>
+            <li><strong>7</strong>｜Re: [新聞] 巴菲特：當今市場就像「一座附設賭場</li>
+            <li><strong>23</strong>｜[新聞] AI 記憶體超級週期點火！SanDisk財報驚艷</li>
+            <li><strong>2</strong>｜[標的] 欣銓 3264 空</li>
+            <li><strong>—</strong>｜[公告] 股票板板規 v4.7 (2024/10/06 修正)</li>
+            <li><strong>6</strong>｜[公告] 4-6-1罰則將在1/22開始到年底加重至30天</li>
+            <li><strong>爆</strong>｜[閒聊] 2026/04/30 盤後閒聊</li>
+          </ul>
+          <div class="ptt-note">註：依規則用 browser + <code>.r-ent</code> 抽取。本次頁面可見條目 10 筆，沒有硬補不存在的項目。</div>
+        </div>
+        <div>
+          <h3>熱門主題 3 則</h3>
+          <ul class="list">
+            <li><strong>記憶體超級週期仍是散戶最買單的故事：</strong>SanDisk 財報、AI 記憶體、科技股動向都排在高互動區，代表市場還在追供給吃緊與 AI 擴產邏輯。</li>
+            <li><strong>航運與能源重新回到討論區：</strong>SCFI 反彈、委內瑞拉石油出口飆升兩條新聞都衝上前排，顯示資金不只盯電子，也在找景氣循環與原物料的補漲線。</li>
+            <li><strong>情緒面開始出現「太熱會不會反噬」的味道：</strong>5 月魔咒、巴菲特賭場論、空單標的文同時存在，說明版上不是全面無腦樂觀，而是多頭裡夾著明顯戒心。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>美股與台股的共同語言都是 AI，</strong>只是美股現在靠財報和大型平台公司續命，台股則更往記憶體、CCL、設備、衛星等次產業鏈擴散。</li>
+          <li><strong>油價回落替市場喘口氣，</strong>但這更像短線情緒緩和，不代表通膨與地緣風險正式結束。</li>
+          <li><strong>現在真正關鍵的是擁擠度。</strong> 當聯發科被處置、記憶體與熱門電子反覆霸榜，代表市場熱度已經很高，後續更需要留意輪動速度與籌碼鬆動。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div>
+      <div><strong>Fetcher：</strong><code>browser for Yahoo/PTT and browser fallback where web_fetch was low-yield; web_fetch used for CNA first pass</code></div>
+    </footer>
+  </main>
+</body>
+</html>
