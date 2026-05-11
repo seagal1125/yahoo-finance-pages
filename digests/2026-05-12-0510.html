@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Finance Digest - 2026年5月12日 05:10</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --positive: #34a853;
+            --negative: #ea4335;
+            --border: #e8eaed;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%); color: white; padding: 40px 30px; border-radius: 16px; margin-bottom: 24px; }
+        .hero h1 { font-size: 28px; margin-bottom: 8px; }
+        .hero .timestamp { opacity: 0.9; font-size: 14px; }
+        .hero .summary { margin-top: 16px; padding: 16px; background: rgba(255,255,255,0.15); border-radius: 8px; }
+        
+        /* Cards */
+        .card { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 18px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--primary); color: var(--primary); }
+        
+        /* Market Indices */
+        .indices-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+        .index-item { background: #f1f3f4; padding: 12px; border-radius: 8px; text-align: center; }
+        .index-item .name { font-size: 12px; color: var(--text-secondary); }
+        .index-item .value { font-size: 18px; font-weight: 600; margin: 4px 0; }
+        .index-item .change { font-size: 13px; }
+        .positive { color: var(--positive); }
+        .negative { color: var(--negative); }
+        
+        /* News List */
+        .news-list { list-style: none; }
+        .news-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .news-list li:last-child { border-bottom: none; }
+        .news-list .meta { font-size: 12px; color: var(--text-secondary); margin-bottom: 4px; }
+        .news-list .title { font-weight: 500; }
+        
+        /* Risk Box */
+        .risk-box { background: #fff3e0; border-left: 4px solid #ff9800; padding: 16px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .risk-box h3 { color: #e65100; margin-bottom: 8px; font-size: 16px; }
+        
+        /* Source Links */
+        .source-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+        .source-chip { background: #e8f0fe; color: var(--primary); padding: 6px 12px; border-radius: 16px; font-size: 13px; text-decoration: none; }
+        .source-chip:hover { background: #d2e3fc; }
+        
+        /* Footer */
+        .footer { text-align: center; padding: 20px; color: var(--text-secondary); font-size: 12px; border-top: 1px solid var(--border); margin-top: 20px; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 12px; }
+            .hero { padding: 24px 16px; }
+            .hero h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <div class="hero">
+            <h1>📈 Yahoo Finance 市場摘要</h1>
+            <div class="timestamp">2026年5月12日 05:10（台北時間）| Premarket Digest</div>
+            <div class="summary">
+                <strong>本週重點：</strong>美股再創新高！那斯達克與S&P 500收盤上漲，晶片股持續領漲。川普稱美伊停火協議「命懸一線」，本週將訪問中國，馬斯克、庫克等CEO隨行。台股今日盤前聚焦：5/15財報截止將至，市場觀望氣氛濃。
+            </div>
+        </div>
+
+        <!-- Yahoo Finance Global -->
+        <div class="card">
+            <h2>🌎 Yahoo Finance（Global）</h2>
+            <div class="indices-grid">
+                <div class="index-item">
+                    <div class="name">S&P 500</div>
+                    <div class="value">7,412.84</div>
+                    <div class="change positive">+13.91 (+0.19%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">Dow 30</div>
+                    <div class="value">49,704.47</div>
+                    <div class="change positive">+95.31 (+0.19%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">Nasdaq</div>
+                    <div class="value">26,274.13</div>
+                    <div class="change positive">+27.05 (+0.10%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">Russell 2000</div>
+                    <div class="value">2,870.64</div>
+                    <div class="change positive">+9.43 (+0.33%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">VIX</div>
+                    <div class="value">18.38</div>
+                    <div class="change negative">+1.19 (+6.92%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">黃金</div>
+                    <div class="value">4,745.60</div>
+                    <div class="change positive">+14.90 (+0.31%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">比特幣</div>
+                    <div class="value">81,734.24</div>
+                    <div class="change positive">+1,031.64 (+1.28%)</div>
+                </div>
+                <div class="index-item">
+                    <div class="name">原油</div>
+                    <div class="value">98.25</div>
+                    <div class="change positive">+2.83 (+2.97%)</div>
+                </div>
+            </div>
+            <ul class="news-list" style="margin-top: 16px;">
+                <li>
+                    <div class="meta">Yahoo Finance · 1小時前</div>
+                    <div class="title">S&P 500、Nasdaq再創新高 晶片股持續領漲</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">晶片股撐起科技股漲勢，投資者仍對美伊談判停滯感到不安。</div>
+                </li>
+                <li>
+                    <div class="meta">Bloomberg · 1小時前</div>
+                    <div class="title">川普：美伊停火協議已處於「巨大生命維持」狀態</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo Finance · 58分鐘前</div>
+                    <div class="title">馬斯克、庫克等CEO將隨行川普訪中行程</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo Finance · 1小時前</div>
+                    <div class="title">Microsoft CEO：從未獲得Altman被解雇的「明確」解釋</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Yahoo Finance Taiwan -->
+        <div class="card">
+            <h2>🇹🇼 Yahoo Finance（台灣）</h2>
+            <ul class="news-list">
+                <li>
+                    <div class="meta">Yahoo財經編輯室 · 11小時前</div>
+                    <div class="title">神山今天卡關 群創接棒台股繼續嗨</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo股市 · 10小時前</div>
+                    <div class="title">5/15前要交卷 千家企業衝刺財報大考</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">距離5/15 Q1財報截止僅剩3天，超過千家企業須在此前完成申報，市場觀望氛圍浓厚。</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo股市 · 10小時前</div>
+                    <div class="title">小七全家一起衝 4月營收刷同期新高</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo股市 · 10小時前</div>
+                    <div class="title">四大會計大加薪 熬3年拚年收百萬</div>
+                </li>
+                <li>
+                    <div class="meta">Yahoo股市 · 10小時前</div>
+                    <div class="title">年增41% 虎航首季獲利13億創新高</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CNA 中央社 -->
+        <div class="card">
+            <h2>📰 CNA 中央社｜股市</h2>
+            <ul class="news-list">
+                <li>
+                    <div class="meta">中央社華盛頓11日綜合報導</div>
+                    <div class="title">川普訪中 馬斯克、庫克和波音執行長等將隨行</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">川普預計本週訪問中國，白宮官員透露隨行名單包括特斯拉執行長馬斯克、蘋果執行長庫克、奇異航太執行長卡普、波音執行長歐特柏格等人。</div>
+                </li>
+                <li>
+                    <div class="meta">中央社倫敦11日綜合報導</div>
+                    <div class="title">中東情勢再陷僵局 歐股收盤走勢分歧</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">伊朗提出結束中東戰爭的條件遭川普拒絕，歐洲股市今天漲跌互見。</div>
+                </li>
+                <li>
+                    <div class="meta">中央社台北11日電</div>
+                    <div class="title">科學園區審議會通過7案 投資總額達506億元</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">新竹科學園區發揮半導體群聚效益，吸引碳化矽（SiC）、特殊應用積體電路（ASIC）及高效能運算（HPC）相關投資。</div>
+                </li>
+                <li>
+                    <div class="meta">中央社台北11日電</div>
+                    <div class="title">00403A前10大成分股揭曉 台積電居首位</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">主動式台股ETF新兵「主動統一升級50」將於5/12掛牌上市，台積電、台光電、台達電全入列。</div>
+                </li>
+                <li>
+                    <div class="meta">中央社台北11日電</div>
+                    <div class="title">中華電4月EPS超車 台灣大前4月EPS居冠</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 鉅亨網 -->
+        <div class="card">
+            <h2>💹 鉅亨網</h2>
+            <ul class="news-list">
+                <li>
+                    <div class="meta">鉅亨網 · 04:15</div>
+                    <div class="title">估值350億美元！Cerebras週四掛牌上市</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">AI晶片商Cerebras即將掛牌，公開市場究竟能容下幾家AI晶片商？市場高度關注。</div>
+                </li>
+                <li>
+                    <div class="meta">鉅亨網 · Topics</div>
+                    <div class="title">降息懸念再起 市場聚焦三大關鍵變數</div>
+                </li>
+                <li>
+                    <div class="meta">鉅亨網 · Topics</div>
+                    <div class="title">日股漲不停 為何仍值得投資？三大理由讓續航力延續</div>
+                </li>
+                <li>
+                    <div class="meta">鉅亨網 · 04:14 盤中速報</div>
+                    <div class="title">思佳訊半導體(SWKS-US)大漲5%，報70.12美元</div>
+                </li>
+                <li>
+                    <div class="meta">鉅亨網 · 04:04 盤中速報</div>
+                    <div class="title">超微電腦(SMCI-US)大跌5.08%，報33.57美元</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- PTT 股市版 -->
+        <div class="card">
+            <h2>💬 PTT 股市版</h2>
+            <ul class="news-list">
+                <li><span class="meta">51推</span> [標的] 2603長榮 停損請益</li>
+                <li><span class="meta">9推</span> [新聞] 獲利狀況逐漸好轉！相隔1年 中鋼4月營收</li>
+                <li><span class="meta">26推</span> Re: [請益] 真的有人敢貸款買股票嗎</li>
+                <li><span class="meta">15推</span> [新聞] 佳能Q1獲利年增1.7倍，全年營運邁大步</li>
+                <li><span class="meta">70推</span> [新聞] 從AI狂潮到散戶追價！華爾街警告：晶片</li>
+                <li><span class="meta">32推</span> [新聞] 川普推薦且價格優惠25% 蘋果最後選了英特爾 Intel 18A</li>
+                <li><span class="meta">13推</span> Re: [請益] 為什麼GG一直不做記憶體？</li>
+                <li><span class="meta">29推</span> [請益] 買綠不買紅？</li>
+            </ul>
+            <div style="margin-top: 16px; padding: 12px; background: #f8f9fa; border-radius: 8px; font-size: 14px;">
+                <strong>🔥 PTT 熱門話題：</strong>
+                <ul style="margin-top: 8px; padding-left: 20px;">
+                    <li>長榮(2603)停損議題火熱，航運股近期走勢疲弱引發投資人討論停損點設定</li>
+                    <li>AI晶片狂潮持續，但華爾街開始警告散戶追價風險，晶片股估值是否過高引發論戰</li>
+                    <li>台積電為何不做記憶體？網友熱議台積電布局策略與三星、SK海力士競爭態勢</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cross-market Takeaways -->
+        <div class="card">
+            <h2>🔄 Cross-market Takeaways（跨市場觀察）</h2>
+            <ul style="padding-left: 20px;">
+                <li><strong>美股延續創高格局：</strong>S&P 500與Nasdaq再創歷史新高，晶片股持續扮演領漲要角，費城半導體指數大漲超過2.5%。</li>
+                <li><strong>川普政策動態：</strong>美伊停火協議陷入僵局，川普威脅對伊朗實施新制裁；本週訪中行程備受矚目，馬斯克、庫克等科技巨頭隨行，顯示美中經貿談判持續深化。</li>
+                <li><strong>台股財報旺季：</strong>5/15為Q1財報申報截止日，市場觀望氣氛濃，指數族群輪動明顯，IC設計與航運股出現分歧走勢。</li>
+                <li><strong>比特幣反彈：</strong>比特幣站上81,000美元大關，單日漲幅超過1%，數位資產市場信心回溫。</li>
+                <li><strong>黃金原油齊漲：</strong>避險需求支撐黃金站上4,700美元，原油因供應擔憂漲幅近3%，重返98美元水準。</li>
+            </ul>
+        </div>
+
+        <!-- Risk Watch -->
+        <div class="risk-box">
+            <h3>⚠️ Risk Watch（風險觀察）</h3>
+            <ul style="padding-left: 20px;">
+                <li><strong>美伊談判破裂風險：</strong>川普稱停火協議「命懸一線」，若談判破裂，中東局勢升溫可能引發油價波動與市場避險情緒回升。</li>
+                <li><strong>Fed利率政策不確定性：</strong>就業數據放緩後，高盛、BOFA延後降息預期，市場對Fed下半年降息時點存在分歧。</li>
+                <li><strong>台股財報地雷：</strong>5/15截止日前，部分營運衰退的公司可能下修財測，投資人需審慎檢視個股基本面。</li>
+                <li><strong>AI股估值修正壓力：</strong>AI晶片族群股價漲幅驚人，華爾街開始示警散戶追價風險，獲利了結賣壓可能隨時湧現。</li>
+            </ul>
+        </div>
+
+        <!-- Source Links -->
+        <div class="source-links">
+            <a href="https://finance.yahoo.com/" class="source-chip" target="_blank">Yahoo Finance (Global)</a>
+            <a href="https://tw.stock.yahoo.com/" class="source-chip" target="_blank">Yahoo Finance (台灣)</a>
+            <a href="https://tw.stock.yahoo.com/news" class="source-chip" target="_blank">Yahoo股市新聞</a>
+            <a href="https://feeds.feedburner.com/rsscna/finance" class="source-chip" target="_blank">CNA 中央社</a>
+            <a href="https://www.cnyes.com/" class="source-chip" target="_blank">鉅亨網</a>
+            <a href="https://news.cnyes.com/news/cat/headline" class="source-chip" target="_blank">鉅亨頭條</a>
+            <a href="https://www.ptt.cc/bbs/Stock/index.html" class="source-chip" target="_blank">PTT股市版</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Generated by nvidia/minimaxai/minimax-m2.5</p>
+            <p>資料來源：Yahoo Finance、CNA、鉅亨網、PTT | 僅供參考，不構成投資建議</p>
+        </div>
+    </div>
+</body>
+</html>
