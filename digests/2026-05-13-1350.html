@@ -84,22 +84,16 @@
       </ul></article>
     </section>
 
-    <section class="card"><div class="kicker">PTT 股市版</div><h2>PTT 股市版</h2><div class="two-col"><div><h3>首頁前 30 篇文章（實際可抓取 11 篇）</h3><ul class="list">
-      <li><strong>52</strong>｜[新聞] 現實版變形金剛來了！中國宇樹科技推出巨</li>
-      <li><strong>94</strong>｜[心得] 股市小白癡自掛東南枝以自我警惕</li>
-      <li><strong>8</strong>｜Re: [標的] 空軍召集令</li>
-      <li><strong>10</strong>｜[標的] 2377微星多</li>
-      <li><strong>54</strong>｜[請益] 主力都從哪邊學習炒股的？</li>
-      <li><strong>16</strong>｜[新聞] MSCI權重台灣三升 台積電大贏家</li>
-      <li><strong>1</strong>｜Re: [情報] 大聯大(3702)115年第一季歸屬母公司淨利5</li>
-      <li><strong>99</strong>｜[公告] 股東會紀念品 置底交流區</li>
-      <li><strong>—</strong>｜[公告] 股票板板規 v4.6 (2024/07/02 修正)</li>
-      <li><strong>7</strong>｜[公告] 4-6-1罰則將在1/22開始到年底加重至30天</li>
-      <li><strong>爆</strong>｜[閒聊] 2026/05/13 盤中閒聊</li>
-    </ul><div class="ptt-note">註：依規則使用 browser + <code>.r-ent</code> 抽取；本次首頁實際回傳 11 篇，未硬補不存在條目。</div></div><div><h3>熱門主題 3 則</h3><ul class="list">
-      <li><strong>盤中情緒非常熱：</strong>盤中閒聊爆文、心得文高互動，代表今天散戶不是觀望，而是在震盪裡積極交換看法與部位。</li>
-      <li><strong>權值與指數框架仍重要：</strong>MSCI 權重調升、台積電受惠等新聞仍能進入熱門，說明大盤結構並沒有從討論中消失，只是人氣更分散到個股與策略文。</li>
-      <li><strong>短線交易味道濃：</strong>多空標的文、主力學習討論與自我警惕心得並列，反映市場現在很像高波動時段，投資人更在乎節奏與風控，不只是方向。</li>
+    <section class="card"><div class="kicker">PTT 股市版</div><h2>PTT 股市版</h2><div class="two-col"><div><h3>熱門文章清單（PyPtt helper，09:30–13:50 共 5 篇）</h3><ul class="list">
+      <li><strong>100</strong>｜[心得] 股市小白癡自掛東南枝以自我警惕</li>
+      <li><strong>100</strong>｜[情報] 川普：希望中國能夠「對外開放」</li>
+      <li><strong>100</strong>｜[新聞] 快訊／黃仁勳登上空軍一號！白宮證實：隨川普訪中</li>
+      <li><strong>68</strong>｜[情報] 2646星宇航空 董事會決議辦理現金增資</li>
+      <li><strong>66</strong>｜[新聞] 現實版變形金剛來了！中國宇樹科技推出巨型人形機甲</li>
+    </ul><div class="ptt-note">註：本段已依新規則改用 <code>scripts/ptt_stock_digest.py</code>（PyPtt helper，<code>.venvs/ptt-digest</code>）抓 2026-05-13 09:30–13:50 原料；未使用 browser / web_fetch 直接抽 PTT 頁面。</div></div><div><h3>熱門主題 3 則</h3><ul class="list">
+      <li><strong>新手追高 00403A，被市場教育得很快：</strong>最熱心得文的核心不是單純賠錢，而是用自己的案例示範「在大多頭裡憑感覺 All in／All out，很容易把 ETF 當飆股追」。推文一邊吐槽原 PO 太快受不了、一邊提醒高溢價 ETF 本來就不該亂追，整體情緒比較像版友用半嘲諷半安慰的方式，替這波過熱散戶降溫。</li>
+      <li><strong>黃仁勳跟川普訪中，市場把地緣政治直接當題材在炒：</strong>兩篇 100 推文章其實是同一條主線：川普喊中國對外開放、黃仁勳臨時登上空軍一號，讓版上立刻把 AI、關稅、供應鏈與中美關係綁在一起解讀。推文口氣明顯偏懷疑與戲謔，很多人認為川普對中政策前後矛盾，也有人把「空軍一號」當成反向訊號，顯示大家雖然高度關注老黃，但不是真的無腦看多。</li>
+      <li><strong>星宇現增提醒市場：題材再熱，缺錢公司還是會被重新定價：</strong>星宇航空現金增資文雖然沒有前兩題那麼戲劇化，但互動不低，因為它直接碰到股東最在意的稀釋與資金壓力。推文主調偏酸，從「終於走到這步」到質疑高檔增資、燒錢模式能撐多久，反映午盤版上除了追 AI 與國際大題材，也在重新檢查那些需要現金續命的故事能不能撐住估值。</li>
     </ul></div></div></section>
 
     <section class="section-grid">
@@ -119,7 +113,7 @@
       </div></article>
     </section>
 
-    <footer class="footer"><div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div><div><strong>Fetcher：</strong><code>web_fetch first; browser used for Yahoo, PTT, and browser fallback on low-yield dynamic pages</code></div></footer>
+    <footer class="footer"><div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div><div><strong>Fetcher：</strong><code>browser for Yahoo; web_fetch for CNA/Cnyes where useful; PTT used scripts/ptt_stock_digest.py via .venvs/ptt-digest (PyPtt helper)</code></div></footer>
   </main>
 </body>
 </html>
