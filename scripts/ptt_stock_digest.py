@@ -5,6 +5,14 @@ import sys
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 
+
+TIME_FORMATS = (
+    "%Y-%m-%d %H:%M",
+    "%Y-%m-%d %H:%M:%S",
+    "%Y-%m-%dT%H:%M",
+    "%Y-%m-%dT%H:%M:%S",
+)
+
 import PyPtt
 
 PTT_ID = os.environ.get("PTT_ID", "seagal")
@@ -39,6 +47,17 @@ def get_run_config(now: Optional[datetime] = None):
         threshold = 50
 
     return slot, start_time, now, threshold
+
+
+def parse_override_now(value: Optional[str]) -> Optional[datetime]:
+    if not value:
+        return None
+    for fmt in TIME_FORMATS:
+        try:
+            return datetime.strptime(value.strip(), fmt)
+        except ValueError:
+            continue
+    raise ValueError(f"Unsupported datetime format: {value}")
 
 
 def parse_ptt_date(date_str: Optional[str]) -> Optional[datetime]:
@@ -232,9 +251,14 @@ def main() -> int:
     parser.add_argument("--max-posts", type=int, default=DEFAULT_MAX_POSTS)
     parser.add_argument("--max-pushes", type=int, default=DEFAULT_MAX_PUSHES)
     parser.add_argument("--body-chars", type=int, default=DEFAULT_BODY_CHARS)
+    parser.add_argument(
+        "--now",
+        help="Override current local time for slot selection, e.g. '2026-05-13 13:50'",
+    )
     args = parser.parse_args()
 
-    slot, start_time, end_time, threshold = get_run_config()
+    override_now = parse_override_now(args.now)
+    slot, start_time, end_time, threshold = get_run_config(override_now)
 
     if not PTT_ID or not PTT_PW:
         print("PTT_ID / PTT_PW 未設定。", file=sys.stderr)
