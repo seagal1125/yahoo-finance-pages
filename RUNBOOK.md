@@ -9,6 +9,9 @@ For each scheduled run:
    - Sources: `config/digest_sources.yaml`
    - Behavior/format rules: `config/digest_behavior.md`
 2. Fetch and summarize all configured sources in **Traditional Chinese**.
+   - For `PTT 股市版`, do **not** open the board page in browser.
+   - Instead run: `source /Users/minim4/.openclaw/workspace/.venvs/ptt-digest/bin/activate && python /Users/minim4/.openclaw/workspace/yahoo-finance-pages/scripts/ptt_stock_digest.py`
+   - Use that script output as the raw material for the PTT section.
 3. Produce a complete HTML digest under `digests/`.
 4. Update `index.html` so it links to the newest digest first and keeps a history list.
 5. Commit and push the changes to `main`.

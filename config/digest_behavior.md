@@ -20,14 +20,17 @@
 - 原因：Yahoo Finance 內容與版位常有動態渲染、地區版差異、反爬限制與 DOM 不穩定問題；直接走 browser 較穩定。
 - 抓取時應等待主要內容完成渲染後再整理重點，並保留原始來源連結。
 
-### 來源特例：PTT 股市版（強制用 browser + selector 抽取）
-- PTT 不要用「快照文字抽取」的方式（很容易抽不到推文數/標題對應）。
-- 直接用 `browser` 開 `https://www.ptt.cc/bbs/Stock/index.html`，用 DOM selector 抽取：
-  - 列表：`.r-ent`（取前 10）
-  - 推文數：`.nrec`
-  - 標題：`.title a`
-  - 連結：`.title a[href]`
-- 若遇 18+ 驗證頁：先點「我同意 / 進入」後再抓列表。
+### 來源特例：PTT 股市版（改用 PyPtt helper script，禁止 browser 開頁）
+- **不要再用 `browser` 或 `web_fetch` 直接開 PTT 頁面做摘要。**
+- 一律改跑這支程式：
+  - `source /Users/minim4/.openclaw/workspace/.venvs/ptt-digest/bin/activate && python /Users/minim4/.openclaw/workspace/yahoo-finance-pages/scripts/ptt_stock_digest.py`
+- 這支程式會：
+  - 依目前 cron 所在時段（05:10 / 09:00 / 13:50 / 21:30）自動判斷回看區間
+  - 登入 PTT Stock 看板
+  - 往前抓熱門文章
+  - 輸出每篇文章的 **內文重點原料** 與 **推文重點原料**
+- digest 在整理 PTT section 時，必須以這支程式輸出的內容為準，不要退回瀏覽器頁面抽取。
+- 若程式失敗，請在 digest 裡明確標示 PTT source failed；不要默默改用 browser 假裝成功。
 
 ## 2) 摘要輸出規則（HTML 內容層）
 
@@ -49,9 +52,13 @@
   - 格式：`標題 + 1 句重點`（避免長段落）。
 
 ### PTT 股市版
-- 先整理首頁前 **30 篇文章**：
-  - 格式：`推/噓或回應量（若可取得）+ 標題`。
-- 再挑出其中 **3 個最熱門主題**，每個主題寫 **2–3 句摘要**。
+- 先讀 helper script 的輸出。
+- 先列出本時段熱門文章清單。
+- 再挑出其中 **3 個最熱門主題**，每個主題寫 **2–4 句摘要**。
+- **每個主題摘要都必須同時吸收：**
+  - 文章內文重點
+  - 推文／噓文的主要觀點、情緒或爭議點
+- 不要只抄標題，也不要只看推文數決定結論。
 
 ## 4) 檔案與發布（沿用 RUNBOOK）
 
