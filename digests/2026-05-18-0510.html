@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-05-18 05:10</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.76);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);border-radius:var(--radius-xl);box-shadow:var(--shadow);padding:34px;
+    }
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%)}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:860px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.7);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px)}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-item{padding:18px;border-radius:18px;background:#f8fbff;border:1px solid #dbe7f5;margin-bottom:16px}
+    .ptt-item:last-child{margin-bottom:0}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Premarket Digest</span>
+        <span class="pill">Asia/Taipei 05:10</span>
+        <span class="pill">Monday Briefing</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">盤前主線很清楚：<strong>美股上週收黑、AI 高估值壓力升高、台股期貨空單偏重</strong>，但資金沒有完全撤出科技敘事，而是從記憶體往 <strong>光通訊／AI 基建</strong> 延伸，同時把 <strong>輝達財報、Fed 會議紀要、PMI 與中東／荷姆茲風險</strong> 一起擺上本週交易核心。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 5 月 18 日 05:10（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>不是全面崩，而是高估值科技被重新定價</strong>
+        <p>Yahoo Global 與鉅亨都把債息、估值與輝達財報放回市場中心，代表本週先看 AI 能不能再交出足夠強的數字。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股盤前</div>
+        <strong>指數先受外資空單與期貨壓力，但主題股還沒熄火</strong>
+        <p>Yahoo 台灣首頁顯示加權指數前一交易日跌 579 點，鉅亨則強調外資期貨空單逼近 5 萬口，盤前氣氛偏保守。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">本週焦點</div>
+        <strong>輝達財報是最硬的驗證點</strong>
+        <p>如果輝達再度超預期，AI 主線可望續命；若財報只算合格、不夠驚豔，高估值修正壓力會立刻擴散。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li>全球盤前敘事已從「單純追 AI」轉成「<strong>AI 還能不能撐住這麼高的估值</strong>」。Yahoo Global 直接把 <strong>Nvidia、債券殖利率、商品超級循環、Fed 是否根本沒空間降息</strong> 放在首頁主軸。</li>
+          <li>台灣線同時有兩股力量在拉扯：一邊是 <strong>台股前一交易日重挫 579 點、台指期空單蠢動、外資連續賣超</strong>；另一邊是 <strong>記憶體、ASIC、半導體與被動元件</strong> 仍持續被點名，顯示市場在退指數、留題材。</li>
+          <li>本週真正的定價器不只一個：<strong>輝達財報、聯準會會議紀要、各國 PMI、中東與荷姆茲海峽風險</strong> 會一起決定風險資產是止穩還是再被壓估值。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>若美債殖利率續升、Fed 再被市場解讀為無法降息，AI 與高本益比科技股壓縮幅度可能擴大。</li>
+          <li>若輝達財報沒有明顯超預期，只要 guidance 稍微保守，市場可能把記憶體、光通訊、台灣半導體鏈一起降溫。</li>
+          <li>荷姆茲海峽與中東局勢若再升級，油價、運價與通膨預期可能反向壓縮股市風險偏好。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance（Global）</h2>
+        <ul class="list">
+          <li>首頁可見的主軸非常集中：<strong>美股、債券殖利率、布蘭特原油、Nvidia 財報前瞻</strong> 被排在最前面，代表市場視線仍是「總體利率 + AI 財報」雙核心。</li>
+          <li>Yahoo 直接把 <strong>“Investors eye Nvidia, bond yields, and the next commodity supercycle”</strong> 放上版面，這不是單一題材，而是在提醒市場正同時交易 AI、利率與原物料。</li>
+          <li>另有 <strong>“Gundlach says it’s just not possible for the Fed to cut rates”</strong>、<strong>“How Nvidia could once again become the flavor of the day”</strong> 等內容，顯示盤前共識偏向：若沒有明顯通膨降溫訊號，市場不敢先押寬鬆。</li>
+          <li>Yahoo 首頁還把 <strong>中國將購買美國農產品、荷姆茲談判僵局</strong> 放在顯著位置，表示地緣政治與商品價格不是背景噪音，而是本週會直接進入交易的變數。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance（台灣）</h2>
+        <ul class="list">
+          <li>台灣首頁顯示上一交易日加權指數收在 <strong>41,172.36</strong>，下跌 <strong>579.39 點（-1.39%）</strong>，量能仍高達 <strong>1.317 兆元</strong>，說明不是縮量整理，而是有力道的風險調整。</li>
+          <li>首頁與新聞頁最密集的關鍵字包括：<strong>台股 ETF 密集除息、輝達財報放榜、美 AI 股成重災區、台指期重摔、外資賣超與主動式 ETF 波動</strong>，盤前情緒偏謹慎。</li>
+          <li>但題材並未消失，站上同時反覆出現 <strong>ASIC、台積電海外廠獲利、NAND 漲價、半導體與被動元件佈局</strong> 等內容，代表資金仍在尋找能撐過估值壓縮的實體受惠股。</li>
+          <li>從首頁熱門成交與新聞排列看，市場結構更像「<strong>指數弱、個股分化強</strong>」：大盤承壓，但科技次族群與政策／ETF 題材仍在吸睛。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li><strong>美股下挫、台指期夜盤跌 487 點</strong>，法人明確點名本週焦點在 <strong>輝達 5/21 財報</strong>；這代表台股週一開盤前的基調本來就不是樂觀開局。</li>
+          <li><strong>記憶體景氣旺</strong> 這條線仍很硬：中央社提到 AI 驅動結構性缺貨，模組廠為了備料與擴張積極籌資，金額逾 280 億元，顯示這不是短線炒作而已。</li>
+          <li><strong>中東戰事墊高能源成本</strong> 的影響已延伸到民生與產業面，連國內油價凍漲都成為財經焦點，代表能源壓力不是遙遠風險。</li>
+          <li>其他 CNA 財經線如 <strong>台積電可能調高資本支出、韓國科技大廠薪資受 AI 熱潮帶動、印度首座晶圓廠推進</strong>，共同指向半導體資本支出與全球供應鏈仍在擴張，只是資本市場短線先進入波動期。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>〈台股盤前要聞〉520 行情走味？外資期貨 5 萬空單罩頂、台積電擬賣世界先進 15.2 萬張</strong>：盤前最直接的指數壓力來源就是外資部位與權值股動向。</li>
+          <li><strong>美股會在 2026 年崩盤嗎？席勒本益比高達 40 倍</strong>：這篇不是說立刻崩，而是在提醒估值已高到不能只靠故事撐住。</li>
+          <li><strong>AI 投資新主線浮現！華爾街押注光通訊股接棒記憶體狂潮</strong>：市場資金沒有離開 AI，只是從 DRAM / NAND 往網通、光模組、資料中心傳輸基建擴散。</li>
+          <li><strong>怒斥 GPU 核武類比！黃仁勳：AI 晶片出口管制傷人不利己</strong>：政策風險仍是 AI 供應鏈的重要折價因子，尤其對跨境出貨與高階晶片評價會持續有影響。</li>
+          <li><strong>本週操盤筆記：輝達財報、聯準會會議紀要與各國 PMI</strong>：鉅亨等於直接把本週時間表畫出來，告訴讀者先盯財報，再盯總體，再看景氣數據有沒有同步轉弱。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <div class="ptt-item">
+        <h3>熱門文章清單</h3>
+        <p><strong>標題：</strong><a href="https://www.ptt.cc/bbs/Stock/M.1779032578.A.7D4.html">[情報] 台股終於要有一檔類似VT的ETF了嗎</a><br>
+        <strong>推文數 / 作者 / 發文時間：</strong>42 推／Obama／2026-05-17 23:42</p>
+        <p><strong>文章內容重點：</strong>原 PO 在鉅亨新基金募集頁看到「貝萊德 iShares 安碩世界股票 ETF 基金（審查中）」，直覺把它理解成可能接近台股版 VT。核心興奮點不是單純新 ETF，而是終於可能有一檔更接近全球股市配置邏輯的產品。文末也先點出現實問題：若真的成立，費率與追蹤品質會決定它是不是值得買。</p>
+        <p><strong>推文重點：</strong></p>
+        <ul class="list">
+          <li>支持派覺得這種全球型 ETF 終於出現在台灣市場，資產配置工具會更完整。</li>
+          <li>懷疑派集中在 <strong>費率可能太高</strong>，認為先別急著興奮，等內扣與追蹤誤差公開再說。</li>
+          <li>另一派直接質疑：<strong>既然美股已經很好買，為什麼不直接買正牌 VT？</strong></li>
+          <li>也有人回頭強調台灣在地 ETF 的優勢：<strong>可質押、稅務、財力證明與本地操作便利性</strong>。</li>
+        </ul>
+        <p><strong>重點摘要：</strong>這篇熱門文真正反映的不是單一基金，而是台股投資人對「全球化資產配置工具本地化」的需求。版上共識偏向：產品概念有吸引力，但最後買不買，還是看 <strong>費率、追蹤能力與台灣在地制度優勢能不能抵銷直接買美股 ETF 的替代性</strong>。</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>熱門主題總結</h3>
+          <ul class="list">
+            <li><strong>全球配置 ETF 有市場，但不能只是換皮上架：</strong> 文章內文本身把題材炒熱，但推文很快把討論拉回實際問題：如果只是做出台股包裝、卻收更高費率，那吸引力會被削弱。</li>
+            <li><strong>散戶對在地化工具仍有剛性需求：</strong> 推文提到質押、稅務、財力證明，說明不少人不是不懂直接買美股，而是希望保留本地券商與制度便利性。</li>
+            <li><strong>市場現在很在意「工具效率」而不只追漲題材：</strong> 在盤前情緒偏保守的背景下，PTT 熱門文沒有去追指數漲跌，反而在討論資產配置工具，這代表投資人有一部分心態正從短線轉向中長線配置思考。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>PTT 補充觀察</h3>
+          <ul class="list">
+            <li>本時段符合熱門門檻的文章只有 1 篇，表示盤前討論熱度還沒全面擴散，焦點集中在一個可延伸的投資工具題材。</li>
+            <li>這篇文雖然不是直接談盤勢，但與本次 digest 的整體氛圍其實一致：<strong>大家在波動放大時，更在意配置與風險承受工具，而不只是追單一熱門股。</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li>美股與台股現在同時面對一個問題：<strong>AI 基本面仍強，但估值已經高到每一份財報都要拿來驗證</strong>。這就是為什麼輝達財報會對全球風險偏好有放大影響。</li>
+          <li>台灣市場的結構很像全球科技股的縮影：<strong>指數先被期貨空單與大型權值修正壓住，但資金仍在記憶體、ASIC、光通訊與次族群之間輪動。</strong></li>
+          <li>若本週 PMI、Fed 紀要與中東風險一起往不利方向發展，市場會把「高利率更久」與「能源再通膨」疊加交易，屆時題材股也未必撐得住。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance (Global)</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo Finance (台灣)</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo Finance 台灣新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 中央社｜股市 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨網頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（以 PyPtt helper 輸出整理）</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer">
+      <span>Generated for schedule slot: <code>2026-05-18 05:10 Asia/Taipei</code></span>
+      <span>Model: <code>openai-codex/gpt-5.4</code></span>
+      <span>PTT source: <code>scripts/ptt_stock_digest.py</code></span>
+    </section>
+  </main>
+</body>
+</html>
