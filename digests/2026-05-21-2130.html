@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-05-21 21:30 Evening</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.74);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:220px;height:220px;border-radius:999px;
+      background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%);
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.72);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:860px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .chip-wrap{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-block{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Evening Digest</span>
+        <span class="pill">Asia/Taipei 21:30</span>
+        <span class="pill">盤後整理</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">今晚的盤後主軸很集中：<strong>美債殖利率衝高、黃金跌破 4500 美元、Nvidia 財報前夕的 AI 風險偏好搖擺</strong>。台股白天雖跌破 4 萬點後勉強守住，但外銷訂單、AI 基建投資與記憶體擴產題材，還在把資金往電子與景氣循環股之間來回拉扯。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 5 月 21 日 21:30（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>股市偏強、利率偏緊、商品分化</strong>
+        <p>美股期貨與主要指數偏穩，但長天期美債殖利率上衝，黃金承壓，代表市場對高利率延長仍有戒心。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>4萬點失而復得，資金明顯在選股</strong>
+        <p>台股日內一度跌破整數關卡，盤面主線則繞著第一金、聯電、面板、AI 光通訊與 ETF 資金流打轉。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今晚變數</div>
+        <strong>Nvidia 財報與美債殖利率是雙核心</strong>
+        <p>若財報沒能蓋過利率壓力，AI 多頭容易先震一下；若財報再度超標，市場又會回到供應鏈與算力擴張交易。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li>Yahoo Finance Global 顯示美國主要指數仍偏強：<strong>S&amp;P 500 站上 7412、Nasdaq 漲逾 1%、Russell 2000 漲近 1.8%</strong>，但這不是完全無風險的上漲，因為市場同時在交易殖利率升高與財報前觀望。</li>
+          <li>Yahoo 台灣與鉅亨、CNA 的共同訊號很一致：<strong>台股白天壓力來自金融與權值震盪，支撐來自外銷訂單、AI 基礎設施投資、外資大額買超與題材股輪動</strong>。也就是指數不穩，但故事還在。</li>
+          <li>今晚最有代表性的跨資產組合是：<strong>美債殖利率上衝、金價跌破 4500、原油仍在高檔、比特幣回穩</strong>。這代表資產價格並非一致 risk-on，而是市場正在篩選誰能承受高利率。</li>
+          <li>PTT 股市版的情緒也印證這件事：討論熱度一半在<strong>外資/法人回補與台股資金流</strong>，另一半在<strong>AI 供應鏈、中國市場風險、記憶體擴產是否過頭</strong>。散戶心態偏亢奮，但也開始吵估值與高點風險。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>美債殖利率若續衝</strong>，高本益比 AI 股會先承壓，哪怕財報不差，市場也可能先獲利了結。</li>
+          <li><strong>Nvidia 財報若只是「很好」而非「超級好」</strong>，台股明天最脆弱的反而是已經先漲的供應鏈與題材股。</li>
+          <li><strong>黃金跌破 4500 美元</strong> 顯示避險資產也在被高利率擠壓，若原油與利率一起維持高檔，市場對停滯性通膨的擔憂會升高。</li>
+          <li><strong>記憶體與 AI 擴產敘事</strong> 很熱，但 PTT 已開始出現「高點擴產、兩年後過剩」的聲音，代表題材雖強，預期差正在縮小。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>本來源重點</h2>
+        <ul class="list">
+          <li>首頁可抽出的核心市場快照顯示：<strong>S&amp;P 500 7412.19（+0.80%）、Dow 30 49715.24（+0.71%）、Nasdaq 26150.84（+1.08%）、Russell 2000 2796.32（+1.79%）</strong>，代表大型股與中小型股都偏強，不是單純靠少數權值硬撐。</li>
+          <li>同一頁面也顯示<strong>VIX 約 17.84、Gold 4499.40、Bitcoin 77212.88、Brent Crude 108.38</strong>。股市上漲、波動率不高，但黃金與油價方向分裂，表示市場並未完全放下宏觀風險。</li>
+          <li>首頁可見頭條集中在<strong>Nvidia 財報前瞻、財報倒數下的美股期貨上揚</strong>，這說明今晚美股交易主軸仍然是 AI 龍頭是否能繼續扛起風險偏好。</li>
+          <li>另外還能看到與房市可負擔性、油價/汽油價格、川普持股揭露相關的頭條，表示美國市場此刻不是單線 AI 故事，而是<strong>科技、民生負擔、政治與能源價格同時被交易</strong>。</li>
+          <li>此來源首頁雜訊較多，但可用訊號仍足以支持一個保守結論：<strong>美股短線仍偏多，真正的壓力點不在成長敘事，而在高利率能忍多久</strong>。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>本來源重點</h2>
+        <ul class="list">
+          <li>台灣首頁與新聞頁最醒目的盤勢敘事是：<strong>台股跌 154 點、盤中一度跌破 4 萬點但收盤守住</strong>。這不是全面崩盤，而是高檔整固下的情緒測試。</li>
+          <li>首頁焦點把<strong>第一金爆量、外銷訂單連 15 紅、和泰集團新題材、18 年成長津貼政策</strong>放在同一層，反映市場並不是只盯台積電，而是在尋找金融、消費、政策與產業訂單的擴散效應。</li>
+          <li>新聞頁進一步強調<strong>輝達財報前夕、台股夜盤暴衝 500 點、美股回檔風險、金價失守 4500、美債殖利率衝高</strong>。這讓台股明顯處在「白天被利率壓、晚上等 AI 財報救場」的節奏裡。</li>
+          <li>熱門排行顯示<strong>群創、聯電、第一金與主動式 ETF 成交很大</strong>，配合盤勢新聞看，資金正從純權值思維轉向「低基期＋題材＋被動/主動資金承接」的混合打法。</li>
+          <li>若明天開盤要看一件事，就是<strong>4 萬點能不能重新站穩且由電子帶量回攻</strong>；如果只剩 ETF 與個別題材硬撐，市場還是會偏震盪盤。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>本來源重點</h2>
+        <ul class="list">
+          <li><strong>外資買超 603.4 億元、創史上第 9 大</strong>，且主要加碼友達、群創、仁寶、聯電等百元內或低基期電子股。這不是單點押注，而是風險資金大範圍回補。</li>
+          <li><strong>蘇姿丰表示 AMD 在台灣產業體系投資逾 100 億美元</strong>，並強調台積電是絕佳夥伴，代表 AI 基礎設施擴張已不只是概念，而是供應鏈產能與封裝能力的實際卡位。</li>
+          <li><strong>4 月五大銀行新承做房貸下滑</strong>，央行微鬆綁後房市仍在盤整，顯示利率與房市政策雖未劇烈轉向，但內需槓桿並沒有重新瘋起來。</li>
+          <li><strong>金管會推 IFRS 永續準則工作坊、國外成分股 ETF 期貨將導入三階段漲跌幅冷卻機制</strong>，監理面在同時加強長期揭露與短期波動控管。</li>
+          <li>若只看中央社，今晚台灣市場最關鍵的不是單一個股，而是<strong>外資回流、AI 投資擴張、監理微調與內需尚未過熱</strong>這四件事同時存在。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>本來源重點</h2>
+        <ul class="list">
+          <li><strong>歐盟擬放寬中國晶片禁令：</strong>焦點不只是晶片，而是汽車供應鏈不要再因政治限制出事，代表全球製造業仍把供應穩定擺在很前面。</li>
+          <li><strong>沃爾瑪財測受高油價侵蝕：</strong>高油價已從地緣風險變成企業獲利壓力，這對美國消費股與零售股是比較實際的利空。</li>
+          <li><strong>國外股債 ETF 期貨 7/6 起採三階段漲跌幅與冷卻機制：</strong>這是典型的波動管理訊號，代表主管機關預期跨資產商品波動還會偏大。</li>
+          <li><strong>AMD 砸逾百億美元投資台灣產業體系：</strong>這和 Yahoo 台灣、CNA 的訊號一致，AI 基建主線仍在，封裝、機架、ODM 與高頻寬互連都還有戲。</li>
+          <li><strong>外資買超 603 億、面板三虎受青睞：</strong>資金沒有只追最熱門 AI 王者，而是往低基期、景氣循環與受惠轉單股擴散，這讓盤面更像輪動市而非單線多頭。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT 股市版</div>
+      <h2>本來源重點</h2>
+
+      <div class="ptt-block">
+        <h3>熱門文章清單</h3>
+        <ul class="list">
+          <li><strong>Meta爆靠詐騙廣告每年爽賺2200億！</strong><br>推文數 / 作者 / 時間：100 推 / Riesz / 05-21 20:33<br><strong>文章內容重點：</strong>內文引用加州法院起訴與外流文件，指 Meta 明知詐騙廣告存在仍持續收費，甚至在反詐過強會傷營收時自動降低查核力道。重點不只在平台失能，而是平台可能把「違規收入」當成商業模式的一部分。<br><strong>推文重點：</strong>多數推文幾乎一面倒認為「完全不意外」；有人直指 FB 廣告生態本來就充斥詐騙與一頁式商店；也有人提到自己檢舉後才比較少看到，暗示使用者對平台治理信任很低。<br><strong>重點摘要：</strong>這篇雖不是台股個股文，但熱度高，反映股版對大型平台治理與詐騙變現模式非常敏感。市場情緒上，它更像在提醒投資人：流量與廣告生意未必等於乾淨的護城河。</li>
+          <li><strong>0521 上市外資買賣超排行</strong><br>推文數 / 作者 / 時間：100 推 / paidzou / 05-21 16:08<br><strong>文章內容重點：</strong>外資買超集中在友達、群創、仁寶、金寶、聯電、南亞、中信金、緯創、鴻海與台股 ETF，明顯不是只押單一 AI 龍頭，而是對低基期電子、成熟製程與部分金融/ETF 一起回補。<br><strong>推文重點：</strong>留言一邊笑金融被蛋雕、一邊問台積電怎麼不在榜上；也有人直接點名第一金、全新、京元電等弱勢股求救。整體語氣像在盤後重新數錢與找下一個補漲標的。<br><strong>重點摘要：</strong>這篇代表盤後最核心的資金流情緒：外資回補是真的，但買的是分散組合，不是全面高價追強。對台股來說，這種買法偏向輪動市、不是單邊噴出市。</li>
+          <li><strong>黃仁勳認了！坦承中國AI市場已拱手讓給華為</strong><br>推文數 / 作者 / 時間：100 推 / yisky / 05-21 15:25<br><strong>文章內容重點：</strong>內文指出輝達在出口管制下已大致退出中國 AI 晶片市場，中國需求則被華為等本土生態系承接；但同時輝達財報仍強、回購規模大，代表失去中國並未立刻打斷總體成長。<br><strong>推文重點：</strong>推文意見分裂：有人認為這是大利空，因為最大市場沒了；也有人反過來解讀成利多，覺得少了中國包袱、其他市場照樣能撐。更激烈的留言直接把討論拉到美國政策反而養大中國 AI 生態。<br><strong>重點摘要：</strong>這篇最重要的不是結論，而是市場分歧本身。股版一邊承認中國市場很大，一邊又不敢直接看空輝達，這說明 AI 交易已從單純追夢，進入「失去一塊市場但估值仍很貴」的再定價階段。</li>
+          <li><strong>115年05月21日 三大法人買賣金額統計表</strong><br>推文數 / 作者 / 時間：97 推 / coconing / 05-21 15:29<br><strong>文章內容重點：</strong>外資及陸資買超 603.4 億元，投信買超 51.14 億，自營商也同步偏多，合計三大法人買超 850.5 億，法人成交比重高達 42.52%。這是很強的資金面訊號。<br><strong>推文重點：</strong>散戶情緒極度亢奮，從「小兒認錯」到「誰空手」都有，甚至把外資行為當成追高認錯。也有人提醒這可能只是逃命反彈，不必太早慶祝。<br><strong>重點摘要：</strong>資金面確實轉強，但留言區的狂歡也提醒一件事：當大家都開始用羞辱空手者的語氣講盤，短線波動往往會放大。</li>
+          <li><strong>南亞科新產能明年初裝機　規劃2至3年產能拚增近一倍</strong><br>推文數 / 作者 / 時間：94 推 / a6435966 / 05-21 14:00<br><strong>文章內容重點：</strong>南亞科認為 DRAM 已從高波動轉向結構性成長週期，AI 帶動需求，供需缺口可望延續到 2027 年後；公司新廠明年初裝機，2 至 3 年後總產能接近倍增，並布局 HBM 相關產品。<br><strong>推文重點：</strong>推文非常兩極：一派覺得 AI 記憶體需求來了、擴產合理；另一派擔心高點擴廠、兩年後反而被景氣循環與中國/韓國產能捲死。還有人質疑二線廠現在才衝 HBM 是否太晚。<br><strong>重點摘要：</strong>這篇代表記憶體主線雖熱，但市場不再無腦買單。題材還在，但投資人開始要求更高的時機與技術可信度。</li>
+        </ul>
+      </div>
+
+      <div class="ptt-block">
+        <h3>熱門主題總結</h3>
+        <ul class="list">
+          <li><strong>主題一：外資回補與台股資金輪動</strong><br>從外資買賣超排行到三大法人統計，盤後最強的共同語言就是「法人回來了」。但推文也看得出來，市場不是全面安心，而是把這波解讀成低基期電子、ETF 與部分金融的輪動回補，所以氣氛是偏多、但還沒到無腦追高的單向一致。</li>
+          <li><strong>主題二：AI 供應鏈仍是主線，但分歧加劇</strong><br>黃仁勳談中國市場、蘇姿丰宣布投資台灣、南亞科談擴產，三條新聞其實都在講同一件事：AI 建設仍在高速推進。只是推文已經從「AI 一定漲」轉向「誰真的吃得到、估值撐不撐得住、兩年後會不會過剩」的更細分辯論。</li>
+          <li><strong>主題三：散戶情緒偏熱，但對風險也更敏感</strong><br>不管是討論洗籌碼、該不該高點換股，還是對 Meta 詐騙廣告的怒氣，都看得出股版情緒處在高張力狀態：一方面怕錯過，一方面又怕站最後一棒。這種心態通常意味著市場還有交易熱度，但也更容易被利空或財報意外放大震盪。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>利率比指數更值得盯：</strong>美股與台股都還有多頭故事，但真正壓著估值的，是美債殖利率上衝而不是獲利衰退。</li>
+          <li><strong>AI 交易進入第二階段：</strong>第一階段是只要沾 AI 就漲；現在則開始比供應鏈位置、產能可落地性、對中國市場曝險與財報兌現能力。</li>
+          <li><strong>台股是輪動盤，不是單核盤：</strong>面板、成熟製程、金融、主動式 ETF、光通訊、記憶體都有人接，這種盤比較難用單一權值邏輯解讀。</li>
+          <li><strong>商品價格在提醒市場別太鬆：</strong>黃金走弱、原油仍高、比特幣回穩，說明資金不是全面恐慌，但也沒有完全脫離通膨與地緣政治陰影。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>接下來要盯的事</h2>
+        <ul class="list">
+          <li>Nvidia 財報與財測是否足以壓過「中國市場流失」的疑慮。</li>
+          <li>美債殖利率是否突破後繼續上行，拖累科技與高評價股。</li>
+          <li>台股明天能否重新站回 4 萬點之上，且由台積電/大型電子帶動，而不是只靠 ETF 與題材股撐場。</li>
+          <li>記憶體與 AI 擴產新聞是否繼續推升族群，還是開始被市場用「高點擴產」邏輯反向交易。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="chip-wrap">
+        <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance (Global)</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo Finance (台灣首頁)</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo Finance (台灣新聞)</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 中央社｜股市 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨網頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（摘要原料由 PyPtt helper script 產生）</a>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span><strong>Digest file:</strong> <code>digests/2026-05-21-2130.html</code></span>
+      <span><strong>Language:</strong> 繁體中文</span>
+      <span><strong>Model:</strong> openai-codex/gpt-5.4</span>
+    </div>
+  </main>
+</body>
+</html>
