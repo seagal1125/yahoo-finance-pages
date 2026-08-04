@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-05 05:10 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.74);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:0;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:0;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:860px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff;margin-bottom:16px}
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Premarket Digest</span>
+        <span class="pill">Asia/Taipei 05:10</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">盤前主軸很集中：<strong>美伊協議露曙光讓油價急跌，美股與台指期同步強彈；台股本地題材則回到 AI 伺服器、記憶體、半導體材料與融資情緒。</strong>這是風險偏好快速修復的一晚，但 PTT 與鉅亨的訊號也提醒：協議能否落地、槓桿資金是否過熱，會決定今天反彈是延續還是震盪。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 5 日 05:10（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>美股創高、油價急跌，風險偏好回來</strong>
+        <p>Yahoo Global 與 CNA 都指向同一條線：荷莫茲通行談判有進展，油價跌破 80 美元附近，美股指數大漲。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股盤前</div>
+        <strong>台指期夜盤大噴，但外資與槓桿仍是變數</strong>
+        <p>Yahoo 台灣與鉅亨都提到台指期夜盤一度大漲逾千點；同時外資賣超、融資回升與主動式 ETF 交易熱度值得留意。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">題材焦點</div>
+        <strong>AI 伺服器、記憶體、材料股仍是盤前核心</strong>
+        <p>緯創、南亞科、華邦電、富喬、矽晶圓與半導體供應鏈新聞同時出現，顯示資金仍沿 AI 與電子循環股找機會。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球線：</strong>Yahoo Finance Global 顯示 S&amp;P 500、Dow、Nasdaq 與 Russell 2000 全面上漲，首頁主標是「Dow、S&amp;P 500 因荷莫茲協議希望創高」。CNA 與鉅亨同步補上油價跌破 80 美元、歐股收漲與美股開漲創高。</li>
+          <li><strong>台股線：</strong>Yahoo 台灣與鉅亨都強調美股爆噴後台指期夜盤狂飆 1100 到 1300 點，台股盤前氛圍明顯轉強；但 Yahoo 熱門新聞仍有外資上週大賣 824 億元、單日再提款 57 億元，籌碼不是全然乾淨。</li>
+          <li><strong>產業線：</strong>緯創 AI 伺服器需求旺至 2027 年、南亞科月營收年增 719.6%、美光與 SK 海力士 ADR 大漲、環球晶產能滿載，讓電子與記憶體鏈成為今天盤前最容易聚焦的方向。</li>
+          <li><strong>情緒線：</strong>PTT 對美伊協議反應偏「利多但不太信」，對融資增加則一面喊貪狗回來、一面擔心跳水台，表示散戶風險胃納修復很快，但信任度仍低。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>協議落地風險：</strong>美伊與荷莫茲通行若只是談判訊號，沒有實際開放，油價與避險情緒可能快速反彈。</li>
+          <li><strong>槓桿資金太快回來：</strong>信用交易統計顯示融資金額增加 63.79 億元，PTT 也明顯感受到散戶槓桿回流，反彈若開太高容易震盪。</li>
+          <li><strong>外資仍偏提款：</strong>Yahoo 台灣熱門新聞提到外資上週狂賣與台股 ETF 交易扭曲，今天若現貨外資沒有跟上期貨，盤中可能開高走整理。</li>
+          <li><strong>政策與關稅變數：</strong>鉅亨報導川普擬對多晶矽設底價、加關稅，可能干擾太陽能、半導體與供應鏈成本預期。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>首頁市場欄顯示美股全面強彈：<strong>S&amp;P 500 +1.79%、Dow 30 +1.71%、Nasdaq +2.59%、Russell 2000 +1.85%</strong>，VIX 約 16.5，反映風險偏好快速恢復。</li>
+          <li>主要新聞聚焦 <strong>Dow、S&amp;P 500 因荷莫茲協議希望創歷史新高</strong>，以及伊朗可能允許歐洲協助清除海峽水雷，市場把能源通行正常化視為最大利多。</li>
+          <li>科技股仍是核心流量：SpaceX 公開市場首份財報、Palantir 股價大漲、Anthropic 取得大型雲端算力合約，都把 AI 與高成長敘事維持在前台。</li>
+          <li>半導體新聞呈現分化：AMD 財報後仍被質疑資本支出與結果品質，但 Marvell、Sandisk、SK Hynix 被放在半導體反彈主線裡，記憶體與 AI 供應鏈仍獲市場關注。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>台灣首頁與新聞頁最醒目的盤前訊號是：<strong>美股狂飆、道瓊漲 900 點創高，台指期夜盤噴逾 1100 點並攻克 44000 點</strong>；這讓今天台股開盤基調偏多。</li>
+          <li>台股題材仍集中在電子細分族群：<strong>華邦電帶記憶體紅燈連發、南亞科月營收年增 719.6%、CPO 台廠、AI 電源與緯創 AI 訂單</strong>都在熱門新聞中。</li>
+          <li>Yahoo 財經特派報導指出，緯創 AI 伺服器訂單能見度到 2027 年，下半年筆電出貨估減 15%；另一篇則提到上半年 EPS 7.78 元、董座林憲銘規劃現增與 GDR，資本支出與擴產是盤前重點。</li>
+          <li>風險面沒有消失：外資上週狂賣 824 億元、單日再賣台積電 1.2 萬張，以及「四貸同堂」周轉金申報新規，代表籌碼與金融監理仍可能壓抑追價意願。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li>中央社的今日市場重點是 <strong>荷莫茲海峽重啟有望，歐股收漲；美伊協議見曙光，油價跌破 80 美元，美股開漲且標普創新高</strong>，與 Yahoo Global 的風險偏好修復一致。</li>
+          <li>台灣企業面最強的是 AI 伺服器：緯創第 2 季 EPS 4.72 元續創單季新高，法人說明會也指出 AI 伺服器為剛性需求、網通交換器業務今年有望成長 10 倍。</li>
+          <li>記憶體與半導體供應鏈續熱：南亞科、晶豪科 7 月營收月增逾 4 成並創新高；環球晶指出客戶庫存健康，12 吋、8 吋、6 吋矽晶圓產能滿載。</li>
+          <li>政策與制度面也有變化：金管會預計 10 月上路虛擬貨幣轉帳新規，並推動股市信用融資等資訊揭露，希望 9 月底前推出股市儀表板；集保結算所也規劃深化與美國 DTCC 合作。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網｜5 則最值得看</h2>
+        <ul class="list">
+          <li><strong>〈台股盤前要聞〉台指期夜盤一度飆逾 1300 點、緯創加碼台美越擴產拚 AI：</strong>這是今天台股最直接的開盤背景，強彈訊號與 AI 供應鏈資本支出同時出現。</li>
+          <li><strong>〈能源盤後〉美伊談判露曙光，Brent 挫逾 5% 跌破 80 美元：</strong>油價降溫是全球股市強彈的核心，鉅亨市場表也顯示倫敦原油約 78.88、紐約原油約 75.34，跌幅都超過 5%。</li>
+          <li><strong>SpaceX 上市首份財報倒數，馬斯克二度槓上空頭：</strong>高敘事成長資產仍吸引流量，Yahoo Global 也把 SpaceX 放在 breaking news，代表成長股風險胃納已回來。</li>
+          <li><strong>川普擬對多晶矽設底價、加關稅，太陽能板與晶片恐變貴：</strong>這是供應鏈成本端變數，短線可能影響太陽能、矽料、半導體材料與地緣供應鏈定價。</li>
+          <li><strong>緯創法說與 AI 伺服器業務：</strong>鉅亨頭條列出緯創法說 AI 摘要與下半年 AI 伺服器優於上半年的新聞，搭配首頁顯示美光 +7.62%、SK 海力士 ADR +8.17%，AI/記憶體鏈是今天盤前主菜。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <p class="meta">PyPtt helper 輸出：Premarket（盤前），搜尋區間 2026-08-04 21:30 到 2026-08-05 05:14，熱門門檻 >=20 推，符合條件文章數 6。</p>
+
+      <div class="ptt-article">
+        <h3>[新聞] 美財長：美伊有望4日或5日達成協議</h3>
+        <div class="ptt-meta">89 推｜omanorboyo (omanorboyo)｜2026-08-05 00:06</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章引用中央社，重點是美國財長貝森特表示，美國與伊朗可能在 4 日或 5 日達成協議，重新開放荷莫茲海峽並恢復自由通行。</li>
+          <li>原 PO 把焦點放在油價急跌，布油跌到約 79 美元，並認為融資清理後 AI 與股市反彈速度很快。</li>
+          <li>文章情緒不是單純看空，而是對「上週停損的人怎麼接回」有明顯踏空焦慮。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>支持或偏多留言認為協議若成真，油價壓力解除，股市可以繼續反彈。</li>
+          <li>質疑聲也很重，許多人提到「第幾次了」、「協議可以隨時毀約」、「伊朗可能又打臉」。</li>
+          <li>吵點集中在政治人物是否用談判消息影響油價與股市，以及這種利多能不能相信。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇是 PTT 盤前最熱的總體題。版上承認油價與 AI 股反彈是實質利多，但對協議可信度保留很深，代表今天若開高，市場仍會反覆檢查消息有沒有被兌現。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 115年08月04日信用交易統計</h3>
+        <div class="ptt-meta">88 推｜steward135 (逆風高飛)｜2026-08-04 21:42</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>信用交易統計顯示融資買進 383,105 單位、賣出 465,343 單位，融資金額今日餘額約 5211.35 億元，資增 63.79 億元。</li>
+          <li>融券今日餘額 196,970 張，券增 11,648 張；槓桿方向不是單邊，多空工具都在增加或調整。</li>
+          <li>重點個股包含台積電資增 762 張、南亞資增 7,138 張、華邦電資增 1,916 張、南亞科資增 1,358 張、旺宏資增 4,469 張。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文大量用「貪狗又回來了」形容融資資金快速回流，情緒明顯轉熱。</li>
+          <li>也有人擔心這是在築跳水台，認為正向與反向 ETF 都有人衝，代表盤面很容易被槓桿放大。</li>
+          <li>討論集中在反一、正二、正五與主動式 ETF 的籌碼變化，散戶對槓桿產品非常敏感。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇把「反彈」與「過熱」同時擺上桌。融資回流有助於盤勢延續，但若今天開太高、追價太快，信用資金也會讓波動變大。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[新聞] 蛋荒又來了？北部地區供不應求 雞蛋產量少3成喊漲</h3>
+        <div class="ptt-meta">78 推｜troy30408 (南宮洛)｜2026-08-04 23:01</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>新聞指出天氣熱、老母雞汰換導致雞蛋產量少約 3 成，北部地區出現供不應求，部分超市蛋品貨架偏空。</li>
+          <li>產地價與批發價已上調，早餐店業者也表示成本明顯增加，正在考慮調漲。</li>
+          <li>農業部啟動協調機制，要求通路與蛋商機動調度，避免民眾買不到蛋。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>多數推文把焦點放在早餐店加蛋是否又要漲到 15、20 或 30 元。</li>
+          <li>有推文質疑短缺是否被製造，也有人抱怨之前蛋價下跌時店家沒有降價。</li>
+          <li>討論雖然帶有玩笑，但核心其實是民生通膨與價格僵固性。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇不是主要股市題材，但對盤前通膨心理有意義。當油價下跌帶來風險偏好時，食品價格與民生成本若再升，會讓市場對通膨降溫的信心打折扣。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[新聞] 南韓總統府政策室長金容範遭刑事舉報，被指倉促強推槓桿 ETF</h3>
+        <div class="ptt-meta">39 推｜mzwj (BLUE SKY)｜2026-08-04 22:59</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章引用鉅亨，指南韓總統府政策室長金容範遭刑事舉報，被控施壓監管機構推出與三星電子、SK 海力士相關的 2 倍槓桿 ETF。</li>
+          <li>報導指這類產品放大權值股與 KOSPI 波動，導致散戶投資者重大損失，目前金融當局已暫停新產品上市與廣告。</li>
+          <li>事件已升高為南韓政壇攻防，核心問題是政府表態是否構成法律上的指示，以及是否與投資損失有因果關係。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文多半嘲諷韓國市場像亞洲拉斯維加斯，認為槓桿玩輸後開始找戰犯。</li>
+          <li>也有留言認為政策設計沒有考慮民族性與投機習慣，確實可能是失職。</li>
+          <li>吵點在政府推動高風險產品與投資人自行追槓桿之間，責任應如何切分。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇與台股信用交易統計互相呼應：槓桿產品能放大行情，也能放大政策與監理風險。今天台股若主動式 ETF、正反向 ETF 交易太熱，這類海外案例會變成情緒提醒。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 5347世界先進 Q2財報 EPS1.56</h3>
+        <div class="ptt-meta">38 推｜chsc100 (彰化高商)｜2026-08-04 21:58</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>世界先進公告 2026 年上半年合併營收約 267.76 億元、營業毛利約 82.75 億元、營業利益約 49.88 億元。</li>
+          <li>上半年歸屬母公司業主淨利約 52.21 億元，基本每股盈餘 2.84 元；標題聚焦 Q2 EPS 1.56 元。</li>
+          <li>資料面是獲利穩定，但文章熱度來自股價與評價是否已經先跑太多。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>多數推文偏失望，拿聯電、緯創等個股相比，認為世界先進目前估值不便宜。</li>
+          <li>也有人用反指標邏輯開玩笑，認為 PTT 看壞可能反而會噴。</li>
+          <li>討論重點不是財報爛，而是股價與題材預期是否過高。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇提醒今天半導體反彈不能只看族群氣氛。若個股獲利無法追上估值，盤中仍可能出現「AI/半導體大題材強、個股財報被挑剔」的分化。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 富喬上半年合併獲利</h3>
+        <div class="ptt-meta">26 推｜Hamchen (Ham)｜2026-08-04 23:33</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>富喬公告上半年營收約 40.13 億元、營業毛利約 15.28 億元、營業利益約 9.50 億元。</li>
+          <li>上半年歸屬母公司淨利約 13.00 億元，基本每股盈餘 2.24 元；原 PO 提到公司已經冷到沒什麼人討論。</li>
+          <li>富喬與玻纖布、材料漲價題材相關，與今天 AI/電子材料線有連動。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文一派認為財報漂亮、籌碼洗乾淨、7 月漲價還沒發力，全年 EPS 有機會更高。</li>
+          <li>另一派提醒股性很難操作、容易洗到投資人不想玩。</li>
+          <li>整體情緒是「基本面有料但股性難受」，偏向材料題材的低關注反彈候選。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇代表 PTT 盤前的次主線：除了權值半導體，材料與漲價股仍有人在找低位階機會。若今天資金追不上高位階 AI，富喬這類財報與漲價題可能被重新翻出來。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜美伊協議與油價急跌：</strong>文章內文把荷莫茲重開與油價跌破 80 美元視為反彈核心，推文卻普遍懷疑協議會反覆。這代表今天市場會先交易利多，但盤中若有任何伊朗否認或談判卡關，情緒會很快轉保守。</li>
+        <li><strong>主題二｜槓桿情緒與政策風險：</strong>台灣信用交易統計顯示融資明顯增加，推文喊貪狗回來；南韓槓桿 ETF 事件則提醒政策推動與散戶槓桿可能造成反噬。兩者合起來看，今天台股若開高，最需要防的是槓桿追價後的盤中急震。</li>
+        <li><strong>主題三｜電子材料與財報驗證：</strong>世界先進與富喬文章都不是純粹大盤新聞，而是在驗證股價是否配得上獲利。推文對世界先進偏挑剔，對富喬則在漂亮財報與難操作股性間拉扯，顯示資金會更重視個股基本面落差。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>全球風險偏好修復是今天最大外部推力。</strong>Yahoo Global、CNA、鉅亨同時指向美股大漲、油價急跌與荷莫茲談判進展，這種共振通常會讓台股先有開高動能。</li>
+          <li><strong>台股反彈核心仍是電子供應鏈。</strong>緯創 AI 伺服器、南亞科/美光/SK 海力士、華邦電、環球晶與富喬材料題材同時出現，表示資金會先從 AI、記憶體與材料鏈找方向。</li>
+          <li><strong>情緒修復不等於籌碼乾淨。</strong>外資賣超、融資回流與 PTT 對槓桿的討論，讓今天更像「開盤偏強但盤中要看承接」的局，而不是無腦追高盤。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>荷莫茲海峽協議若沒有正式確認，油價可能反抽，直接打擊今天的全球 risk-on 敘事。</li>
+          <li>台指期夜盤已先大漲，現貨若外資不跟、量能不足，容易開高後拉回測承接。</li>
+          <li>AI 與記憶體若只靠美股帶動，但個股財報或估值被挑剔，盤面可能很快從普漲轉成選股。</li>
+          <li>金融監理與信用資金議題升溫，主動式 ETF、正反向 ETF 與融資熱門股的波動會被放大。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance Global</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo Finance 台灣</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 股市新聞</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（PyPtt helper）</a>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>GPT-5 Codex</code></span>
+      <span>Generated at: <code>2026-08-05 05:10 CST</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
