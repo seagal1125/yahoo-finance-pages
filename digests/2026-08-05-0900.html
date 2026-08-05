@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-05 09:00 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.94), rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.74);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:0;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:0;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:860px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff;margin-bottom:16px}
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Open Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">早盤主軸是<strong>美股創高與費半暴漲後，台股跳空強彈叩關季線；電子、半導體、零組件與記憶體接棒成為盤面核心。</strong>全球線由荷莫茲協議進展與油價回落帶動風險偏好，台灣線則同步反映在台指期夜盤大漲、台積電與聯發科回升、正向 ETF 交易熱度升高。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 5 日 09:00（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>全球風險偏好修復，台股開盤放大反彈</strong>
+        <p>美股道瓊與標普創高、費半大漲 6.55%，台股早盤上市指數漲逾 1,200 點，電子與半導體是最直接的推力。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>半導體、零組件、記憶體與 AI 伺服器領漲</strong>
+        <p>Yahoo 台灣與鉅亨都指向台積電 ADR、SK 海力士、美光、南亞科、南電與 ABF 載板題材，資金回到 AI 供應鏈。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">早盤情緒</div>
+        <strong>散戶跟上反彈，但對追高仍帶疑慮</strong>
+        <p>PTT 盤中閒聊從「大爆噴」到「反 1」都有，代表情緒修復很快，但對開高後震盪與槓桿風險仍敏感。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球市場：</strong>Yahoo Finance Global 顯示美股期貨大致偏穩，前一交易日 Dow、S&amp;P 500 因荷莫茲協議希望創高，油價延續兩日跌勢，風險情緒由能源降溫與 AI 財報支撐。</li>
+          <li><strong>台股早盤：</strong>Yahoo 台灣頁面顯示上市指數約 44,659 點、上漲 1,298 點，上櫃漲逾 4%，電子漲逾 3%，金融漲約 1.3%；早盤是強勢開高，不是單一權值股撐盤。</li>
+          <li><strong>產業主線：</strong>費半大漲、台積電 ADR 漲 2.72%、SK 海力士 ADR 漲 8.17%、美光漲 7.62%，把台股早盤焦點推向半導體、記憶體、ABF 載板、AI 伺服器與光通訊。</li>
+          <li><strong>新聞焦點：</strong>CNA 與鉅亨同時提醒，台指期夜盤漲逾千點後，台股挑戰季線；但 SpaceX 與 AMD 財報後盤後走低、多晶矽關稅、外資期貨空單與美債殖利率仍是早盤後續變數。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>開高後季線壓力：</strong>法人晨訊指出台股若要挑戰季線，成交量必須放大並消化季線上方賣壓，早盤強彈後仍要看能否守住漲幅。</li>
+          <li><strong>中東消息反覆：</strong>荷莫茲通行談判尚未完全定案，若協議延遲或破局，油價與避險情緒可能快速反轉。</li>
+          <li><strong>AI 財報不只看營收：</strong>SpaceX 與 AMD 營收表現佳但盤後承壓，市場開始檢查資本支出、獲利品質與估值，而不是只買 AI 故事。</li>
+          <li><strong>供應鏈與政策變數：</strong>美國擬對多晶矽設價格底線並課關稅，外媒提到 PC 大廠導入長鑫記憶體，科技供應鏈仍有地緣與成本波動。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>全球頁面顯示美股收盤後，<strong>S&amp;P Futures +0.20%、Dow Futures +0.20%、Nasdaq Futures -0.14%、VIX 約 16.50</strong>，代表前一晚大漲後，期貨盤並未明顯反轉。</li>
+          <li>核心市場新聞是 <strong>Dow、S&amp;P 500 因荷莫茲協議希望創高</strong>，以及油價因通行談判進展延續兩日跌勢；Crude Oil Sep 26 約 75.39 美元。</li>
+          <li>科技與 AI 仍是首頁主流：SpaceX 首份財報優於預期但股價承壓，馬斯克表示 SpaceX AI 服務將依賴 Nvidia，Palantir 因美國商業業務強勁股價飆漲。</li>
+          <li>半導體線明顯回暖：Marvell、Sandisk、SK Hynix 帶動晶片股反彈，AMD 雖財報優於預期但市場不滿意，說明 AI 供應鏈仍強，但投資人正在提高財報門檻。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>Yahoo 台股首頁 09:00 後顯示，<strong>上市指數約 44,659.48 點、上漲 1,298.82 點，成交約 1,545 億元</strong>；上櫃漲 4.04%，電子漲 3.35%，金融漲 1.27%。</li>
+          <li>早盤新聞重點集中在「費半暴漲 6.5%、台指期夜盤飆 1,195 點」，以及法人看台股挑戰季線，反映國際科技股強彈直接傳導到台股開盤。</li>
+          <li>成交金額排行由<strong>聯發科、台積電、南亞科、緯創、光寶科</strong>居前，題材涵蓋半導體權值、記憶體、AI 伺服器與電源供應鏈。</li>
+          <li>ETF 交易也很熱：元大台灣 50 正 2、群益臺灣加權正 2、主動式台股 ETF 都在成交量或成交金額榜上，顯示追多與槓桿部位早盤快速回流。</li>
+          <li>新聞頁同步提到 ASIC 客製化晶片、緯創 AI 訂單到 2027 年、光通訊與美股科技財報；台股早盤不是只有反彈交易，還有 AI 供應鏈基本面敘事支撐。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li>中央社今日市場重點是：<strong>荷莫茲海峽重啟有望、國際油價回落、美股道瓊與標普雙創新高，台指期夜盤收 44,539 點上漲 1,195 點</strong>。</li>
+          <li>法人認為台股今天有機會挑戰收復季線約 44,142 點，主因是中東局勢和緩帶動美股樂觀情緒，台積電期貨夜盤也上漲 50 點。</li>
+          <li>科技財報面呈現強弱並存：SpaceX 營收優於預期、受惠星鏈與 AI 事業成長；AMD 營收與財測也優於預期，但兩者盤後股價走低，市場仍在檢查資本支出與成長品質。</li>
+          <li>政策面則有美國可能對多晶矽與相關產品設定價格底線並加徵關稅，該材料牽涉太陽能板與半導體供應鏈，後續可能影響材料、能源與晶圓成本預期。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網｜5 則最值得看</h2>
+        <ul class="list">
+          <li><strong>美股大漲、標普 500 登 7700 點新高：</strong>鉅亨把美股五大正面催化劑放在頭條，主線是油價降溫、AI 財報、科技股回補與中東談判進展共同推升風險偏好。</li>
+          <li><strong>台股盤前要聞：台指期夜盤一度飆逾 1300 點：</strong>這是台股早盤跳空大漲的直接背景，搭配緯創加碼台美越擴產拚 AI，強化 AI 伺服器供應鏈主線。</li>
+          <li><strong>台積電 ADR 漲 2.7%，Wedbush 看 3 奈米擴產提前達標：</strong>權值半導體重新成為多方核心，台積電早盤股價與成交金額都位居焦點。</li>
+          <li><strong>美銀看好 SK 海力士股價翻倍、HBM 霸主地位穩固：</strong>記憶體與 HBM 題材延續，美光、SK 海力士與台股南亞科、晶豪科、華邦電形成跨市場連動。</li>
+          <li><strong>SpaceX、Palantir、Anthropic 與 Nvidia 相關新聞密集：</strong>鉅亨首頁與頭條都把 AI 算力、太空資料中心與雲端訂單放在高位，說明市場還在交易 AI 基建擴張，但更重視獲利能否跟上支出。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <p class="meta">PyPtt helper 輸出：Morning（早盤），搜尋區間 2026-08-05 05:10 到 2026-08-05 09:00，熱門門檻 >=50 推，符合條件文章數 2。</p>
+
+      <div class="ptt-article">
+        <h3>[新聞] 建商叫苦連天！營造業缺工4.6萬人 逾92％</h3>
+        <div class="ptt-meta">76 推｜Reewalker（報告饅頭班長不夠）｜2026-08-05 07:41</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章引用工商時報，指出營造業空缺逾 4.6 萬人，基層勞工缺口約 3.25 萬人、占比超過 70%。</li>
+          <li>內政部雖已開放 1.5 萬名營造業移工並核配完畢，但 2024 年仍有 92.7% 營造業企業沒有雇用移工，大型業者雇用比例明顯較高。</li>
+          <li>業者經營困難以物價波動、成本控制不易與勞工短缺最突出，原 PO 延伸到大型營造與工程股較有派工和成本轉嫁優勢。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>主要質疑集中在「缺工其實是缺便宜勞工」，不少推文把問題解讀成薪資、勞動條件與少子化共同造成。</li>
+          <li>也有人反問空屋率高仍持續興建是否合理，對建商「叫苦」的同情度不高。</li>
+          <li>少數推文提到非法移工、外送吸走基層人力與黃仁勳曾談建築工人短缺，顯示市場把營建缺工視為長期結構問題。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇熱度反映營建與工程股的成本壓力不是短線新聞，而是人口、薪資、移工制度與房市供需一起卡住。投資解讀上，版友對建商同情有限，但也承認大型工程、能源基建或具成本轉嫁能力的公司相對有防禦性。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[閒聊] 2026/08/05 盤中閒聊</h3>
+        <div class="ptt-meta">68 推｜laptic（嶼天聖林）｜2026-08-05 08:30</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>盤中閒聊整理了前一日台股與國際指數：台股前一日小跌 25.75 點，但台指期夜盤大漲 1,195 點。</li>
+          <li>國際數據顯示道瓊漲 907 點、那斯達克漲 2.59%、標普漲 1.79%、費半漲 6.55%，成為早盤台股強彈的主要外部背景。</li>
+          <li>外資期貨未平倉仍為大幅淨空單，投信多單高，代表盤勢強彈時仍有部位結構需要觀察。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文情緒分成兩邊：有人喊「早安大爆噴」、看百檔漲停，也有人自嘲反 1 或提醒可能開高後震盪。</li>
+          <li>個股討論集中在光環等強勢題材，顯示早盤資金追逐電子與中小型題材股。</li>
+          <li>也有推文抱怨分析師或前一日虧損，代表急漲雖修復情緒，卻也放大踏空與追高壓力。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這串是早盤市場情緒溫度計：國際股市給出強烈多方訊號後，散戶快速從恐慌轉向追多，但部位上仍有人押反向或擔心被震下車。早盤若成交量放大並守住漲幅，情緒會繼續偏多；若開高走低，反向 ETF 與外資空單話題會再升溫。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜營建缺工與成本轉嫁：</strong>文章指出營造業缺口超過 4.6 萬人，推文則把問題拉回薪資、少子化、移工與空屋率。市場不太買單建商單純叫苦，但會關注大型營造、能源工程與具議價力業者能否在成本壓力下勝出。</li>
+        <li><strong>主題二｜台股早盤強彈與追價心理：</strong>盤中閒聊把美股創高、費半暴漲與台指期夜盤大漲放在一起，推文迅速出現「大爆噴」與百檔漲停期待。這代表散戶情緒修復很快，但踏空焦慮也會讓盤中波動放大。</li>
+        <li><strong>主題三｜外資空單、反向 ETF 與開高震盪風險：</strong>閒聊文列出的外資期貨淨空單仍高，推文也有人提到買反 1 或前一日虧損。這說明早盤反彈不是完全無壓力，若現貨買盤沒有跟上期貨，多空分歧會集中在正 2、反 1 與期貨部位解讀。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>油價回落把全球風險偏好打開，半導體把台股彈性放大。</strong>荷莫茲談判降低能源風險，美股科技股與費半大漲，台灣早盤最受益的就是電子權值與 AI 供應鏈。</li>
+          <li><strong>AI 故事還在，但市場開始要求財報品質。</strong>SpaceX、AMD、Palantir、Nvidia 相關新聞都在高位；可是 SpaceX 與 AMD 盤後反應提醒，資本支出與獲利能見度會影響下一段行情。</li>
+          <li><strong>台股短線從修復轉向驗證。</strong>今天開盤強彈已經證明買盤回來，接下來要看季線附近能否量價配合、外資現貨是否跟上、槓桿 ETF 熱度是否過熱。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">tw.stock.yahoo.com/news</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（以 helper script 取得）</a>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>GPT-5 Codex</code></span>
+      <span>Generated at: <code>2026-08-05 09:00 CST</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
