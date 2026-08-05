@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-05 13:50 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      color:#28425f;
+      font-size:.87rem;
+      font-weight:700;
+      letter-spacing:0;
+    }
+    h1,h2,h3{margin:0;line-height:1.18;letter-spacing:0}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);margin-bottom:14px}
+    h2{font-size:1.38rem;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    p{margin:0}
+    .lead{max-width:900px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .card.full{margin-top:22px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:#24415f;
+      font-size:.93rem;
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      margin-bottom:16px;
+    }
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .method{
+      margin-top:16px;
+      padding:14px 16px;
+      border:1px solid #dbe7f5;
+      border-radius:14px;
+      background:#f8fbff;
+      color:#4f6177;
+      font-size:.92rem;
+    }
+    .footer{
+      margin-top:28px;
+      padding:18px 22px;
+      border-radius:18px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 20px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Midday Digest</span>
+        <span class="pill">Asia/Taipei 13:50</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">午盤主軸是<strong>中東風險降溫與油價回落推升全球風險偏好，台股在台積電、記憶體、PCB 與 AI 供應鏈領軍下大漲 1250 點收復 4 萬 4、月線與季線</strong>。但盤面同時露出兩個需要警覺的訊號：美股期貨續揚時 VIX 仍上升，PTT 熱門討論也集中在「大賣空」貝瑞死守空單與 SpaceX/Nvidia 高資本支出敘事，代表反彈很強，但市場並沒有忘記估值與槓桿風險。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 5 日 13:50（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>全球 risk appetite 延續，但不是無風險環境</strong>
+        <p>美股期貨偏強、油價續跌、亞洲科技股反彈；但 VIX 與黃金同步上升，表示資金仍在替反彈買保險。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>台積電收 2405 元，指數收復月線與季線</strong>
+        <p>台股收 44611.60 點、大漲 1250.94 點，電子與半導體是主推力，南亞科、聯發科、欣興與緯創成交金額居前。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">情緒溫度</div>
+        <strong>追多變快，但疑慮也變尖銳</strong>
+        <p>PTT 對放空者多半是看戲與嘲諷，也對 SpaceX/Nvidia 題材抱持「有利多但別太快買單」的保留態度。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球市場：</strong>Yahoo Finance Global 顯示美股期貨延續偏多，S&amp;P Futures 約 +0.39%、Dow Futures 約 +0.41%、Nasdaq Futures 約 +0.26%；原油約 75 美元續跌，市場仍交易荷莫茲協議進展與能源壓力降溫。</li>
+          <li><strong>台股盤後：</strong>Yahoo 台灣與鉅亨同步顯示台股終場收 44611.60 點、上漲 1250.94 點、漲幅 2.88%，一舉收復 4 萬 4、月線與季線；台積電收 2405 元、上漲 85 元，是今天最直接的指數推力。</li>
+          <li><strong>產業主線：</strong>半導體、DRAM、PCB、AI 伺服器與光通訊是最熱區域。Yahoo 台灣新聞點名 DRAM 漲聲、PCB 三小兵漲停、弘塑雖弱但高盛續挺；鉅亨則把 AI 記憶體、光收發模組、Microchip 與美光的 PCIe Gen 6 儲存架構放在高位。</li>
+          <li><strong>資金情緒：</strong>ETF 正向槓桿成交熱，台股正 2 商品成交量大；但 PTT 熱門文章顯示散戶同時在討論 1987 式崩盤警告與 SpaceX/Nvidia AI 資料中心題材，反映市場在快速修復後開始追問「這波是基本面反轉，還是短線嘎空」。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>開高大漲後的獲利了結：</strong>台股 9 天劇烈震盪後單日收漲逾 1200 點，若成交量不能支持延續，追價部位容易先遇到短線賣壓。</li>
+          <li><strong>VIX 與黃金沒有同步降溫：</strong>美股期貨上漲時 VIX 仍約 +4%、黃金也上漲，代表市場對地緣政治、利率或 AI 估值仍有避險需求。</li>
+          <li><strong>AI 資本支出門檻變高：</strong>SpaceX 財報優於預期但股價仍跌，AMD 財報後也讓市場挑剔資本支出與成長品質；AI 供應鏈不能只靠敘事，需要現金流證明。</li>
+          <li><strong>地緣與政策變數：</strong>荷莫茲通行談判若反覆，油價可能回彈；美國光收發模組禁令傳聞、多晶矽關稅、台灣調查中企挖角高科技人才，也都會擾動半導體與光通訊供應鏈。</li>
+          <li><strong>槓桿 ETF 與散戶追價：</strong>正向 ETF 成交活絡提升上漲動能，也會在盤勢轉弱時放大賣壓，午後和隔日開盤都要看槓桿部位是否退潮。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>本來源重點一：美股期貨盤偏多，S&amp;P Futures 7795.75（+0.39%）、Dow Futures 54490（+0.41%）、Nasdaq Futures 29942.25（+0.26%），顯示前一晚風險偏好修復後，午盤仍未明顯反轉。</li>
+          <li>本來源重點二：原油 Sep 26 約 75.01 美元、下跌 1.00%，Yahoo Markets &amp; Economy 區塊以「Asia shares climb as tech mood swings, oil retreats」與「Oil holds two-day drop on signs of progress toward Hormuz deal」呈現全球背景。</li>
+          <li>本來源重點三：AI/科技仍是流量核心。SpaceX 財報優於預期但股價下跌，投資人開始檢查高額資本支出；Musk 表示 SpaceX AI 基建將依賴 Nvidia Vera Rubin，也讓 NVDA 續成科技敘事中心。</li>
+          <li>本來源重點四：半導體與 AI 名單強勢，SK Hynix、Sandisk、PLTR、ALAB、NVDA、AMD 都出現在首頁或熱門股區塊；PLTR 顯示 +29.45%，SNDK +10.84%，NVDA +2.56%，AMD +7.00%。</li>
+          <li>本來源重點五：雖然風險偏好回來，VIX 16.50、上升 4.04%，黃金 4220.20、上升 1.63%，說明資金不是全面解除避險，而是「股票追反彈、避險同時留著」。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>本來源重點一：Yahoo 台灣首頁顯示台股盤後收 44611.60 點、上漲 1250.94 點、漲幅 2.88%，電子指數約 +3.28%、金融約 +0.83%，台指期近月也上漲約 1170 點。</li>
+          <li>本來源重點二：台積電收 2405 元、上漲 85 元、漲幅 3.66%，成交金額約 763 億元；成交金額前段還有南亞科、聯發科、欣興、緯創，顯示權值半導體、記憶體、PCB 與 AI 伺服器一起撐盤。</li>
+          <li>本來源重點三：新聞頁焦點包括「跳空開漲收復季線」、「台股收漲 1250.94 點」、「台股 9 天狂震近萬點」、「PCB 三小兵先漲停開路」、「DRAM 漲聲響，華邦電、力積電齊噴漲」。</li>
+          <li>本來源重點四：ETF 熱度明顯，群益臺灣加權正 2、元大台灣 50 正 2、主動統一升級 50、主動統一台股增長都在成交量或成交金額榜上，顯示追多工具被大量使用。</li>
+          <li>本來源重點五：區域市場同步偏強，日經約 +3.58%、韓國綜合約 +4.29%、上海綜合約 +1.45%；新台幣兌美元在 Yahoo 外匯欄位約 32.234，與 CNA 午盤強升訊號相互呼應。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li>本來源重點一：CNA 今日市場重點是美伊局勢露曙光、荷莫茲海峽重啟有望，帶動美股收高、油價回落，台灣股匯同步攻高。</li>
+          <li>本來源重點二：中央社 10:52 報導台積電領軍衝鋒，台股盤中最高 44923.06 點、大漲 1562.4 點，是歷史盤中第 8 大漲點，並收復月線與季線支撐。</li>
+          <li>本來源重點三：新台幣兌美元午盤暫收 32.295 元、強升 1.52 角；另一則報導指出盤中一度強升逾 1.7 角，顯示外資與匯市同步反映風險偏好回升。</li>
+          <li>本來源重點四：CNA 也補上中長線科技背景，量子運算與台灣半導體供應鏈卡位成為午間財經新聞之一，說明市場不只交易短線反彈，仍在延伸下一波算力敘事。</li>
+          <li>本來源重點五：政策/供應鏈面仍有變數，包括美國可能對多晶矽設定價格底線並加徵關稅，這會同時牽動太陽能、能源與半導體材料成本預期。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網｜5 則最值得看</h2>
+        <ul class="list">
+          <li><strong>〈台股盤後〉台積電收 2405 元，大漲 1250 點：</strong>鉅亨把台股收復月線、季線與 4 萬 4 大關放在最顯眼位置，這是今天台灣市場的主敘事。</li>
+          <li><strong>Microchip 攜手美光，衝刺 PCIe Gen 6 儲存架構：</strong>AI 資料中心不只買 GPU，儲存與傳輸規格也在升級，這讓記憶體與高速互連題材有基本面延伸。</li>
+          <li><strong>AI 記憶體行情未見頂，高盛力挺三星、SK 海力士：</strong>鉅亨把 HBM/記憶體循環放進主編精選，與 Yahoo 台灣的南亞科、DRAM 題材形成台美韓連動。</li>
+          <li><strong>美國光收發模組禁令傳聞攪動中美光通訊板塊：</strong>光通訊既受 AI 資料中心需求支撐，也受出口管制消息擾動，後續要看大摩、花旗等券商解讀是否引發供應鏈重估。</li>
+          <li><strong>「大賣空」貝瑞續看空，恐重演 1987 股災：</strong>在美股逼近高點、台股大反彈的同一天，這則新聞能成為主編精選，代表市場仍在警惕槓桿、低波動策略與 AI 資本支出可能引發的反向踩踏。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <p class="meta">PyPtt helper 輸出：Midday（盤中），搜尋區間 2026-08-05 09:30 到 2026-08-05 13:50，熱門門檻 >=50 推，符合條件文章數 2。</p>
+
+      <div class="mini-title">熱門文章清單</div>
+      <div class="ptt-article">
+        <h3>[新聞] 美股創新高他卻死守空單！「大賣空」貝</h3>
+        <div class="ptt-meta">100 推｜justin531xx（吉他手 喵喵）｜2026-08-05 13:09</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章引用工商時報與 CNBC，指出美股多頭強、標普 500 與道瓊創高，費半也因 AI 基建需求大漲，但 Michael Burry 仍認為市場可能逼近主要頂部。</li>
+          <li>Burry 警告現在的低波動與槓桿資金可能形成自我強化循環：市場上漲讓波動率下降，波動率目標型基金與動能策略加槓桿，一旦反轉就可能引發被迫賣出。</li>
+          <li>他長期質疑 AI 投資熱潮，認為高額資本支出和複雜融資如果無法由營收/現金流支撐，相關企業估值可能被重估。</li>
+          <li>Burry 仍持有 SOXX、美光、輝達、Caterpillar、Palantir、特斯拉、應用材料等看跌部位，但也提醒一般投資人不該輕易放空，因為方向、時間與風險都很難承受。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>主流推文偏看戲，常見反應是「壞掉的鐘總會準兩次」、「每天喊總有一天中」，對 Burry 長期看空的時點掌握抱持懷疑。</li>
+          <li>也有人尊重他「有單就有立場」，但更多推文想看他被嘎空，代表散戶在大反彈當下短線情緒偏多。</li>
+          <li>有推文補充 1987 年背景與選擇權模型/程式交易有關，提醒不能把歷史崩盤類比直接套到現在。</li>
+          <li>少數人承認如果他早補美光空單可能有賺，表示市場不是完全否定放空邏輯，而是質疑持續死守空單的風險報酬。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇爆熱的核心不是 Burry 又喊空，而是它剛好出現在美股創高、台股大反彈的時點。PTT 情緒偏向「反彈正在軋空，別急著相信末日劇本」，但底層焦慮仍在：如果 AI 資本支出與槓桿交易過熱，放空者遲早會等到波動，只是時間成本很高。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[新聞] 馬斯克力挺輝達！SpaceX AI 資料中心將只</h3>
+        <div class="ptt-meta">55 推｜strlen｜2026-08-05 10:31</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章引用鉅亨報導，Musk 在 SpaceX 財報會議表示公司未來 AI 資料中心將全面採用 Nvidia 晶片，並稱 Vera Rubin 是目前「最好的 AI 電腦」。</li>
+          <li>SpaceX 預估 2026 年底 AI 運算能力超過 2GW，2027 年底接近 10GW，基礎設施會支援自家 AI 模型、相關服務與雲端運算客戶。</li>
+          <li>SpaceX 與 Nvidia 也將共同設計 Starmind AI1 衛星運算模組，把 Rubin GPU 與 Vera CPU 放進衛星，主打接近資料中心等級的太空 AI 運算。</li>
+          <li>消息帶動 Nvidia 盤後一度上漲，但文章與討論也提到 SpaceX 財報後股價反而承壓，顯示市場對資本支出與營運現金流仍有疑慮。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>部分推文直接解讀成利多台積電與 Nvidia，認為「台積跟著噴」、「老黃盤後有繼續漲」。</li>
+          <li>另一派質疑這是新的題材包裝，認為太空資料中心故事需要更多實證，不能只靠 Musk 口水推升估值。</li>
+          <li>推文也注意到 SpaceX 自身股價不強，有人用「火箭盤後爆炸」調侃，代表市場把利多與股價反應分開看。</li>
+          <li>整體氣氛是看多 Nvidia/台積電供應鏈，但對 SpaceX 高資本支出和題材延伸保持戒心。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇反映 AI 基建交易仍很有吸引力，但市場已經不是看到「Musk + Nvidia」就全盤買單。PTT 的共識偏向：Nvidia 與台積電是明確受益人，SpaceX 則要證明太空 AI 資料中心不是燒錢故事。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜反彈行情中的空頭焦慮：</strong>Burry 文章熱度最高，代表美股創高與台股大漲並沒有讓市場完全解除崩盤記憶。推文大多嘲諷他太早喊空，但也承認槓桿與低波動反轉是需要警惕的風險。</li>
+        <li><strong>主題二｜AI 基建的受益人分層：</strong>SpaceX 全面採用 Nvidia 的消息讓版友很快聯想到 Nvidia、台積電與資料中心供應鏈，但大家也把 SpaceX 本身的資本支出風險切開討論，顯示市場開始分辨「賣鏟子的人」和「花錢挖礦的人」。</li>
+        <li><strong>主題三｜題材越熱，估值驗證越嚴：</strong>兩篇熱門文其實在談同一件事：AI 與半導體仍是主軸，但市場已開始用現金流、資本支出、股價反應與槓桿結構來驗證敘事。這讓午後行情更像強勢反彈後的品質篩選，而不是無差別追多。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>油價回落是今日最大底色。</strong>Yahoo Global、CNA 與鉅亨都把荷莫茲協議進展與油價兩日回落放在核心背景，這直接降低通膨與能源供應風險，幫助美股、亞股與台股一起修復。</li>
+          <li><strong>台股反彈比全球指數更集中在 AI 供應鏈。</strong>美股是廣泛 risk-on，台股則由台積電、南亞科、聯發科、欣興、緯創與 PCB/DRAM 題材推動，產業選擇性更強。</li>
+          <li><strong>匯率與股市同向確認。</strong>CNA 新台幣午盤強升到 32.295，Yahoo 台灣也顯示美元/新台幣走低，配合台股大漲，代表資金面不是只靠內資題材，而有外部風險偏好改善支撐。</li>
+          <li><strong>AI 敘事仍強，但市場更會挑。</strong>SpaceX、Nvidia、SK Hynix、Micron、PCB、光收發模組都熱，但 Burry 警告、SpaceX 股價承壓與 PTT 推文保留，顯示資金會追受益鏈，也會懲罰只剩資本支出的故事。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>台股已快速收復月線、季線與 4 萬 4，隔日是否能站穩比今天漲多少更重要。</li>
+          <li>若荷莫茲協議進展不如預期，油價回落邏輯會被重估，亞洲股匯反彈可能同步降溫。</li>
+          <li>AI 財報季的檢驗標準變嚴，資本支出、雲端需求、GPU 租金、HBM 供應與現金流都可能成為下個波動來源。</li>
+          <li>光通訊、半導體材料、人才挖角與出口管制消息密集，供應鏈題材可能同時帶來溢價與政策風險。</li>
+          <li>槓桿 ETF 成交熱代表散戶追價速度快，一旦權值股無法續攻，去槓桿賣壓會先出現在 ETF 與高 beta 題材股。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">tw.stock.yahoo.com/news</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（PyPtt helper）</a>
+      </div>
+      <div class="method">
+        Fetch notes: Yahoo Finance Global/台灣依規則直接使用 browser；CNA RSS 使用 web_fetch 成功；鉅亨 web_fetch 內容不足，改用 browser 首頁抽取，頭條分類頁 web_fetch 取得部分內容且 browser DOM 抽取逾時；PTT 股市版依規則只使用 PyPtt helper 輸出。
+      </div>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>Codex GPT-5</code></span>
+      <span>Generated at: <code>2026-08-05 13:50 CST</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
