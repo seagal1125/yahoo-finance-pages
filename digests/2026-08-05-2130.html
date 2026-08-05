@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-05 21:30 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      color:#28425f;
+      font-size:.87rem;
+      font-weight:700;
+      letter-spacing:0;
+    }
+    h1,h2,h3{margin:0;line-height:1.18;letter-spacing:0}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);margin-bottom:14px}
+    h2{font-size:1.38rem;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    p{margin:0}
+    .lead{max-width:900px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .card.full{margin-top:22px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:#24415f;
+      font-size:.93rem;
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      margin-bottom:16px;
+    }
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .method{
+      margin-top:16px;
+      padding:14px 16px;
+      border:1px solid #dbe7f5;
+      border-radius:14px;
+      background:#f8fbff;
+      color:#4f6177;
+      font-size:.92rem;
+    }
+    .footer{
+      margin-top:28px;
+      padding:18px 22px;
+      border-radius:18px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 20px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Evening Digest</span>
+        <span class="pill">Asia/Taipei 21:30</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">晚間主軸是<strong>風險偏好延續，但避險與利率訊號沒有消失</strong>。美股早盤主要指數續漲，台股白天靠外資與三大法人逾千億買超大反攻，AI 伺服器、記憶體、光通訊與正向 ETF 是資金最集中的區域；同時 VIX、黃金、Fed 官員偏鷹發言與 ADP 就業降溫，也提醒這不是無腦追價盤，而是強反彈後的品質篩選。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 5 日 21:30（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>美股開高，避險同時留在桌上</strong>
+        <p>S&amp;P 500、道瓊與 Nasdaq 早盤走揚，但 VIX 與黃金同步上升，代表資金仍在替中東、利率與 AI 估值買保險。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>外資買超 903 億，三大法人合計買超 1004 億</strong>
+        <p>台股收 44611.60 點、大漲 1250.94 點，法人資金與正 2 ETF 爆量共同放大反彈動能。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">產業主線</div>
+        <strong>AI 伺服器、記憶體、光通訊接力發酵</strong>
+        <p>鴻海、英業達、研華、信驊、SK 海力士、長鑫與光收發器新聞把 AI 基建需求串成晚間主敘事。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>美股早盤：</strong>Yahoo Finance Global 顯示 S&amp;P 500 約 +0.57%、道瓊約 +0.79%、Nasdaq 約 +0.43%、Russell 2000 約 +1.85%，美股延續白天風險偏好；但 VIX 約 +2.55%、黃金約 +2.44%，表示避險沒有完全退場。</li>
+          <li><strong>台股盤後：</strong>Yahoo 台灣、CNA 與 PTT 原料一致指向法人資金大回流：台股收 44611.60 點、上漲 1250.94 點，三大法人合計買超 1004.06 億元，外資買超 903.08 億元、創史上單日第 3 大。</li>
+          <li><strong>產業與個股：</strong>AI 伺服器、記憶體與光通訊是最強主線。鴻海 7 月營收首破 9000 億元，英業達 7 月營收創單月歷史次高，研華看第 3 季營收雙增；鉅亨同時聚焦 SK 海力士、長鑫 LPDDR6、光收發器與科技預算。</li>
+          <li><strong>市場情緒：</strong>PTT 熱門討論從外資大買、正 2 ETF、三大法人千億買超一路延伸到「誰在賣」與「明天會不會拉一坨」。散戶短線偏多，但對開高大漲後的隔日沖與追價風險仍很敏感。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>漲幅與槓桿過熱：</strong>台股單日大漲逾 1200 點且正向 ETF 成交熱，隔日若量能或權值續航不足，追多部位會先遇到獲利了結。</li>
+          <li><strong>利率與就業訊號拉扯：</strong>Kansas City Fed 官員偏向較高利率壓通膨，ADP 私部門就業又低於預期，市場可能在「成長降溫」與「利率不降」之間反覆定價。</li>
+          <li><strong>AI 資本支出檢驗：</strong>SpaceX 營收翻倍仍因 AI spending plans 壓股價，AMD、Uber、Disney 等財報也讓市場更挑剔成長品質；AI 鏈不能只靠敘事。</li>
+          <li><strong>地緣與商品波動：</strong>荷莫茲談判若反覆，油價回落邏輯會被重估；黃金同步走強也暗示避險需求仍在。</li>
+          <li><strong>資金流反覆：</strong>雖然今日外資現貨大買，但 7 月外陸資仍轉淨匯出、央行外匯存底連 2 降，不能把單日回補直接解讀成長線資金完全翻多。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>本來源重點一：美股早盤偏多，S&amp;P 500 約 7780.95、上漲 0.57%，Dow 30 約 54515.51、上漲 0.79%，Nasdaq 約 26699.81、上漲 0.43%，Russell 2000 約上漲 1.85%。</li>
+          <li>本來源重點二：商品與避險訊號分歧，原油 Sep 26 約 75.85 美元、微漲 0.11%，但 VIX 約 16.92、上漲 2.55%，黃金約 4254.10、上漲 2.44%，顯示市場不是單純 risk-on。</li>
+          <li>本來源重點三：首頁主新聞是 <strong>SpaceX stock sinks on huge AI spending plans</strong>，內容指出季度營收近乎倍增，但支出膨脹到去年同期逾 6 倍，資金開始用更嚴格標準檢查 AI 基建資本支出。</li>
+          <li>本來源重點四：宏觀訊號同時偏緊又偏冷。Kansas City Fed 的 Schmid 傾向更高利率以壓通膨；ADP 私部門聘僱低於預期，讓「降息期待」與「經濟降溫」同時被市場消化。</li>
+          <li>本來源重點五：Yahoo 同頁也出現 Wall Street bonus boom、Sandisk earnings 等金融與半導體題材，說明資金仍在追景氣與 AI 延伸鏈，但開始重視財報與現金流兌現。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>本來源重點一：Yahoo 台灣新聞主標直接寫出「法人千億銀彈進場、正 2 爆量跟台股一起飛」，對應台股大漲 1250 點與三大法人買超千億的盤後敘事。</li>
+          <li>本來源重點二：台股新聞區聚焦「台股大漲 1250 點、收復月季線」、「法說前夕鴻海吸買氣」、「三大法人重押 AI 權值股」，顯示反彈核心不是單一題材，而是法人資金、權值與 AI 鏈一起推動。</li>
+          <li>本來源重點三：個股財報與營收亮點密集：信驊單季賺逾 4 個股本並入股 M31；鴻海 7 月營收 9465 億元、年增 54%；英業達 7 月營收 901 億元、月減但仍創歷史次高；研華法說釋出第 3 季營收再攀峰期待。</li>
+          <li>本來源重點四：資金面同時出現短線與中線兩種訊號。短線是三大法人買超千億、正向 ETF 爆量；中線則有外資 7 月淨匯出 930 億元、外匯存底連 2 降，表示今日回流要放進前期大震盪脈絡看。</li>
+          <li>本來源重點五：Yahoo 新聞也把 0050 追價時機、台股基本與籌碼面優於韓股、海外 ETF 創高等內容放在顯眼位置，顯示投資人開始從恐慌反彈轉向「要追哪個工具、追哪個市場」的比較。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li>本來源重點一：CNA 盤後延續台股大反攻主線，報導外資買超台股 903.08 億元、三大法人合計買超 1004.06 億元；台股大漲 1250 點，收在 44611 點，是歷史收盤第 11 大漲點。</li>
+          <li>本來源重點二：股匯同向確認，新台幣盤中一度強升逾 1.7 角，終場收 32.315 元、強升 1.32 角；同時亞洲股市因市場期待荷莫茲海峽重開而大多收高。</li>
+          <li>本來源重點三：7 月外資仍偏防守。金管會統計外陸資 7 月轉淨匯出 29.26 億美元，但今年截至 7 月底仍累計淨匯入 738.55 億美元、創史上同期新高，說明今天的外資大買比較像劇烈波動後的回補與再平衡。</li>
+          <li>本來源重點四：AI 伺服器與工業 AI 需求仍強。英業達 7 月營收約 901.9 億元、年增 65.7%；研華看第 3 季營收季增、年增，毛利率持穩；技嘉董事長稱 AI 市場需求旺盛、看到明年沒問題。</li>
+          <li>本來源重點五：財報與政策面補強台股結構。信驊第 2 季 EPS 40.87 元並參與 M31 私募；禾伸堂上半年 EPS 6.73 元、看旺 AI 用 MLCC；櫃買中心也提醒深偽投資詐騙，顯示高波動環境下投資詐騙風險升高。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網｜5 則最值得看</h2>
+        <ul class="list">
+          <li><strong>〈環宇法說〉光通訊市場持續供不應求，美禁中國光收發器有利後市營運：</strong>光收發器同時受 AI 資料中心需求與出口管制變數推動，是今晚最值得追的台股供應鏈題材。</li>
+          <li><strong>〈美股早盤〉企業財報與中東樂觀情緒助攻，主要指數開高：</strong>鉅亨與 Yahoo Global 對得上，市場仍把中東風險降溫與財報表現視為美股續彈的主要支撐。</li>
+          <li><strong>Fed 還能只盯著通膨？美國 7 月小非農僅增 4.4 萬人：</strong>就業增幅創半年最低，會讓降息預期升溫，但也會引發成長動能變弱的另一層擔憂。</li>
+          <li><strong>AI 浪潮驅動記憶體超級周期，華爾街多家主要機構看好 SK 海力士：</strong>這和台灣盤後 DRAM、HBM、伺服器與 PTT 長鑫討論同向，代表記憶體已從台股題材變成跨市場主線。</li>
+          <li><strong>2027 科技預算 1823 億元史上最高，國科會加碼 AI 算力：</strong>政策資源往 AI 算力與中小企業轉型集中，對伺服器、工業電腦、網通、散熱與電力基建形成中長線支撐。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <p class="meta">PyPtt helper 輸出：Evening（盤後），搜尋區間 2026-08-05 13:50 到 2026-08-05 21:30，熱門門檻 &gt;=50 推，符合條件文章數 15；本節整理 helper 輸出的前 8 篇熱門文章。</p>
+
+      <div class="mini-title">熱門文章清單</div>
+
+      <div class="ptt-article">
+        <h3>[新聞] 傳蘋果壓價失敗！長鑫存儲喊價貴過三星</h3>
+        <div class="ptt-meta">100 推｜d38485678（oh!!!!）｜2026-08-05 17:17</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>報導指出蘋果為降低下一代 iPhone 與裝置成本，評估向長鑫存儲採購 LPDDR5X 等行動 DRAM，但長鑫拒絕降價，報價甚至高於或持平三星、SK 海力士。</li>
+          <li>長鑫背後有華為、小米等中國內需大單支撐，供應鏈本土化與高單價長約讓它不必為蘋果讓利。</li>
+          <li>通用 DRAM 因 HBM 擴產排擠產能而短缺，定價權從終端品牌轉向上游記憶體廠，對三星、SK 海力士與其他記憶體供應鏈都有利。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文主流情緒是看蘋果壓價失敗很痛快，認為「現在是賣方說話」。</li>
+          <li>也有人質疑美國政府是否會允許蘋果大量採用中國記憶體，政策可行性仍是疑點。</li>
+          <li>不少人把這解讀成記憶體供需反轉與終端品牌議價能力下降，而不是單一廠商新聞。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇是今晚 PTT 最熱的產業文，重點不在蘋果單一採購，而是 DRAM 定價權轉移。版友的情緒偏向「記憶體賣方市場確認」，也呼應今天台股與鉅亨的 AI 記憶體主線。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 0805 上市外資買賣超排行</h3>
+        <div class="ptt-meta">100 推｜saber50116（Catdog）｜2026-08-05 16:19</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>外資買超排行前段集中在 00631L 元大台灣 50 正 2、00403A 主動統一升級 50、0050、009816 凱基台灣 TOP50 等 ETF。</li>
+          <li>個股端買超也包括鴻海、緯創、光寶科、長榮航、華新、中信金、華航、台積電、華邦電、欣興與南亞科等權值、AI 與景氣循環股。</li>
+          <li>這份排行顯示外資不是只回補台積電，而是透過 ETF、權值與 AI 伺服器鏈同步拉高台股 beta。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文注意到外資大買 ETF 與正 2，嘲諷「外資也來當正二貪狗」。</li>
+          <li>有人看多到「上看五萬」，也有人擔心隔日沖或買在高點。</li>
+          <li>鴻海與緯創連續買超引起注意，版友猜測老 AI 或伺服器鏈後續仍有題材。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇把今天台股大漲的資金來源具體化：外資買的不只是個股，也大量買進 ETF 與槓桿工具。市場情緒偏多，但推文已開始問隔天會不會變成追高風險。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 115年08月05日 三大法人買賣金額統計表</h3>
+        <div class="ptt-meta">100 推｜coconing（證券）｜2026-08-05 15:08</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>三大法人合計買超 1004.06 億元，法人成交比重 44.81%。</li>
+          <li>外資及陸資買超 903.08 億元，是今日最主要推手；投信買超 86.41 億元，自營商自行買賣賣超 23.27 億元，自營商避險買超 37.83 億元。</li>
+          <li>買盤規模與台股大漲互相確認，說明這不是只有內資題材股自嗨，而是法人現貨資金大幅回補。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>版友普遍震驚外資買超規模，常見語氣是「小兒終究是要回來的」、「外資大開大闔」。</li>
+          <li>也有人反問「誰在賣」，把焦點放在散戶或短線資金逢高出場。</li>
+          <li>推文對外資追高保持玩笑式懷疑，認為大買不一定保證隔日續漲。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>法人數字讓今天反彈有了強力背書，但推文沒有完全放心。市場接受「外資回來了」這件事，同時也在擔心大漲背後是否有人趁機出貨。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 外資買超歷史前十名（今天第三名）</h3>
+        <div class="ptt-meta">100 推｜paidzou｜2026-08-05 15:00</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>文章整理 TWSE 歷史外資買超排名，2026-08-05 外資買超 903.08 億元列史上第 3 名。</li>
+          <li>前兩名分別是 2005/12/28 的 1252.88 億元，以及 2026/04/08 的 1177.72 億元；今年多個日期進入前十，凸顯 2026 台股資金波動幅度很大。</li>
+          <li>作者用「誰還沒上車」收尾，反映今天盤後追多情緒被大幅放大。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文一方面喊外資認錯，另一方面覺得「買這麼多才漲這樣」不夠乾脆。</li>
+          <li>不少人懷疑是否有人逢高賣出，對隔日盤勢沒有完全樂觀。</li>
+          <li>也有版友注意到 2026 多次外資大買入榜，代表今年市場不是常態低波動，而是劇烈回補與殺盤反覆發生。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇提供歷史刻度，讓今天的外資買超看起來不只是大，而是非常極端。推文的矛盾感很重要：大家想追，但也知道歷史級資金流後面常伴隨隔日波動。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[閒聊] 2026/08/05 盤後閒聊</h3>
+        <div class="ptt-meta">100 推｜laptic（嶼天聖林）｜2026-08-05 14:00</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>盤後資料顯示台股收 44611.60 點、上漲 1250.94 點，成交值 1 兆 1441.62 億元；台指期上漲 1170 點。</li>
+          <li>上市漲停 43 家、上櫃漲停 33 家，成交量排行包括群益臺灣加權正 2、群創、元大台灣 50 正 2、主動統一升級 50 與元大台灣 50 反 1。</li>
+          <li>成交值排行為台積電、南亞科、聯發科、欣興、緯創，明確指向權值半導體、DRAM、PCB 與 AI 伺服器鏈。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文大量出現空方被軋、正 2 與追價玩笑，短線情緒非常熱。</li>
+          <li>也有人提到「人道走廊」和先落跑，顯示部分版友把大漲視為逃命或降風險機會。</li>
+          <li>盤後閒聊的情緒比財報文更直接，反映散戶正在快速從恐慌切回亢奮。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇是市場情緒溫度計：數據非常強，推文也很嗨，但不是單向樂觀。真正訊號是成交與槓桿工具熱度都放大，短線會讓隔日行情更容易劇烈擺動。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[創作] 做了一個專門追蹤主動式ETF的 App</h3>
+        <div class="ptt-meta">94 推｜gogoqaz（gogo）｜2026-08-05 19:55</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>作者做了一款 iOS App，專門追蹤主動式 ETF 每日持股進出、持股變化、最愛清單與整體資金流向。</li>
+          <li>資料每天 6 點後從投信端更新，作者表示基本資料免費看，後續可能加入 AI 彙整每日重點摘要。</li>
+          <li>這篇會爆，和今天主動式 ETF、正 2 ETF、法人買賣超一起升溫有直接關係。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>推文多數正面，許多人表示已下載、感謝作者、稱讚不用登入會員與個股反查功能。</li>
+          <li>主要需求是希望推出 Android 版，代表 ETF 資料透明化工具有明確受眾。</li>
+          <li>在主動 ETF 成交熱的時候，版友對「看清楚基金到底買什麼」的需求明顯提高。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇不是傳統股票新聞，但很能反映盤面變化：主動式 ETF 熱起來後，散戶需要新的追蹤工具。市場不只在追漲，也在追資料透明度。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[情報] 2317 鴻海 115年7月營收</h3>
+        <div class="ptt-meta">94 推｜BlueBird5566（賴粉-青鳥56）｜2026-08-05 15:31</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>鴻海 7 月營業收入淨額 9465.13 億元，年增 54.19%；累計 1 至 7 月營收約 5.59 兆元，年增 37.89%。</li>
+          <li>公司備註營收成長主要受惠伺服器產品需求提升與出貨成長。</li>
+          <li>7 月單月營收明顯高於前幾個月，接近兆元級別，直接支撐市場對 AI 伺服器供應鏈的信心。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>多數推文對近兆月營收感到驚訝，直覺聯想到 Rubin 放量與伺服器需求。</li>
+          <li>也有人用反向玩笑說「年增下去吧」或擔心利多出盡，顯示股價反應未必跟基本面同速。</li>
+          <li>版友對鴻海能否回 300、外資是否趁法說前後操作很有興趣。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>鴻海營收文把 AI 伺服器行情從敘事拉回數字。推文雖然有利多出盡的玩笑，但主流認知是伺服器需求真的強，這也是今天外資買超與成交值排行的重要背景。</p>
+      </div>
+
+      <div class="ptt-article">
+        <h3>[新聞] 日經亞洲：美國貝恩資本將以逾202億元收購貢茶</h3>
+        <div class="ptt-meta">79 推｜AnimalSpirit（動物本能）｜2026-08-05 14:13</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>日經亞洲報導貝恩資本將以超過 6.35 億美元、約新台幣 202 億元，從 TA Associates 等持股方收購台灣手搖飲品牌貢茶。</li>
+          <li>貢茶在全球約 30 個國家與地區、超過 2000 家門市，將運用貝恩資本資源擴展日本、韓國與美國市場。</li>
+          <li>2024 年集團營收成長 6% 至 1.888 億美元，營業利益成長一倍至 2370 萬美元，交易反映海外連鎖茶飲仍具成長溢價。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>不少版友驚訝貢茶估值這麼高，甚至有人表示在台灣不常看到或不常喝。</li>
+          <li>海外經驗推文很多，日本、澳洲、美國門市人氣被多次提到，說明貢茶的價值主要來自海外展店與品牌 SOP。</li>
+          <li>也有人吐槽海外口味普通但生意好，反映消費品牌估值與台灣本地體感不一定一致。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇跳出台股 AI 主線，提醒市場仍有消費品牌出海與私募股權題材。推文的重點是落差感：台灣人不一定常喝，但海外市場願意給出 200 億元級估值。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜外資回補與槓桿 ETF 情緒升溫：</strong>外資買超排行、三大法人統計、歷史買超排名與盤後閒聊都指向同一件事：法人現貨資金大舉回來，散戶也用正 2 與 ETF 快速追上。推文雖然偏亢奮，但對隔日沖、誰在賣與追高風險仍有強烈警覺。</li>
+        <li><strong>主題二｜AI 伺服器與記憶體從題材變成數字：</strong>長鑫拒絕蘋果壓價與鴻海 7 月營收近兆，讓 AI/記憶體不只是股價故事，而是供需與營收數字同時支持。推文也看出賣方市場、伺服器需求與台積電/鴻海/Nvidia 供應鏈仍是主流想像。</li>
+        <li><strong>主題三｜投資工具與非典型題材變熱：</strong>主動式 ETF App 爆紅代表散戶需要更細的持股與資金流資料；貢茶收購案則顯示台灣資本市場討論不只限於電子。兩者都反映市場在大波動後開始找「下一個可理解、可追蹤的標的」。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>全球風險偏好修復，但避險價格沒有同步塌。</strong>美股主要指數早盤續漲，亞洲股市受荷莫茲談判期待提振，但 VIX 與黃金上升代表資金仍在防尾端風險。</li>
+          <li><strong>台股今天是資金面與產業面共振。</strong>外資 903 億元、三大法人 1004 億元給出資金背書；鴻海、英業達、研華、信驊與 MLCC/DRAM/光通訊新聞則給出基本面背書。</li>
+          <li><strong>記憶體主線已跨出台股。</strong>Yahoo 台灣、鉅亨、PTT 都同時談到 DRAM、HBM、SK 海力士、長鑫、南亞科與華邦電，這代表資金正在把 AI 算力需求轉譯成記憶體價格與供給稀缺。</li>
+          <li><strong>宏觀敘事仍會左右股市續航。</strong>若 ADP 疲弱被解讀成降息利多，科技股會受益；若 Fed 偏鷹和通膨壓力被放大，今天的高 beta 追價部位會先承壓。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>台股單日大漲與外資歷史級買超後，隔日是否續量、權值能否續攻，比今天收盤點位更重要。</li>
+          <li>正向 ETF 與主動 ETF 成交熱提高上漲速度，也會在盤勢轉弱時放大回落速度。</li>
+          <li>AI 伺服器與記憶體供需強，但如果市場開始用 SpaceX、AMD、雲端資本支出來檢查現金流，估值壓力會從美股傳回台股供應鏈。</li>
+          <li>中東與油價雖暫時降溫，但黃金與 VIX 偏強表示避險資金沒有完全解除警報。</li>
+          <li>外資今日大買不等於中期匯流完全翻正，7 月淨匯出與外匯存底下降仍需追蹤。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">tw.stock.yahoo.com/news</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（PyPtt helper）</a>
+      </div>
+      <div class="method">
+        Fetch notes: Yahoo Finance Global/台灣依規則直接使用 browser；CNA RSS 使用 web_fetch 成功；鉅亨首頁與頭條先用 web_fetch，因首頁抽取內容不足、頭條只回傳單一項目，依規則補用 browser；PTT 股市版依規則只使用 PyPtt helper 輸出。
+      </div>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>Codex GPT-5</code></span>
+      <span>Generated at: <code>2026-08-05 21:30 CST</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
