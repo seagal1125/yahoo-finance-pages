@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-07 05:10 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f4f7fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.82);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.7);
+      background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(240,247,255,.9));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.78);
+      border:1px solid var(--line);
+      color:#28425f;
+      font-size:.87rem;
+      font-weight:700;
+      letter-spacing:0;
+    }
+    h1,h2,h3{margin:0;line-height:1.18;letter-spacing:0}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);margin-bottom:14px}
+    h2{font-size:1.38rem;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    p{margin:0}
+    .lead{max-width:940px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.75);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .card.full{margin-top:22px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:#24415f;
+      font-size:.93rem;
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      margin-bottom:16px;
+    }
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .method{
+      margin-bottom:16px;
+      padding:14px 16px;
+      border:1px solid #dbe7f5;
+      border-radius:14px;
+      background:#f8fbff;
+      color:#4f6177;
+      font-size:.92rem;
+    }
+    .footer{
+      margin-top:28px;
+      padding:18px 22px;
+      border-radius:18px;
+      background:rgba(255,255,255,.78);
+      border:1px solid var(--line);
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 20px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Premarket Digest</span>
+        <span class="pill">Asia/Taipei 05:10</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">盤前主線很清楚：<strong>美股在油價與殖利率壓力下多收黑，台股則帶著強彈後的籌碼分歧進入開盤前檢查</strong>。AI、記憶體與半導體仍是最熱敘事，但市場開始同時追問資本支出、融資槓桿、ETF 贖回與外資期現貨部位，代表短線不是無腦追價盤，而是「題材還熱、容錯變低」。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 7 日 05:10（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>美股多收黑，油價大漲壓住風險偏好</strong>
+        <p>Yahoo Global 顯示 Dow -0.85%、S&amp;P 500 -0.18%、Nasdaq -0.06%，原油 +4.00%；就業報告前，殖利率與油價成為盤前壓力源。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>反彈後看守季線、萬金股與記憶體續航</strong>
+        <p>Yahoo 台灣與鉅亨同時聚焦台股回檔整理、川湖萬元身價、華邦電擴產與力積電/群創/華邦電成交量。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">情緒訊號</div>
+        <strong>散戶想做多，但更怕被洗出場</strong>
+        <p>PTT 熱門文不是喊單，而是討論停損後隔天反彈的心理壓力，這反映震盪盤最核心的交易焦慮。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>美股盤後偏弱：</strong>Yahoo Finance Global 顯示 S&amp;P 500 收 7,709.96、跌 0.18%，Dow 30 收 53,885.10、跌 0.85%，Nasdaq 收 26,348.35、小跌 0.06%，Russell 2000 跌 0.58%；VIX 雖下滑 4.17%，但原油大漲 4.00%，市場壓力不算解除。</li>
+          <li><strong>總體變數集中在油價、就業與利率：</strong>Yahoo 與 CNA 都提到美國就業報告前股市走弱；Yahoo Global 同時出現 Dow 從高點回落、混合勞動數據、Iran/Hormuz 航運安排、以及美國對太陽能與半導體關鍵材料關稅的新聞。</li>
+          <li><strong>台股盤前不是全面轉空，而是強彈後做品質檢查：</strong>Yahoo 台灣與鉅亨的盤前訊號集中在「回檔整理守季線、權值股熄火換小兵、川湖萬元身價、華邦電法說與 Module B 擴產」。盤面仍有題材，但追價門檻變高。</li>
+          <li><strong>記憶體/AI 仍熱，但估值與資本支出被重新檢查：</strong>華邦電、力積電、群創、AI 伺服器/光通訊供應鏈仍在新聞流前排；海外端則有 SpaceX、Alphabet 債券、Microsoft AI、SanDisk/Western Digital 財報門檻與 Google AI 改組。</li>
+          <li><strong>PTT 情緒偏紀律焦慮：</strong>本時段 helper script 抓到 1 篇 69 推熱門文，主題是「5% 停損後隔天反彈怎麼克服」。推文一方面嘲笑 5% 太緊，一方面也提醒照紀律執行與部位管理，這正好對應盤前震盪追價風險。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>油價與殖利率：</strong>原油單日大漲約 4%，若推升通膨預期，美股成長股與台股高估值電子都會承壓。</li>
+          <li><strong>美國就業報告：</strong>市場在就業報告前已偏保守，若薪資或新增就業高於預期，Fed 降息想像會再被壓抑。</li>
+          <li><strong>台股 ETF 贖回與外資分歧：</strong>主動式 ETF 單日爆撤 208 億、外資買超縮小又買反向 ETF，代表反彈背後仍有避險與落袋賣壓。</li>
+          <li><strong>記憶體追價風險：</strong>華邦電、力積電、群創成交熱，但若美光/SK 海力士/儲存股海外表現轉弱，台灣記憶體股容易被獲利了結。</li>
+          <li><strong>交易心理：</strong>震盪盤最容易把停損、凹單與追高混在一起；PTT 討論顯示散戶正在被短線洗盤壓力牽動。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>本來源重點一：美股主要指數多收黑，S&amp;P 500 跌 0.18%、Dow 跌 0.85%、Nasdaq 跌 0.06%、Russell 2000 跌 0.58%；VIX 下滑至 15.15，代表波動率沒有恐慌化，但指數動能明顯降溫。</li>
+          <li>本來源重點二：原油 78.23 美元、上漲 4.00%，是盤前最重要的跨資產訊號；同頁也有 Iran/Hormuz 航運與中東安排新聞，市場還在重新定價能源風險。</li>
+          <li>本來源重點三：Top Stories 顯示「Trump announces tariffs on key component for solar panels and semiconductors」，關稅與半導體材料供應鏈風險重新回到交易桌面。</li>
+          <li>本來源重點四：AI/科技新聞仍密集，包括 Jamie Dimon 警告 AI build-out 可能帶來風險、Alphabet 債券需求、Microsoft AI growth、OpenAI/Apple 安全爭議，以及 SanDisk 財報後賣壓被討論。</li>
+          <li>本來源重點五：SpaceX 是流量核心之一，首頁同時出現股價大跌後散戶逢低買、能源需求受惠公司、以及 9 億股解禁後股價評價討論，顯示散戶與高敘事成長股仍牽動市場情緒。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>本來源重點一：台股盤前距開盤約 3 小時多，前一交易日上市大盤收 44,396.70、下跌 214.90 點；台指期近一顯示 44,543、上漲 285 點，盤前期貨訊號偏向跌後修復。</li>
+          <li>本來源重點二：今日要聞集中在「權值股熄火換小兵秀、川湖萬元身價、華邦電法說報喜、0050 定存與抄底紀律、韓股與高息 ETF」，代表市場從指數強弱轉向族群和投資紀律。</li>
+          <li>本來源重點三：上市熱門成交量前排為力積電 66.60、群創 50.00、群益臺灣加權正 2、元大台灣 50 反 1、華邦電 171.00；正向槓桿 ETF 和反向 ETF 同時在前排，顯示多空分歧很強。</li>
+          <li>本來源重點四：新聞頁前排有主動式 ETF 單日爆撤 208 億、台股強彈卻散戶贖回、記憶體產能被大廠包下、北美大廠訂單拉動達發 EPS、7 月 CPI 年增 2.54% 連三月高於警戒線。</li>
+          <li>本來源重點五：Yahoo 台灣的盤前結論偏「反彈後分化」：AI、記憶體、光通訊與高價零組件還有話題，但 ETF 贖回、反向 ETF 放量與通膨警戒線讓追價不再輕鬆。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li>本來源重點一：中央社財經 RSS 顯示，歐股在企業財報評估下互有漲跌，科技類股再度承壓；美股開盤則因投資人關注中東局勢而漲跌互見，與 Yahoo Global 的盤後弱勢相互印證。</li>
+          <li>本來源重點二：台灣金融面仍強，本國銀行上半年稅前盈餘 3,583.1 億元、年增 20.8% 寫同期新高；6 月個人放款增加 2,575 億元，反映資金需求仍旺。</li>
+          <li>本來源重點三：半導體封測與 AI 先進製程需求維持動能，穎崴上半年 EPS 38.24 元、矽格上半年 EPS 4.65 元並創同期新高，對台股電子鏈提供基本面支撐。</li>
+          <li>本來源重點四：日本最大 AI 資料中心規劃落腳秋田、阿聯酋擬投資 2 兆日圓，呼應全球 AI 基建支出仍在擴張，但也讓市場更在意資本支出回收期。</li>
+          <li>本來源重點五：監理風險上升，金管會研議台股一次違約交割後一定期間內可能預收足額款券；在成交量放大與散戶回流背景下，這類風控規則會影響短線交易情緒。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>5 則最值得看</h2>
+        <ul class="list">
+          <li><strong>台股盤前要聞：</strong>鉅亨把「回檔整理守季線、反彈誕生新萬金股、華邦電啟動 Module B 擴產計畫」放在首頁與頭條首位，盤前核心是強彈後能否守住技術面與人氣股續航。</li>
+          <li><strong>科技股依賴散戶，波動恐升級：</strong>小摩指出避險基金慘虧平倉後，科技股未來更依賴散戶，這對高估值 AI/半導體股是雙面刃，漲時快、回撤也快。</li>
+          <li><strong>馬斯克光環重估：</strong>鉅亨報導特斯拉、SpaceX 市值蒸發 1.4 兆美元，代表市場開始把「注意力溢價」和實際營收/獲利拆開看。</li>
+          <li><strong>Google AI 帳單與組織調整：</strong>Alphabet AI 資本支出被寫成 2,050 億美元帳單，同時調整 DeepMind 相關職務，市場正在追問 AI 投入的管理效率與回報。</li>
+          <li><strong>市場焦點數據：</strong>鉅亨首頁 StockQ 顯示台積電 2,365 元、跌 1.66%，台積電 ADR +1.01%，美光 -1.31%，SK 海力士 ADR -4.97%，倫敦原油 +5.25%、美元指數 99.95；這組訊號說明台股盤前要同時消化記憶體修正、油價上行與美元偏硬。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <div class="method">PTT section 使用 runbook 指定的 PyPtt helper script 輸出；搜尋區間為 2026-08-06 21:30 至 2026-08-07 05:11，門檻為 20 推，符合條件熱門文章數 1。</div>
+
+      <div class="mini-title">熱門文章清單</div>
+      <div class="ptt-article">
+        <h3>[請益] 停損後隔天就反彈，大家都怎麼克服這種心</h3>
+        <div class="ptt-meta">69 推｜chunzheng（聽巴哈）｜2026-08-07 01:24</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>原 PO 表示自己的策略是看好股票後進場，固定設 5% 停損，但最近常遇到跌到停損價後照紀律出場，隔天卻反彈回停損價以上。</li>
+          <li>核心困擾不是單一股票，而是停損紀律與「是不是應該多等一天」之間的拉扯；他知道延後停損可能變成凹單，但看到反彈又會懷疑策略。</li>
+          <li>這篇文章反映震盪盤常見問題：停損設定太近時，很容易被日內/隔日波動洗掉；但完全取消停損，又可能讓風險失控。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>不少推文用反串方式說「不要停損就沒問題」「一張不賣奇蹟自來」「拔網路線」，情緒上偏嘲諷散戶被洗來洗去。</li>
+          <li>較認真的意見集中在 5% 停損可能太緊，除非是超短線或槓桿交易，否則容易被正常波動打掉。</li>
+          <li>也有推文提醒「照紀律就是這樣，不然有沒有本錢凹單」，支持先把資金控管和策略週期想清楚，而不是因單次反彈否定規則。</li>
+          <li>推文整體沒有形成單一答案，主要分成「放寬停損/調整策略」與「接受紀律成本」兩派，中間穿插大量自嘲式玩梗。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇熱門文的結論不是「停損對或錯」，而是 5% 停損必須搭配交易週期、波動率與部位大小。若是波段投資，5% 可能只是雜訊；若是短線交易，停損後反彈就是策略成本，重點是長期統計能否勝出。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜停損紀律與後悔成本：</strong>文章內文把「照紀律賣出」和「隔天反彈」的心理痛點講得很清楚；推文雖然多用玩笑回應，但認真派也承認，停損本來就會有被洗掉的成本，不能只看單筆結果。</li>
+        <li><strong>主題二｜5% 停損是否太緊：</strong>多數質疑點都指向 5% 對一般波段股票太窄，除非策略是超短線或高槓桿，否則容易把正常波動誤判成趨勢反轉。這代表版上對風控不是反對，而是要求停損距離要和商品波動匹配。</li>
+        <li><strong>主題三｜散戶在震盪盤的行為壓力：</strong>推文中的「不要停損」「跟自己對做」「砍軟體」其實是在嘲笑散戶被市場節奏牽著走。綜合內文與推文，真正要處理的是策略一致性、部位大小與情緒管理，而不是下一次到底要不要多等一天。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>美股弱，台指期修復，代表台股開盤不一定跟跌到底。</strong>美股多收黑與油價大漲是壓力，但 Yahoo 台灣顯示台指期近一盤前回升，台股更可能先走「題材與籌碼分化」。</li>
+          <li><strong>AI 故事沒有退場，但市場開始要求現金流與紀律。</strong>SpaceX、Alphabet、Google、Microsoft、SanDisk 與台灣記憶體鏈都還是核心流量；差別是投資人更在意資本支出、財測門檻與估值承受度。</li>
+          <li><strong>反彈盤的最大風險不是沒有題材，而是太多資金同時想快進快出。</strong>ETF 贖回、反向 ETF 放量、外資買超縮小與 PTT 停損焦慮都指向同一件事：短線流動性熱，但信心不穩。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">tw.stock.yahoo.com/news</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（以 helper script 取得）</a>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>GPT-5 (Codex)</code></span>
+      <span>Generated at: <code>2026-08-07 05:10 CST</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
