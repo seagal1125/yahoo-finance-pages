@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-06 13:50 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      color:#28425f;
+      font-size:.87rem;
+      font-weight:700;
+      letter-spacing:0;
+    }
+    h1,h2,h3{margin:0;line-height:1.18;letter-spacing:0}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);margin-bottom:14px}
+    h2{font-size:1.38rem;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    p{margin:0}
+    .lead{max-width:920px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .card.full{margin-top:22px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:#24415f;
+      font-size:.93rem;
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .ptt-article{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      margin-bottom:16px;
+    }
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .method{
+      margin-top:16px;
+      padding:14px 16px;
+      border:1px solid #dbe7f5;
+      border-radius:14px;
+      background:#f8fbff;
+      color:#4f6177;
+      font-size:.92rem;
+    }
+    .footer{
+      margin-top:28px;
+      padding:18px 22px;
+      border-radius:18px;
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--line);
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 20px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Midday Digest</span>
+        <span class="pill">Asia/Taipei 13:50</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">午盤主線從早盤的「強彈品質檢查」轉成更清楚的<strong>電子權值壓回、散熱與光通訊撐人氣、AI 投資報酬與資本支出被重新審視</strong>。美股端仍是 Dow 與景氣股撐住、Nasdaq 期貨偏弱；台股盤中一度跌近 600 點後收斂，市場沒有全面熄火，但資金更挑題材、也更在意估值能不能被營收與訂單證明。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 8 月 6 日 13:50（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球輪廓</div>
+        <strong>美股期貨分化，AI 成本壓力壓住 Nasdaq</strong>
+        <p>S&amp;P 與 Dow 期貨小漲，Nasdaq 期貨小跌；Yahoo Global 的首頁焦點仍集中在 Google AI 改組、SanDisk 財測與 AI 成本。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>開低震盪後收斂，台積電弱但高價股與散熱撐場</strong>
+        <p>CNA 指出台股早盤最低到 44024 點附近，台積電跌至 2370 元，台達電、鴻海、散熱與光通訊承接買氣。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">題材焦點</div>
+        <strong>記憶體與 AI 基建熱，但市場開始問「會不會打水漂」</strong>
+        <p>PTT 熱門文集中在南亞科 3466 億擴產；推文同時有供不應求期待，也有資本支出利空與循環高點疑慮。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球市場偏分化：</strong>Yahoo Finance Global 顯示 S&amp;P Futures +0.16%、Dow Futures +0.21%，但 Nasdaq Futures -0.18%；VIX 下滑到 15.81，油價約 74.86 美元續弱，代表總體壓力不大，但科技股自己面臨財報與 AI 投資效益檢查。</li>
+          <li><strong>AI 主線沒有消失，只是容錯率更低：</strong>Google AI 領導權集中、DeepMind 改組、Palantir、Meta coding agent、AI 資料中心用電壓力與 SanDisk 財測低於期待都同時出現。市場還買 AI，但不再只因題材買單。</li>
+          <li><strong>台股盤中不是全面崩跌：</strong>CNA 指出台股早盤下跌近 600 點後收斂，台積電跌 35 元至 2370 元，但台達電、鴻海等權值撐盤，散熱、光通訊強漲，川湖一度躍上萬元關卡，千元以上高價股達 48 檔。</li>
+          <li><strong>台灣新聞流的資金方向很清楚：</strong>Yahoo 台灣與鉅亨都把鴻海 7 月營收、外資/法人資金、國安基金護盤獲利、雙鴻與聯亞等 AI 散熱/光通訊焦點放到前排；這表示資金仍在 AI 基建鏈內輪動。</li>
+          <li><strong>午盤最大矛盾是「長線需求強」對上「短線估值高」：</strong>南亞科擴產、AI 資料中心缺貨、三星先進製程與 InP 產能都支持長線需求；但 Fed 官員偏鷹、金融類股疲弱、AI 企業資本支出壓力提醒市場，追價仍要看現金流與財測能不能跟上。</li>
+        </ul>
+      </article>
+
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>台積電與金融同步偏弱：</strong>台積電仍是指數最大壓力來源；鉅亨 13:34 也出現金融保險類股跌幅 2.15% 的盤中訊號，若權值與金融不穩，題材股撐盤力道有限。</li>
+          <li><strong>AI 資本支出被重新定價：</strong>SpaceX、SanDisk、Western Digital、AMD 與 Figma 相關新聞都指向同一件事：投資人開始追問 AI 投資何時轉成利潤。</li>
+          <li><strong>Fed 語氣仍可能壓估值：</strong>鉅亨頭條引述 Fed 庫克稱若通膨不退準備支持升息，對高本益比科技股不是好背景。</li>
+          <li><strong>記憶體循環風險：</strong>南亞科擴產與 DDR4 議價力是利多，但大額資本支出也可能在景氣反轉時變成市場擔憂來源。</li>
+          <li><strong>油價與黃金訊號分裂：</strong>Yahoo Global 顯示油價續弱、鉅亨與 CNA 同時提到黃金走高，代表避險與降通膨交易並存，市場對 headline risk 仍敏感。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>本來源重點一：主要期貨盤偏分化，S&amp;P Futures 7,762.25、+0.16%，Dow Futures 54,610、+0.21%，Nasdaq Futures 29,563、-0.18%；VIX -4.18% 顯示波動率降溫，但科技股承壓。</li>
+          <li>本來源重點二：首頁頭條是 Google 將 AI 權力集中到加州，試圖在與 Anthropic、OpenAI 的競賽中加速；同時 Google/DeepMind 改組新聞也居前，AI 組織能力成為市場觀察點。</li>
+          <li>本來源重點三：SanDisk 因營收展望不如預期下跌，Western Digital 也在 trending tickers 弱勢名單；記憶體題材仍熱，但財測門檻被市場拉高。</li>
+          <li>本來源重點四：AI 成本壓力是共同敘事，包括 AI 電力需求傷害資料中心、Figma 提到 AI 成本、SpaceX 因 AI capex 跌深，以及投資人審視 AI bottomless pit problem。</li>
+          <li>本來源重點五：Crude Oil Sep 26 約 74.86 美元、-0.48%，Gold 約 4,323.30、+0.42%，Bitcoin 約 64,820、+0.85%；跨資產呈現油價降溫、黃金偏強、風險資產分化的組合。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>本來源重點一：Yahoo 台灣首頁顯示台股盤中上市大盤約 44,396.70 點、成交約 9,404 億；成交金額排行由台積電、南亞科、華邦電、力積電、國巨居前，記憶體與權值仍是午盤核心。</li>
+          <li>本來源重點二：今日要聞集中在「雙鴻重返千金帶隊」、「川湖躍升萬元級股后」、「國巨又臉綠」、「黃金存摺重返 4400 元關卡」等，顯示資金在高價 AI 散熱、被動元件與避險資產間快速切換。</li>
+          <li>本來源重點三：新聞頁仍保留前一日強彈敘事，包括法人千億銀彈進場、正 2 爆量、外資買超、台股大漲 1250 點收復月季線；但午盤現貨已轉為開低震盪，代表市場正在消化強反彈後的賣壓。</li>
+          <li>本來源重點四：Yahoo 新聞頁把鴻海 7 月營收首破 9000 億、信驊入股 M31、外資 7 月淨匯出 930 億、英業達與研華營收/訂單等放在前排，AI 伺服器與資金流仍是台股敘事中心。</li>
+          <li>本來源重點五：全球市場欄位顯示美元/新台幣約 32.247、紐約原油近月約 74.92、黃金近月約 4,322.2；匯率與商品訊號對台股的短線風險評價仍重要。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li>本來源重點一：中央社午盤報導指出台股開低震盪，早盤下跌近 600 點，最低達 44024 點附近，盤中跌勢收斂；台積電跌 35 元至 2370 元，權值壓力仍在。</li>
+          <li>本來源重點二：台達電、鴻海等權值股撐盤，散熱與光通訊族群強漲；千元以上高價股達 48 檔，信驊、川湖勁揚，川湖盤中首度躍上萬元關卡，形成「雙萬金」話題。</li>
+          <li>本來源重點三：CNA 也指出 AI 獲利疑慮再起，亞股早盤科技股領跌、多數走低；這和 Yahoo Global 的 AI 成本與財測壓力互相呼應。</li>
+          <li>本來源重點四：新台幣午盤升 6.6 分，暫收 32.249 元；油價走弱、美元貶值、美債殖利率下滑帶動金價連 4 漲並觸及 7 週高點。</li>
+          <li>本來源重點五：國安基金第 9 次護盤已出清，靠台積電獲利 77.72 億元最多；東元關節模組切入四足機器狗並合作開發人形機器人，則補上機器人題材的產業面訊號。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>台股震盪誰在買：</strong>鉅亨 13:55 把法人與散戶 ETF 布局放在首位，高股息與市值型成為熱門標的，顯示波動中仍有資金用 ETF 分批承接。</li>
+          <li><strong>金價站上 7 週高點：</strong>鉅亨頭條指出專家仍看長期牛市、黃金有望重返 5000 美元；這和油價降溫並存，表示避險與降通膨交易同時存在。</li>
+          <li><strong>Fed 庫克放鷹：</strong>若通膨不退，Fed 官員準備支持升息；這會讓 AI、高估值與長天期現金流資產承受估值壓力。</li>
+          <li><strong>AI 資料中心缺貨潮：</strong>諾基亞買下 NXP 工廠搶 InP 產能，大聯大詮鼎攜英飛凌搶 SST 商機，廣錠搶光通訊散熱訂單，AI 基建鏈從 GPU 擴散到電力、光通訊與散熱。</li>
+          <li><strong>國安基金與台積電：</strong>第 9 次護盤買 8 檔全勝，靠台積電進帳 77.7 億元；這強化台積電在台股信心與政策護盤記憶中的核心地位。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card full">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <div class="ptt-article">
+        <h3>[新聞] 南亞科拚擴產 4年豪砸3,466億不怕打水漂</h3>
+        <div class="ptt-meta">71 推｜nisi0773（深知身在情常在）｜2026-08-06 11:17</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>南亞科董事會通過 2026 至 2029 年長期投資計畫，資本支出上限 3,466 億元，5A 新廠將導入 1B、1C、1D、1E 等 10 奈米級製程與 EUV 設備。</li>
+          <li>新產能規劃月投片 3.59 萬片，預計 2027 年下半年開始投片，2028 年月投片量到 3 萬片，2029 年再提升，未來視需求擴充至完整產能。</li>
+          <li>公司同步調高 2026 年資本支出預算，由 520 億元增至 697 億元，用於 5A 新廠設備預付款與建廠時程。</li>
+          <li>文章強調 DDR4 價格走升、三大原廠轉供 HBM 與 DDR5 後，南亞科在 DDR4 市場議價能力提升，7 月營收也被描述為續創單月歷史新高。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>支持或樂觀推文集中在「記憶體供不應求」、「訂單看到多年後」、「一年就賺回來」等，認為擴產對應長線需求。</li>
+          <li>質疑聲音則認為大幅提高資本支出可能是利空，擔心記憶體景氣循環走到高點後，新產能反而壓低報價。</li>
+          <li>也有推文提醒這是既有建廠計畫開始運作，部分內容像「舊聞新發」，市場解讀不該只看標題的 3,466 億。</li>
+          <li>整體氣氛是偏熱但帶戒心，版友願意承認 DDR4 報價與南亞科題材，但沒有完全忽略循環股的反轉風險。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇熱門文把今天的記憶體主線講得很完整：需求與議價力讓南亞科有擴產理由，但大額資本支出也會讓市場立刻想到循環高點與未來供給壓力。PTT 情緒不是單純唱多，而是「題材很強，但要小心熟悉的循環劇本」。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜南亞科 5A 新廠與 EUV 製程升級：</strong>文章內文把 5A 新廠、10 奈米級製程、EUV 導入與 2027 至 2029 年投片時程列得很清楚，這是南亞科從成熟 DDR4 議價力往更先進製程升級的長線故事。推文對技術與投資規模有興趣，但也提醒不要把規劃期的產能當成立刻到位的獲利。</li>
+        <li><strong>主題二｜DDR4 供需與記憶體景氣循環：</strong>內文說三大原廠轉供 HBM/DDR5，讓南亞科成為 DDR4 最具議價能力的供應商之一；推文的樂觀派也用「供不應求」、「訂單看到很久」來解讀。爭議點在於記憶體一向是景氣循環股，當市場開始喊擴產時，也常讓老手想到報價反轉與產能過剩。</li>
+        <li><strong>主題三｜資本支出到底是利多還是利空：</strong>公司把 2026 年資本支出調高至 697 億元，長期投資上限 3,466 億元，代表管理層押注需求延續。推文有人認為「一年就賺回來」，也有人直指提高資本支出是利空；這正是午盤市場對 AI/記憶體鏈的核心矛盾：長線需求可見，但短線估值會先審問現金流。</li>
+      </ul>
+      <div class="method">PTT section 依 runbook 指定 PyPtt helper 取得，搜尋區間為 2026-08-06 09:30 至 13:52，門檻 >=50 推；本時段符合條件熱門文章 1 篇。</div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>AI 交易進入成果導向。</strong> 從 Yahoo Global 的 AI 成本、鉅亨的資料中心缺貨，到 Yahoo 台灣的鴻海/散熱/光通訊題材，市場還在買 AI，但開始要求財測、訂單、產能與毛利都能對得上。</li>
+          <li><strong>台股今天是「權值壓回、題材接棒」。</strong> 台積電與金融偏弱讓指數承壓，但台達電、鴻海、高價股、散熱、光通訊與記憶體讓盤面沒有全面轉空。</li>
+          <li><strong>記憶體是最熱也最需要紀律的主線。</strong> 南亞科、華邦電、力積電都在成交與討論前排；但 PTT 推文和 Yahoo Global 的 SanDisk 財測反應都提醒，市場對記憶體鏈會同時追需求與殺預期落差。</li>
+          <li><strong>避險與風險資產訊號混在一起。</strong> 油價下滑與 VIX 降低支持風險偏好，但黃金創高、Fed 偏鷹與金融類股疲弱，說明市場還沒有真正放鬆。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（以 helper script 取得）</a>
+        </div>
+        <div class="method">抓取方式：Yahoo Global / Yahoo 台灣依設定強制 browser；CNA 以 web_fetch RSS；鉅亨先 web_fetch，內容不足後改 browser；PTT 僅使用 PyPtt helper，未用 browser 或 web_fetch 開頁。</div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model used：</strong><code>GPT-5 Codex</code></div>
+      <div><strong>Generated at：</strong><code>2026-08-06 13:50 CST</code></div>
+      <div><strong>Repository：</strong><code>yahoo-finance-pages</code></div>
+    </footer>
+  </main>
+</body>
+</html>
