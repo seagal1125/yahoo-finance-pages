@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-08-07 13:50 CST</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.72);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg, rgba(255,255,255,.92), rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:220px;height:220px;border-radius:999px;
+      background:radial-gradient(circle, rgba(37,99,235,.16), transparent 68%);
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.72);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:0;
+    }
+    h1,h2,h3{margin:0;line-height:1.18;letter-spacing:0}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);margin-bottom:14px}
+    h2{font-size:1.38rem;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:860px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid,.links-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:0;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:0}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{
+      border:1px solid #fecdd3;
+      background:linear-gradient(180deg,#fff8f8,#fff1f2);
+    }
+    .risk h2{color:var(--danger)}
+    .ptt-article{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff;margin-bottom:16px}
+    .ptt-article:last-child{margin-bottom:0}
+    .ptt-meta{color:var(--muted);font-size:.94rem;margin-bottom:10px}
+    .mini-title{font-size:.95rem;font-weight:800;margin:14px 0 8px;color:#28425f}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid,.links-grid{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Midday Digest</span>
+        <span class="pill">Asia/Taipei 13:50</span>
+        <span class="pill">Traditional Chinese</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">午盤主線是<strong>台股開高後快速震盪、記憶體與 AI 供應鏈仍熱、能源與匯率變數重新升溫</strong>。全球端美股期貨分歧但 VIX 回落，台灣端則從電子權值延伸到金融、電機、主動式 ETF、微電網與記憶體缺貨題材。</p>
+      <p class="meta"><strong>時間：</strong>2026-08-07 13:50 CST（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>不是單純 risk-on，而是題材續熱、指數高震盪</strong>
+        <p>台股開高後翻黑收跌，成交仍大；全球市場同時交易 AI 資本支出、記憶體緊缺、油價上行與就業數據前觀望。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>金融撐盤、記憶體爆量、權值股仍決定節奏</strong>
+        <p>Yahoo 台灣與 CNA 都指向開高走低與外資期貨空單壓力，但群創、力積電、華邦電、金融與電機股仍有資金承接。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">午後觀察</div>
+        <strong>看 AI 缺料敘事能否抵消能源與籌碼壓力</strong>
+        <p>HBM/DRAM 缺貨、Terafab、AI 資料中心電力是人氣核心；但油價、日圓、外資空單與季線攻防會壓住追價膽量。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球市場：</strong>Yahoo Finance 顯示美股期貨分歧，S&amp;P 500 期貨小跌 0.02%、道瓊期貨跌 0.18%、Nasdaq 期貨漲 0.15%；VIX 跌 4.17%，但原油上漲、黃金走高，表示風險情緒沒有崩，避險與能源變數仍被交易。</li>
+          <li><strong>台股盤勢：</strong>Yahoo 台灣與 CNA 都呈現「開高後震盪拉回」：台股早盤一度受台積電 ADR 與台指期夜盤激勵大漲逾 430 點，之後賣壓湧現，終場收 44,225.91 點、跌 170.79 點，失守季線附近。</li>
+          <li><strong>題材焦點：</strong>記憶體仍是最強敘事，CNA 提到 WSTS 看今年全球半導體營收年增 108%、記憶體增逾 3 倍；鉅亨進一步強調三大記憶體廠 2027 產能已被訂滿，輝達 Rubin Ultra HBM 配置也可能因供應吃緊而調整。</li>
+          <li><strong>PTT 情緒：</strong>本時段 PTT helper 只抓到 1 篇符合門檻熱門文，焦點是馬斯克 Terafab。推文不是單純看多，而是高度懷疑資金、量產難度與跨領域執行，代表散戶對「AI 自建晶圓廠」故事有興趣但不盲信。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>油價與荷姆茲海峽：</strong>CNA 與鉅亨都提到伊朗/荷姆茲相關變數，Yahoo Global 也顯示原油續漲；若航運與能源風險升高，通膨交易會壓縮科技股估值。</li>
+          <li><strong>外資期貨空單與季線：</strong>CNA 指出外資期貨空單仍高，Yahoo 台灣顯示台股終場失守季線附近，短線仍是籌碼面先於基本面。</li>
+          <li><strong>AI 供應鏈缺料雙面刃：</strong>DRAM/HBM 缺貨可支撐記憶體報價，但也可能拖累先進封裝、iPhone 或 AI 平台交貨節奏。</li>
+          <li><strong>美國就業數據前觀望：</strong>Yahoo/CNA 均顯示美股在就業報告前偏保守，若數據推遲降息預期，成長股容易再波動。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>美股期貨呈現分歧：S&amp;P 500 期貨 7,733.00、跌 0.02%；道瓊期貨 53,915.00、跌 0.18%；Nasdaq 期貨 29,533.25、漲 0.15%，科技股相對抗跌。</li>
+          <li>VIX 下跌 4.17% 到 15.15，代表波動率短線降溫；但黃金漲 0.73%、原油漲 1.27%、比特幣跌 0.80%，跨資產不是單向風險偏好，而是避險與能源議題仍在。</li>
+          <li>首頁主新聞聚焦「亞太 AI 相關公司帶動股權資本市場破紀錄」，說明 AI 資本支出仍在支撐 IPO/募資與風險資產敘事。</li>
+          <li>市場與經濟新聞同時放大「Iran/Hormuz」「Asia energy markets」「oil extends gains」，能源供應與 AI 用電需求正在成為全球科技交易的底層變數。</li>
+          <li>科技焦點包括 AMD 收購加拿大 AI 晶片新創 Taalas、Alibaba 擬向大型用戶收取開源 AI 模型費用、SpaceX 解禁股仍被長線股東看好，顯示 AI、晶片與太空資料中心仍是流量核心。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>台股開高後拉回，Yahoo 即時新聞顯示早盤一度突破 44,800 點、漲逾 430 點，後續賣壓湧現，終場收 44,225.91 點、跌 170.79 點，成交值約 8,192 億元。</li>
+          <li>台積電與金融是兩條主線：台積電盤中拉回但仍報 2,370 元附近；金融族群被 Yahoo 新聞描述為「開趴放紅煙火」，但族群內部分化。</li>
+          <li>熱門股排行顯示群創、力積電、華邦電等成交熱，記憶體/面板人氣延續；但 Yahoo 新聞也提醒記憶體漲跌互見，追價已開始看個股分水嶺。</li>
+          <li>主動式 ETF 熱度很高，00981A 相關新聞強調主動式 ETF 規模破兆、加碼電子供應鏈並調節部分高本益比設備股，法人布局從全面防禦轉向結構選股。</li>
+          <li>台股新聞焦點延伸到研華受惠台積電與 CSP 資本支出、英特爾 18A 仍需證明實力、世界先進認為 AI 不是景氣循環，顯示市場仍把 AI 基建視為中線主軸。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li><strong>今日市場重點：</strong>台股早盤反映台積電 ADR 上揚與台指期夜盤勁揚，一度漲逾 430 點，但隨後賣壓湧現，外資期貨空單居高使盤中翻黑，高低震盪逾 600 點。</li>
+          <li>中央社匯市訊號偏穩，新台幣午盤升 2.7 分、暫收 32.234 元，與鉅亨即時美元/台幣報價相互對上，短線匯率不是台股主要壓力來源。</li>
+          <li>半導體基本面仍強：WSTS 統計第 2 季全球半導體營收 4,030 億美元、上半年年增 102%，全年估 1.655 兆美元，記憶體成長逾 3 倍是主要驅動。</li>
+          <li>DRAM 缺貨的副作用開始浮現，中央社引述市場傳聞指出台積電替 Apple 生產的處理器可能因記憶體短缺影響封裝交貨，但專家認為台積電可透過產線動態調整應對。</li>
+          <li>國際面仍有壓力：CNA 提到美國就業報告前美股多數收黑、伊朗擬限制美以船隻通過荷姆茲海峽使油價大漲，這些都會影響台股午後與下個交易日的風險胃納。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>史上最缺一年將至？記憶體三巨頭把 2027 產能賣光：</strong>鉅亨頭條把記憶體供需推到最前面，AI 公司「跪求晶片」的說法強化 HBM/DRAM 緊缺與報價支撐。</li>
+          <li><strong>供應吃緊！傳輝達擬下調 Rubin Ultra HBM 記憶體配置：</strong>這是記憶體缺貨的另一面，供給緊會推升族群人氣，也可能迫使 AI 平台規格或交期調整。</li>
+          <li><strong>台達永續 AI 峰會：微電網將是未來幾年發展重點：</strong>AI 資料中心擴建讓電力基礎設施成為新主線，台達電、儲能、PDU、強韌電網題材持續吸金。</li>
+          <li><strong>日元已回吐近半干預漲幅，美日匯率保衛戰恐有第二輪：</strong>鉅亨把匯率與政策干預放到頭條，若美元/日圓再失控，亞洲資產波動會被放大。</li>
+          <li><strong>荷姆茲局勢與央行買盤助攻黃金，瑞銀看 2027 年 6 月挑戰 5,200 美元：</strong>原油與黃金同時偏強，代表市場仍在為地緣政治與通膨尾端風險保留避險部位。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <ul class="list">
+        <li>本時段 PyPtt helper 搜尋區間為 2026-08-07 09:30 至 13:52，熱門門檻為 50 推，回看 300 篇後找到 1 篇符合條件熱門文。</li>
+        <li>PTT 熱度集中在馬斯克 Terafab 晶圓廠新聞，討論從 AI 晶片自給、德州建廠、天然氣電廠與儲能，延伸到台積電產能、Intel 合作與資金可行性。</li>
+        <li>推文情緒偏「有趣但懷疑」：版友承認錢與產能需求是真問題，但普遍質疑 1,190 億美元是否足夠、量產需要多久，以及跨入晶圓製造是否低估難度。</li>
+      </ul>
+
+      <div class="ptt-article">
+        <h3>[新聞] 馬斯克要蓋Terafab晶圓廠 首期砸168億美</h3>
+        <div class="ptt-meta">100 推｜AnimalSpirit（動物本能）｜2026-08-07 09:48</div>
+        <div class="mini-title">文章內容重點</div>
+        <ul class="list">
+          <li>SpaceX 與 Tesla 擬在德州 Grimes County 興建名為 Terafab 的先進 AI 半導體製造園區，首期投入 168 億美元，後續完整擴建規模可能上看 1,190 億美元。</li>
+          <li>Terafab 目標是因應 SpaceX、Tesla 未來數年超過 1 太瓦算力需求，園區規劃整合先進邏輯晶片、記憶體晶片、封裝與測試。</li>
+          <li>計畫同時包含自建天然氣發電廠與大規模電池儲能，凸顯 AI 晶片製造與資料中心的瓶頸不只在晶圓產能，也在電力與基礎設施。</li>
+          <li>報導指出 SpaceX 已與英特爾敲定合作，Tesla 也在德州超級工廠北園區啟動研發中心作為前期試驗。</li>
+        </ul>
+        <div class="mini-title">推文重點</div>
+        <ul class="list">
+          <li>支持/看熱鬧派認為「錢能解決一切問題」，也有人把它解讀為排不到台積電產能後的自救。</li>
+          <li>質疑派集中在資本支出不足與時間過長：1,190 億美元要同時做 IC 設計、晶圓製造、封裝、電力，未必夠；五年後是否能量產也被反覆吐槽。</li>
+          <li>不少推文把焦點放在馬斯克風格，認為他常用大計畫與未來故事吸引資金，短線對 Tesla/SpaceX 股價未必是純利多。</li>
+          <li>也有版友用反串方式討論台積電是否被威脅，但主流語氣更像「先看能不能蓋出來」。</li>
+        </ul>
+        <div class="mini-title">重點摘要</div>
+        <p>這篇熱門文把本日 AI 供應鏈焦慮濃縮在同一個故事裡：產能不夠、電力不夠、記憶體不夠，所以大型科技公司想垂直整合。但 PTT 的結論不是直接看多，而是把它視為一個需要長時間驗證的超大型資本支出敘事。</p>
+      </div>
+
+      <div class="mini-title">熱門主題總結</div>
+      <ul class="list">
+        <li><strong>主題一｜AI 公司開始想把晶片產能握在自己手上：</strong>Terafab 的文章內容指出 SpaceX/Tesla 想把邏輯、記憶體、封裝、測試與電力放進同一個園區，推文則把這解讀成排不到台積電產能與 AI 算力需求爆炸後的自救。市場會把它放進「大型科技公司自建供應鏈」的長線敘事。</li>
+        <li><strong>主題二｜資本支出故事很大，但量產懷疑更大：</strong>內文提到首期 168 億美元、完整擴建可能 1,190 億美元，推文仍懷疑錢不夠、時間太久、跨領域障礙被低估。這代表散戶願意追 AI 題材，但對「馬上威脅台積電」這種結論保持距離。</li>
+        <li><strong>主題三｜晶片製造的新瓶頸是電力與基建：</strong>Terafab 自建天然氣電廠與儲能的設定，與鉅亨台達微電網、Yahoo 台灣研華/AI 資料中心題材互相呼應。推文雖然多半玩梗，但核心焦慮其實是 AI 擴張已不只是半導體技術競賽，而是能源、土地、水源與資本配置競賽。</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>AI 仍是主線，但市場正在交易 AI 的瓶頸。</strong>Yahoo Global 看見 AI 股權募資熱，Yahoo 台灣看見台積電/研華/世界先進/英特爾，CNA 與鉅亨看見 DRAM/HBM 缺貨，PTT 則把焦點放到自建晶圓廠。</li>
+          <li><strong>台股不是全面轉弱，而是高位震盪後更挑族群。</strong>指數失守季線附近會讓追價保守，但記憶體、金融、電機、電力基建與主動式 ETF 仍有資金輪動。</li>
+          <li><strong>能源與匯率重新影響科技交易。</strong>油價因荷姆茲變數上行、黃金走高、日圓干預議題升溫，使 AI/半導體多頭不再只看成長，也要看資金成本與地緣風險。</li>
+          <li><strong>缺貨同時是利多與風險。</strong>記憶體缺貨推升報價、營收與市場敘事，但若 HBM/DRAM 影響 Rubin Ultra、iPhone 或先進封裝交貨，將變成終端出貨與估值的壓力。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">finance.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">tw.stock.yahoo.com</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">tw.stock.yahoo.com/news</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（以 helper script 取得）</a>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">
+      <span>Model used: <code>OpenAI GPT-5 Codex</code></span>
+      <span>Generated at: <code>2026-08-07 13:50 CST</code></span>
+      <span>Fetch policy: <code>Yahoo via browser; CNA via web_fetch; Cnyes web_fetch then browser fallback; PTT via PyPtt helper</code></span>
+      <span>Repository: <code>yahoo-finance-pages</code></span>
+    </div>
+  </main>
+</body>
+</html>
