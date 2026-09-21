@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-09-21 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.76);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(37,99,235,.11),transparent 28%),
+        radial-gradient(circle at top right,rgba(15,118,110,.10),transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:220px;height:220px;border-radius:999px;
+      background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%);
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.72);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:900px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .market-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+    .quote{padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.76);border:1px solid var(--line)}
+    .quote span{display:block;color:var(--muted);font-size:.82rem;font-weight:700}
+    .quote strong{display:block;font-size:1.15rem;margin-top:4px}
+    .quote em{font-style:normal;font-size:.86rem;color:#0f766e}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media(max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col,.market-strip{grid-template-columns:1fr}.hero{padding:26px}}
+    @media(max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Morning Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">開盤前後焦點</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">早盤主線是<strong>「風險資產偏強，但總體逆風仍在」</strong>：美股期貨與台股同步走高，AI／半導體、先進封裝與 PCB 題材延續熱度；另一邊，Fed 再升息預期、10 年期美債殖利率站上 5%、油價接近每桶 100 美元，以及美中峰會與中東局勢，仍可能把波動重新拉高。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 9 月 21 日 09:00（Asia/Taipei）｜資料抓取約於 08:59–09:03 完成</p>
+    </section>
+
+    <section class="market-strip">
+      <div class="quote"><span>台股加權</span><strong>47,400.91</strong><em>+220.16（+0.47%）</em></div>
+      <div class="quote"><span>S&P 期貨</span><strong>7,739.50</strong><em>+27.00（+0.35%）</em></div>
+      <div class="quote"><span>WTI 原油</span><strong>98.96</strong><em style="color:#b91c1c">−1.34（−1.34%）</em></div>
+      <div class="quote"><span>VIX</span><strong>14.81</strong><em>−0.63（−4.08%）</em></div>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>風險偏好回來，但不是無條件樂觀</strong>
+        <p>期貨、台股與 AI 供應鏈偏強；利率、油價與地緣政治則保留上方波動風險。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>47,000 點上方開高，資金往 AI 延伸鏈輪動</strong>
+        <p>先進封裝、ASIC、PCB、記憶體與高階銅箔成為盤面主軸，但個別報價敘事出現分歧。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今日變數</div>
+        <strong>川習會、Fed、油價與長債殖利率</strong>
+        <p>四條線都可能改變估值與產業輪動，午盤量能與權值股承接是重要驗證。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li>Yahoo 全球頁面顯示美股期貨普遍上漲：Nasdaq 100 期貨約 <strong>+0.56%</strong>、S&P 期貨約 <strong>+0.35%</strong>，VIX 回落至 14.81；但市場仍在交易「10 月可能再升息」的預期，成長股估值並未完全脫離利率壓力。</li>
+          <li>台股早盤加權指數報 <strong>47,400.91 點、上漲 220.16 點</strong>，電子與金融同步走高。新聞與盤勢欄位聚焦 AI 先進封裝、ASIC、PCB、記憶體、CCL 與外資買進主動式 ETF，顯示資金仍在做產業輪動。</li>
+          <li>市場敘事存在一個需要驗證的矛盾：部分報導引用記憶體供應吃緊與 DRAM 長期需求，宏碁董事長則表示 DDR4、DDR5 並非全面缺貨。短線可交易，但不能把單一報價故事直接等同於整條供應鏈獲利。</li>
+          <li>本週最大宏觀催化劑是 <strong>9 月 24 日川習會</strong>，AI、關稅休兵與稀土供應是市場預期的焦點；同時中東與荷莫茲海峽議題仍讓原油、運價與通膨風險保持高敏感度。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>利率：</strong>Yahoo 全球頁面指投資人已定價 10 月再升息機率超過 50%；鉅亨市場資料則顯示美國 10 年債殖利率約 5.01%、30 年債約 5.33%，高估值成長股的折現率風險仍在。</li>
+          <li><strong>能源與通膨：</strong>WTI 約 98.96 美元、布蘭特約 102.39 美元；若中東、荷莫茲或航運供應再惡化，油價與運價可能重新推高通膨預期。</li>
+          <li><strong>盤面廣度：</strong>台股指數上漲不代表全面轉強。若成交量無法維持、台積電等權值股承接不足，只剩中小型題材股上攻，短線波動與追價風險會同步增加。</li>
+          <li><strong>事件與部位：</strong>美股近期選擇權大量到期、季末再平衡與企業回購靜默期可能放大收盤前波動；勿把期貨上漲直接解讀成趨勢已確認。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance Global</div>
+        <h2>Yahoo Finance（Global）</h2>
+        <ul class="list">
+          <li><strong>期貨偏多：</strong>S&amp;P 期貨 7,739.50（+0.35%）、Dow 期貨 52,200（+0.23%）、Nasdaq 期貨 30,082.50（+0.55%），Russell 2000 期貨也小幅上漲。</li>
+          <li><strong>利率重新成為主線：</strong>首頁主標題指出華爾街開始準備更多 Fed 升息，市場認為 10 月再升息的機率已超過一半；這是今天最需要與「科技股上漲」並讀的訊號。</li>
+          <li><strong>風險指標暫時平穩：</strong>VIX 14.81、黃金 4,403.20 美元、比特幣 81,564 美元；原油期貨約 94.66 美元、下跌約 1.48%，但能源價格絕對水位仍高。</li>
+          <li><strong>資金集中在高波動與 AI 相關標的：</strong>MSTR、BTDR、MARA、PS、SBET 位列漲幅前段；NVDA 上漲 1.34%，MU 上漲 3.92%，顯示科技／加密概念仍有追價，但 XENE、SMR 等跌幅也很深，個股分化明顯。</li>
+          <li><strong>宏觀新聞延伸：</strong>住房負擔、油價高於 2024 年選舉同期、AI 監管與美中關係同時占據首頁，市場正在把政策、能源與科技估值放進同一個交易框架。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance Taiwan</div>
+        <h2>Yahoo Finance（台灣）</h2>
+        <ul class="list">
+          <li><strong>指數開高：</strong>加權指數 47,400.91 點，上漲 220.16 點（+0.47%），成交金額約 739.81 億；電子指數 3,003.10、金融指數 3,594.34，盤面呈現電子與金融同步偏強。</li>
+          <li><strong>盤前／早盤焦點：</strong>川習會、中秋連假前量能、台股是否再創高，以及券商對 CCL、AI 權值股與業績題材股的觀察，是當前市場最常出現的關鍵字。</li>
+          <li><strong>AI 供應鏈仍是核心：</strong>新聞頁集中出現先進封裝、ASIC、PCB、AMD 晶片漲價、Nscale IPO 與 AI 雲端等題材；台廠受惠敘事從晶圓製程延伸到封裝、測試、銅箔、散熱與高速互連。</li>
+          <li><strong>記憶體需要基本面確認：</strong>熱門新聞一方面討論記憶體漲價與法人買超，另一方面引用宏碁董座稱 DDR4、DDR5 沒有全面缺貨；價格、庫存與終端需求仍要分開驗證。</li>
+          <li><strong>國際線牽動台股：</strong>油價、航運成本、Fed 升息壓力與美中稀土／AI 談判，可能透過長債殖利率、美元與科技供應鏈訂單預期影響今日盤中輪動。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li><strong>台股量能回溫、類股輪動：</strong>中央社指出台股上週價漲量增、重登 47,000 點，本週面臨川習會與中秋連假，若美股續強，指數有機會在輪動中挑戰前高。</li>
+          <li><strong>能源成本創高：</strong>中東戰爭擾動原油供應，法國柴油均價升至每公升 2.41 歐元、再創歷史新高；能源成本對企業毛利與家庭支出的壓力值得持續追蹤。</li>
+          <li><strong>台灣油價暫時凍漲：</strong>台塑石化與中油均公告 21 日起汽、柴油價格不調整，短期有助平穩國內物價，但不代表國際能源風險已解除。</li>
+          <li><strong>外幣存款續創高：</strong>本國銀行 7 月底外幣存款餘額達 16.945 兆元，月增 4,846 億元，顯示企業與資金配置對外幣資產的需求仍強。</li>
+          <li><strong>AI 與台灣供應鏈：</strong>黃仁勳再次強調台灣是全球 AI 核心；中央社同時整理電力、散熱與高速互連為 AI 硬體三大課題，產業成長仍伴隨基礎設施瓶頸。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>5 則最值得看的重點</h2>
+        <ul class="list">
+          <li><strong>貝森特盛讚美中磋商「非常成功」：</strong>美中高層預備會談聚焦 AI、關稅與稀土，並計畫建立 AI 通報機制，川習會的政策訊號將直接影響科技與出口供應鏈。</li>
+          <li><strong>IBS：先進製程缺、成熟製程剩：</strong>市場同時看到 Token、DRAM、NAND、HBM 與 CoWoS 需求上升，但供給分布不均，受惠者與庫存壓力可能並存。</li>
+          <li><strong>股債等多類資產年底可能同步上漲：</strong>高盛認為市場對升息的悲觀預期可能過度，若通膨與油價降溫，風險資產與債券有機會同時修復；這仍屬情境判斷而非已確認趨勢。</li>
+          <li><strong>日本央行出現升息悖論：</strong>兩張反對票與日圓、日美利差議題讓亞洲匯率波動升溫，台股外資流向不能只看美國利率。</li>
+          <li><strong>短期美債發行可能突破 1 兆美元：</strong>政府融資需求增加可降低短期融資成本，但會放大再融資、殖利率與美元政策的中期壓力。</li>
+        </ul>
+        <div class="ptt-note">鉅亨市場資料快照：台積電 2,460 元；台積電 ADR +1.03%；輝達 +1.34%；美元／台幣 31.758；布蘭特原油 102.39 美元；比特幣 81,513.99 美元。</div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT Stock</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>熱門文章清單</h3>
+          <ul class="list">
+            <li><strong>PTT source failed</strong>：依 runbook 執行 PyPtt helper，但本次登入失敗，沒有取得可供整理的文章、作者、時間、內文或推文資料。</li>
+          </ul>
+          <div class="ptt-note">本次未以 browser 或 web_fetch 開啟 PTT 股市版，也未用其他來源補寫熱門文章；因此沒有虛構文章條目。</div>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <ul class="list">
+            <li><strong>無法產出：</strong>PyPtt helper 在 09:01 左右回報「登入失敗」，沒有文章內文與推／噓文原料，故本層依規則標示 source failed。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>今天是「偏多開局、宏觀待驗證」。</strong> 美股期貨、VIX 與台股指數都給出正面訊號，但升息預期與長債殖利率仍對科技估值形成上限。</li>
+          <li><strong>AI 主線沒有消失，正在往基礎設施擴散。</strong> 台股盤面從晶片延伸到先進封裝、ASIC、PCB、CCL、散熱與高速互連；這能提高選股範圍，也提高題材輪動速度。</li>
+          <li><strong>能源是跨市場共同的風險因子。</strong> 油價與航運成本若因中東局勢重新上升，可能同時打擊通膨、利率、消費與企業毛利；台灣油價凍漲只提供短期緩衝。</li>
+          <li><strong>美中會談是本週方向性事件。</strong> AI 通報、關稅休兵與稀土供應若有正面進展，有利科技與出口敘事；若談判轉差，供應鏈與風險溢價會快速反應。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance（Global）</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo 股市台灣</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 中央社｜股市 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨網頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>OpenAI Codex（GPT-5）</code></div>
+      <div><strong>Fetcher：</strong><code>Yahoo 強制 browser；CNA／鉅亨先 web_fetch，低產出後改 browser；PTT 僅 PyPtt helper</code></div>
+      <div><strong>PTT status：</strong><code>source failed（PyPtt 登入失敗）</code></div>
+    </footer>
+  </main>
+</body>
+</html>
