@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-09-30 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.76);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --warning:#9a3412;
+      --warning-bg:#fff7ed;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.11), transparent 28%),
+        radial-gradient(circle at top right, rgba(15,118,110,.10), transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:auto -60px -60px auto;
+      width:220px;height:220px;border-radius:999px;
+      background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%);
+    }
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(255,255,255,.72);border:1px solid var(--line);
+      color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em;
+    }
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:900px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{
+      background:var(--panel-soft);
+      border:1px solid rgba(255,255,255,.7);
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow);
+      padding:24px;
+      backdrop-filter:blur(10px);
+    }
+    .card.compact{padding:20px}
+    .wide{grid-column:1/-1}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);
+      color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+    }
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .warning{border:1px solid #fed7aa;background:linear-gradient(180deg,#fffaf4,#fff7ed)}
+    .warning h2{color:var(--warning)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){
+      .summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}
+      .hero{padding:26px}
+    }
+    @media (max-width:640px){
+      .shell{padding:18px 14px 56px}
+      .hero,.card{padding:20px}
+      h1{font-size:2rem}
+      .lead{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Morning Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">2026-09-30</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">今日早盤的核心不是單一方向，而是<strong>高殖利率壓估值、AI／半導體撐題材、能源與地緣政治製造通膨風險</strong>的分化盤。美股三大指數收低但費半逆勢走強，台股開盤後則由權值與電子股帶動反彈。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 9 月 30 日 09:00（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>指數承壓，AI 與半導體仍有買盤</strong>
+        <p>美股道瓊、標普與那指小跌，費半上漲 1.32%；長天期美債殖利率創高，市場風險偏好仍不穩。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股早盤</div>
+        <strong>加權 48,194 點、上漲 1.18%</strong>
+        <p>Yahoo 09:01 頁面顯示上市與上櫃同步走高，台積電、聯發科、日月光投控與台達電帶動成交。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今日變數</div>
+        <strong>美債殖利率、油價與美光財報</strong>
+        <p>利率是否繼續走高、伊朗與美國談判及美光盤後財報，將決定 AI／記憶體行情能否延續。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>美股是「大盤弱、半導體強」：</strong>9 月 29 日道瓊跌 0.26%、標普 500 跌 0.17%、那斯達克跌 0.09%，但費城半導體指數逆勢漲 1.32%，應用材料大漲 5.19%。</li>
+          <li><strong>利率仍是最大總體壓力：</strong>10 年期美債殖利率盤中約 5.27%～5.29%，30 年期一度升至約 5.6%，創 2002 年以來高點；房貸利率與高估值科技股因此承壓。</li>
+          <li><strong>台股早盤出現反彈：</strong>上市加權指數報 48,194.04 點、上漲 562.08 點，上櫃指數上漲 1.59%；但這是在前一交易日大跌 392.64 點後的修復，仍需觀察權值股能否穩住。</li>
+          <li><strong>AI 主線尚未熄火但進入驗證期：</strong>輝達、OpenAI、Anthropic 的 AI 安全與產品消息延續熱度，Micron 盤後財報則會直接檢驗 HBM、DRAM、NAND 需求能否支撐記憶體估值。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>若美債長端殖利率續創高，市場可能同時下修高本益比科技股與房地產相關資產的估值。</li>
+          <li>中東談判若再度失敗，油價與運輸成本可能反彈，能源通膨會讓 Fed 的降息或暫停升息空間更窄。</li>
+          <li>AI 題材目前仍集中在少數大型科技與半導體標的；若財報、資本支出或訂單展望不如預期，輪動可能快速反向。</li>
+          <li>PTT 股市版本次 helper 登入失敗，群眾情緒樣本缺失，不以其他頁面或瀏覽器內容代替。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>全球市場</h2>
+        <ul class="list">
+          <li>美股 9 月 29 日收盤：道瓊 <strong>51,349.92，-0.26%</strong>；標普 500 <strong>7,670.84，-0.17%</strong>；那斯達克 <strong>26,797.54，-0.09%</strong>；費城半導體 <strong>12,629.16，+1.32%</strong>。</li>
+          <li>長債殖利率成為主要壓力來源：Yahoo 首頁顯示 10 年期約 5.26%，30 年期殖利率上升至 5.6% 上方；相關新聞並指出 30 年期已達 2002 年以來高點，房貸利率升至 7.58%。</li>
+          <li>AI 仍是全球新聞主軸：川普與輝達、OpenAI、Anthropic 等業者討論自律協議；OpenAI 推出 Dots AI agents，Anthropic 上市與募資消息則持續刺激相關估值，但市場也開始擔心 AI 數學與資本支出的回報。</li>
+          <li>個股與跨資產呈現分化：Apple 跌 <strong>2.66%</strong>、Nvidia 跌 <strong>0.72%</strong>，Meta 漲 <strong>3.24%</strong>，Micron 漲 <strong>1.05%</strong>；黃金約 4,209.80 美元、比特幣約 83,379.85 美元，原油近月約 89.40 美元。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>台灣市場</h2>
+        <ul class="list">
+          <li>09:01 行情顯示上市加權指數 <strong>48,194.04 點、+562.08 點（+1.18%）</strong>；上櫃 <strong>418.79 點、+1.59%</strong>；電子類股 +1.31%、金融類股 +0.52%。</li>
+          <li>權值與成交主軸偏多：台積電 2,500 元、+1.01%，聯發科 5,030 元、+2.44%，日月光投控 720 元、+4.80%，台達電 1,890 元、+3.00%；台積電單一成交金額約 45.88 億元。</li>
+          <li>早盤焦點集中在 AI 與供應鏈：亞馬遜加碼金像電私募、超微收購 World Labs、台積電美國擴產與台鏈受惠，以及鴻海發放 117.5 億元員工分紅等消息共同支撐人氣。</li>
+          <li>強勢股與題材股仍活躍：GIS-KY 近 8 天漲逾 45%，友達、彰源、群創等列入成交量排行；同時，嘉晶本益比偏高、金像電等注意股消息提醒市場，追價風險並未消失。</li>
+          <li>國際欄位顯示台積電 ADR 456.94 美元、+0.90%，美元／台幣約 31.844；這使台股同時受惠於半導體情緒，也暴露在美債殖利率與美元波動中。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li>中央社最新財經 RSS 指出，油價自近期漲勢回落，但公債殖利率走高、投資人等待美國關鍵通膨數據，美股三大指數收低，費半則上漲逾 1%。</li>
+          <li>中東局勢仍是能源市場變數：沙烏地阿拉伯增加重要管線原油供應的消息，暫時蓋過美伊僵局疑慮，國際油價收低；若談判再度惡化，方向可能快速反轉。</li>
+          <li>科技線方面，OpenAI 推出價格約為旗艦產品五分之一的中階 AI 模型；AI 產品降價與普及速度加快，可能擴大使用量，但也會提高業者對算力成本與商業模式的要求。</li>
+          <li>台灣企業與金融線仍有基本面消息：玉山金注資三商美邦人壽 160 億元到位；壽險業 8 月獲利 617 億元、前 8 月 3,394 億元，均創同期新高，但富崴與台電離岸風電工程爭議仍涉及近 60 億元資金。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>5 則最值得看的重點</h2>
+        <ul class="list">
+          <li><strong>三星：明年 HBM 將占 DRAM 全球產能近 30%：</strong>AI 伺服器需求仍把產能推向高頻寬記憶體，傳統 DRAM 供應可能承壓，記憶體價格與供需是今日台股的重要驗證點。</li>
+          <li><strong>Muse 劍指蘋果生態系：</strong>AI 代理人若直接承接使用者任務，可能分走 App Store 與服務收入；同時記憶體晶片成本上升，也讓蘋果新任 CEO 面臨成本與人事壓力。</li>
+          <li><strong>美國釋出 4,000 萬桶儲備油、美伊談判仍卡關：</strong>美國選前壓油價與中東「零荷姆茲」戰略同時出現，短期有抑制油價的政策訊號，但供應與地緣風險尚未解除。</li>
+          <li><strong>Fed 官員喊「不急」：</strong>鉅亨整理顯示，威廉斯等官員的偏觀望訊息使 10 月升息機率回落至約五成；然而 10 年、30 年殖利率仍在高位，市場尚未真正解除利率壓力。</li>
+          <li><strong>AI 資本支出與記憶體財報進入驗收：</strong>三星電機 AI 伺服器 MLCC 訂單、OpenAI 可能募資至少 300 億美元，以及 Micron 盤後財報，將分別從零組件、平台融資與記憶體獲利三個角度檢驗 AI 景氣。</li>
+        </ul>
+        <div class="ptt-note">鉅亨 browser 行情快照：台積電 ADR 456.94 美元、輝達 227.21 美元、30 年美債約 5.568%、美元／台幣約 31.850、比特幣約 83,432 美元；原油報價因契約與市場不同，與 Yahoo 頁面可能存在差異。</div>
+      </article>
+    </section>
+
+    <section class="card wide warning">
+      <div class="kicker">PTT Stock</div>
+      <h2>PTT 股市版</h2>
+      <div class="ptt-note"><strong>PTT source failed：</strong>依規則執行 PyPtt helper，但本次登入失敗；原始輸出為「登入帳號 seagal」及「PTT 摘要抓取失敗：登入失敗」。本節不改用 browser 或 web_fetch 補抓。</div>
+      <div class="two-col" style="margin-top:18px">
+        <div>
+          <h3>熱門文章清單</h3>
+          <ul class="list">
+            <li>本次無法取得任何可驗證的熱門文章，因此不列出標題、作者、時間、內文或推文摘要。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <ul class="list">
+            <li>因 helper 登入失敗，沒有可用的文章內文與推文資料，無法可靠整理三個熱門主題；避免以其他來源推測版上情緒。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>利率先於指數：</strong>長天期美債殖利率創高，解釋了為何美股三大指數偏弱；費半與部分 AI 股能上漲，代表資金仍願意押注成長，但要求更強的獲利與訂單證據。</li>
+          <li><strong>台股反彈不等於風險解除：</strong>台股早盤從前一交易日的跌勢修復，台積電、聯發科、日月光投控帶動指數，但盤面同時出現注意股與高本益比警示，較像高檔輪動而非全面無風險上攻。</li>
+          <li><strong>AI 供應鏈仍是共同主線：</strong>HBM、MLCC、先進製程、AI 代理人與資料中心資本支出，從美國、韓國到台灣反覆出現；今日的關鍵是「需求是否轉成毛利與現金流」。</li>
+          <li><strong>能源與外交是二階風險：</strong>油價因供應消息回落，但美伊談判與荷姆茲海峽議題未解；一旦能源價格再上行，會同時打擊通膨預期、債券與高估值科技股。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance Global</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo Finance 台灣</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 股市 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock（本次 helper failed）</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>openai/gpt-5.6-luna</code></div>
+      <div><strong>Fetcher：</strong><code>Yahoo browser；其他來源 web_fetch first，鉅亨低產出改 browser；PTT 僅 PyPtt helper</code></div>
+      <div><strong>提醒：</strong>本頁為資訊整理，不構成投資建議；報價可能因來源與延遲時間不同而有差異。</div>
+    </footer>
+  </main>
+</body>
+</html>
