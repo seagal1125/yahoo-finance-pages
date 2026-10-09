@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance 晨間摘要｜2026-10-09 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#fff;
+      --panel-soft:rgba(255,255,255,.78);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --danger-bg:#fff1f2;
+      --warn:#9a3412;
+      --warn-bg:#fff7ed;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:16px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(37,99,235,.11),transparent 28%),
+        radial-gradient(circle at top right,rgba(15,118,110,.10),transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.6);
+      background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);border-radius:var(--radius-xl);box-shadow:var(--shadow);padding:34px;
+    }
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%)}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:900px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.7);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px)}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .notice{border:1px solid #fed7aa;background:linear-gradient(180deg,#fffaf5,var(--warn-bg));color:#7c2d12;border-radius:16px;padding:15px 17px}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media(max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media(max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">晨間摘要</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">2026 年 10 月 9 日・週五</span>
+      </div>
+      <h1>Yahoo Finance 晨間摘要</h1>
+      <p class="lead">盤面主線是<strong>「美股 AI／記憶體承壓、台股現貨仍有資金接棒」</strong>：OpenAI 營收預期落差、半導體與高殖利率同時施壓全球科技估值；但台股開盤快照裡，台積電、聯發科、南亞科與台塑仍上漲，顯示資金正在高檔換手，而不是全面撤退。油價、殖利率與中東局勢則是今天最需要盯的總體變數。</p>
+      <p class="meta"><strong>資料時間：</strong>2026 年 10 月 9 日 09:00（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>AI 交易降溫，但台股仍有族群輪動</strong>
+        <p>費半、台積電 ADR 與多檔記憶體股下跌；台股現貨快照卻由權值、記憶體與塑化題材支撐，呈現外部利空與本地買盤拉鋸。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>台積電 2,550、聯發科 4,690，盤面偏向換手</strong>
+        <p>抓取時台積電約漲 1.35%、聯發科約漲 3.00%、南亞科約漲 3.50%；這是開盤快照，不代表收盤結果。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今日變數</div>
+        <strong>AI 獲利驗證、長債殖利率與能源風險</strong>
+        <p>10 年美債殖利率約 5.236%、30 年約 5.610%；若油價與地緣政治再升溫，高本益比資產的波動會被放大。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>全球科技先承壓：</strong>Yahoo Finance 全球首頁以「晶片賣壓、油價上升」為主軸，CNA 與鉅亨同步指出 OpenAI 年化營收低於市場先前預期，費半、台積電 ADR 與多檔記憶體股走弱。</li>
+          <li><strong>台股出現相對強勢：</strong>Yahoo 股市快照顯示台積電 2,550（+35、+1.35%）、聯發科 4,690（+145、+3.00%）、南亞科 532（+18、+3.50%）；但新聞頁也提醒外資在國慶前調整權值與 ETF 部位，不能把早盤上漲直接當成風險解除。</li>
+          <li><strong>基本面出現兩種訊號：</strong>台積電、聯發科、力積電與部分代工／品牌廠營收創高；另一方面全球 PC 第三季出貨量衰退超過 20%，手機記憶體價格上漲也迫使部分廠商考慮減產，景氣正在分化。</li>
+          <li><strong>今天先看三件事：</strong>AI 相關公司能否用營收與現金流支撐估值、長債殖利率是否續升，以及中東／颶風是否讓能源供應風險重新定價。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>OpenAI 營收消息與 Oracle 以債務支應 AI 晶片採購的敘事，可能讓市場從「AI 成長」轉向檢查資本支出回收期與融資成本。</li>
+          <li>中東衝突、伊朗相關軍事風險與颶風逼近墨西哥灣，若推升油價或運輸成本，通膨與利率交易會再度壓縮成長股估值。</li>
+          <li>台股現貨與台積電 ADR 的方向暫時背離；若本地買盤無法延續，開盤相對強勢可能轉成補跌壓力。</li>
+          <li>PTT 股市版本次因 helper 登入失敗沒有可用原料，散戶情緒觀測缺口已明確標示，不以其他來源代填。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Source 01</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li>全球首頁抓取時顯示美國市場已收盤，主視覺新聞為<strong>晶片賣壓、油價上升</strong>；「S&amp;P 500、Nasdaq 連續第二日下跌、AI 交易受打擊」是隔夜風險資產的核心敘事。</li>
+          <li><strong>SpaceX／Starlink 頻譜交易：</strong>SpaceX 取得頻譜資產後，電信股相關標題集中出現，AT&amp;T、T-Mobile、Verizon 盤後承壓；這是產業競爭格局變化，不只是單日題材。</li>
+          <li><strong>AI 估值進入驗證期：</strong>首頁同時出現 OpenAI、Anthropic IPO、AI 財富分配、Oracle AI 晶片債務與 TSMC 季度表現等內容，市場焦點從「AI 有沒有需求」轉向「營收、獲利與融資是否跟得上」。</li>
+          <li><strong>利率仍是壓力源：</strong>聖路易聯準銀行總裁 Musalem 被引述認為未來 6 個月可能需要更多升息，對高本益比成長股與長久期資產不利。</li>
+          <li>其他熱門題材包括 Meta 禁止 TikTok 在其旗下 App 投放廣告、進口商關稅退款訴訟擴大、American Express 因反洗錢控制被罰 3.5 億美元；監管與企業事件仍在增加個股分化。</li>
+        </ul>
+        <div class="ptt-note">抓取方式：依共享設定直接使用 browser 等待頁面完成渲染；未以 web_fetch 作為 Yahoo 全球頁面先行抽取。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Source 02</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li>「今日要聞」把焦點放在<strong>國慶前外資調整權值股、台塑與被動元件相對活躍</strong>；盤面更像高檔資金換手，而非所有族群同步上攻。</li>
+          <li><strong>記憶體線：</strong>DRAM 投片價格大漲 45%，力積電 9 月營收年增近 94% 創高；低軌衛星網通廠也以 9 月營收年增 76.8% 成為強勢題材。</li>
+          <li>台股熱門排行快照顯示，成交量前列包括主動中信台灣收益 00406A（279,707 張）、友達 2409（273,195 張、+3.56%）、台塑 1301（244,197 張、+7.82%）、群益臺灣加權正 2（236,925 張、+2.24%）。</li>
+          <li>成交金額前列包括台積電 2330（2,550、+35、+1.35%）、南亞科 2408（532、+18、+3.50%）、聯發科 2454（4,690、+145、+3.00%）、國巨與華新科；權值與記憶體仍有本地買盤。</li>
+          <li>新聞頁同時提醒<strong>費半下跌 3.39%、台積電 ADR 下跌約 3%、外資減碼 0050</strong>；因此早盤的相對強勢要和隔夜 ADR、外資流向一起看。</li>
+        </ul>
+        <div class="ptt-note">抓取方式：依共享設定以 browser 分別讀取台股首頁與新聞頁；價格與成交量是抓取當下頁面快照，不是收盤數據。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Source 03</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li><strong>SpaceX 進軍手機通訊：</strong>SpaceX 同意收購可涵蓋全美的低頻段無線電頻譜，消息公布後美國三大電信業者盤後股價重挫，產業競爭與頻譜資源重新成為市場變數。</li>
+          <li><strong>AI 預期降溫：</strong>媒體披露 OpenAI 年化營收低於先前傳聞，帶動美股主要指數多數收黑，那斯達克下挫超過 1%，AI 類股承壓。</li>
+          <li><strong>能源風險升高：</strong>國際油價上漲約 4%，背景包括中東戰事疑慮與颶風接近美國墨西哥灣沿岸，供應中斷風險同時出現。</li>
+          <li><strong>地緣政治延伸：</strong>市場傳出美國可能在期中選舉前對伊朗發動新攻擊，歐洲三大股市收黑，油價一度大漲逾 5%。</li>
+          <li><strong>台灣企業營收仍有韌性：</strong>精誠資訊 9 月營收 83.72 億元、年增 55.69%；緯致科技第三季營收 37.52 億元、年增 25.6%。另有宏碁 9 月營收年增 17.6%、華碩年增 17.7%，AI 與企業數位需求仍在支撐部分公司。</li>
+        </ul>
+        <div class="ptt-note">抓取方式：web_fetch 取得 CNA 財經 RSS；摘要以最新股市相關條目與其原始連結為準。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Source 04</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>台股上五萬、高檔資金換手：</strong>鉅亨 08:50 頭條把焦點放在指數高檔的資金重新配置；這與 Yahoo 台股快照中權值、記憶體與 ETF 同時活躍的樣貌一致。</li>
+          <li><strong>全球 PC 景氣出現警訊：</strong>第三季全球 PC 出貨量衰退超過 20%，但蘋果市占率逆勢升至 9.5%；產業不是全面轉弱，而是品牌與產品組合分化。</li>
+          <li><strong>美股科技股重挫：</strong>鉅亨列出的盤面變化包括輝達 -2.94%、博通 -4.35%、美光 -4.79%，並引用分散投資的觀點；AI 族群的擁擠交易風險升高。</li>
+          <li><strong>OpenAI 與記憶體雙重重新定價：</strong>OpenAI 年化營收消息被指較先前報導低 200 億美元；同時三星財測不如預期、記憶體族群普遍下跌，市場開始檢查 AI 需求能否穿透到硬體獲利。</li>
+          <li><strong>跨資產價格偏緊：</strong>鉅亨市場焦點表顯示 10 年美債殖利率約 5.236%、30 年約 5.610%、美元／台幣約 31.875；台積電 ADR 約 -3.01%，黃金小漲、比特幣約 -1.96%，資金在風險資產間明顯分化。</li>
+        </ul>
+        <div class="ptt-note">抓取方式：web_fetch 對首頁與頭條頁內容不足，依規則改用 browser 讀取動態內容；本節取 5 則最值得追蹤的重點。</div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Source 05</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>熱門文章清單</h3>
+          <div class="notice"><strong>PTT source failed：</strong>依規則執行 PyPtt helper 後，程式於 09:00 時段登入帳號 <code>seagal</code> 失敗，未取得任何文章內文或推文原料。因此本次沒有可可靠列出的熱門文章；未改用 browser 或 web_fetch 開啟看板代替。</div>
+          <div class="ptt-note">文章欄位（標題、推文數／作者／時間、文章內容重點、推文重點、重點摘要）因來源失敗而無資料。</div>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <div class="notice">來源失敗，無法依內文與推文交叉整理 3 個熱門主題；本節不推測散戶情緒，也不以其他新聞來源冒充 PTT 觀點。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>外部利空與本地買盤同時存在：</strong>美股半導體、台積電 ADR 與記憶體下跌，但台股現貨的台積電、聯發科、南亞科與台塑仍走強，代表資金正在由熱門權值／高估值部分轉向具營收或報價支撐的族群。</li>
+          <li><strong>AI 不是消失，而是進入驗證：</strong>台積電與聯發科營收創高、企業數位需求仍強，支持 AI 長期需求；但 OpenAI 營收落差、Oracle 融資與全球 PC 衰退提醒市場，題材必須逐步轉化成現金流。</li>
+          <li><strong>能源、利率、匯率形成同一條風險鏈：</strong>中東／颶風推升供應疑慮，高長債殖利率抬高折現率，美元／台幣約 31.875 也讓台灣資產面臨外資與匯率的雙重觀察。</li>
+          <li><strong>產業破壞式新聞增加：</strong>SpaceX 的頻譜與手機通訊布局、PC 品牌市占變化、記憶體供需調整，顯示今天不能只看指數；商業模式與供應鏈位置的變動可能比單日漲跌更重要。</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="kicker">今日觀察清單</div>
+        <h2>接下來盯什麼</h2>
+        <ul class="list">
+          <li>台積電與聯發科的早盤強勢能否維持，或是否出現現貨補跌；同步觀察外資、0050 與槓桿 ETF 的資金方向。</li>
+          <li>美國 10 年／30 年債殖利率是否續升，以及油價與美元是否重新同步走強。</li>
+          <li>AI 與記憶體公司的財測、資本支出、訂單與庫存訊號，是否足以抵銷 OpenAI 營收落差帶來的估值壓力。</li>
+          <li>中東局勢、伊朗相關消息與墨西哥灣天候是否造成供應鏈或能源價格二次衝擊。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance（Global）</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo 股市（台灣）</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 股市新聞</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨網首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨網頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT 股市版（本次未開頁抽取）</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span><strong>資料時間：</strong>2026-10-09 09:00（Asia/Taipei）</span>
+      <span><strong>模型：</strong>GPT-5（Codex）</span>
+      <span>數據為抓取時頁面快照；不構成投資建議。</span>
+    </footer>
+  </main>
+</body>
+</html>
