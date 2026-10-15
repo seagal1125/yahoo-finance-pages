@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-10-15 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.76);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --amber:#a16207;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(37,99,235,.11),transparent 28%),
+        radial-gradient(circle at top right,rgba(15,118,110,.10),transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.68);
+      background:linear-gradient(135deg,rgba(255,255,255,.93),rgba(240,247,255,.88));
+      backdrop-filter:blur(12px);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%)}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:920px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}.meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.72);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px)}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}.summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}.list li{margin:0 0 12px}.list li:last-child{margin-bottom:0}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}.risk h2{color:var(--danger)}
+    .watch{border:1px solid #fde68a;background:linear-gradient(180deg,#fffbeb,#fff7d6)}.watch h2{color:var(--amber)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Morning Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">2026-10-15</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">美國 9 月 CPI 年增 <strong>3.7%</strong> 高於預期，隔夜科技與半導體承壓；台股開盤前又面臨台指期夜盤下挫 853 點、台積電法說與 48K 保衛戰。今天的市場主線是 <strong>通膨／利率、AI 資本支出、能源與地緣風險</strong> 同時定價。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 10 月 15 日 09:00（Asia/Taipei）</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>通膨升溫，風險偏好轉弱</strong>
+        <p>那斯達克跌 1.88%、費城半導體跌 4.30%，VIX 上升 10.48%；市場重新提高對高利率維持更久的敏感度。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>指數承壓，法說與強勢股分化</strong>
+        <p>Yahoo 股市頁面顯示上市、上櫃與電子指數下跌；同時台積電法說、記憶體、AI 與 ETF 題材仍吸引資金。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今日變數</div>
+        <strong>AI 故事要用獲利抵銷殖利率壓力</strong>
+        <p>AI 基建支出仍被大摩看好，但晶片股賣壓、資料中心融資與債券殖利率讓估值驗證更嚴格。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>宏觀先壓住科技股：</strong>CNA 指出美國 9 月 CPI 年增 3.7% 高於預期，市場重新討論 Fed 升息可能；Yahoo Finance 同步顯示那斯達克跌 1.88%、費半相關個股普遍走弱。</li>
+          <li><strong>台股開盤前的第一個訊號偏空：</strong>Yahoo 股市新聞以「台指期夜盤瀉 853 點、面臨 48K 保衛戰」為焦點，上市指數頁面顯示下跌 2.88%，上櫃與電子指數跌幅更大。</li>
+          <li><strong>AI 主線沒有消失，但進入基本面辨識期：</strong>鉅亨整理大摩認為 AI 年度資本支出可能維持 1 兆美元，同時 Nvidia 的 Vera Rubin 機櫃設計與 CUDA-X 工具仍有題材；然而輝達、台積電 ADR、CoreWeave 等報價已反映賣壓。</li>
+          <li><strong>能源與地緣風險是第二條折價率：</strong>CNA 指出中東與俄烏衝突使油品供應再受威脅；油價、美元與殖利率若同步走高，將繼續壓縮高本益比資產的容錯空間。</li>
+        </ul>
+      </article>
+      <article class="card watch">
+        <div class="kicker">Market data note</div>
+        <h2>資料快照提醒</h2>
+        <ul class="list">
+          <li>不同頁面的報價時間不完全相同：Yahoo 股市標示台股盤中，Yahoo Finance 顯示美股前一交易日與期貨，鉅亨 StockQ 另有 08:50／09:00 的即時欄位。</li>
+          <li>頁面同時顯示指數走弱與部分台股大型股、ETF 報價上揚，可能反映撮合時間、資料刷新或不同商品欄位差異；本 digest 以來源與時間標示為準，不把單一快照當成收盤結論。</li>
+          <li>PTT section 的指定 PyPtt helper 本次在登入階段失敗，因此沒有版上文章、推文或情緒資料可供交叉驗證。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance Global</div>
+        <h2>Yahoo Finance (Global)</h2>
+        <ul class="list">
+          <li><strong>期貨與波動率偏弱：</strong>S&amp;P 500 期貨 7,746.75、下跌 0.30%；Nasdaq 期貨 29,954.25、下跌 0.76%；VIX 16.87、上升 10.48%。</li>
+          <li><strong>通膨是首頁主敘事：</strong>Yahoo Finance 聚焦 CPI 年增 3.7% 與 Fed 升息疑慮；同頁「Stock market today」指出道瓊上漲，但 S&amp;P 500 與 Nasdaq 下跌，顯示指數內部分化。</li>
+          <li><strong>晶片與 AI 基建承壓：</strong>Nvidia 下跌 3.16%、ASML 下跌 3.94%，CoreWeave 下跌 15.46%；Yahoo 另以「晶片賣壓深化」串起高 CPI 與科技股回檔。</li>
+          <li><strong>AI 需求故事仍有正面訊號：</strong>首頁列出 Anthropic 第 3 季營收達 168 億美元，以及 Matter Venture Partners 投入 4.5 億美元押注機器人；市場焦點從需求有沒有，轉向資本支出能否產生回報。</li>
+          <li><strong>個股分化放大：</strong>Dell 下跌 11.27%、Bank of America 下跌 4.76%，但 Bending Spoons 上漲 41.20%、Apple 上漲 0.50%；高波動環境下，事件與財報對個股的影響大於指數方向。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance Taiwan</div>
+        <h2>Yahoo Finance (台灣)</h2>
+        <ul class="list">
+          <li><strong>主要指數承壓：</strong>頁面抓取時上市 47,226.22、下跌 1,399.61 點（-2.88%）；上櫃 405.16、下跌 14.97 點（-3.56%）；電子指數跌 3.31%，金融指數跌 0.79%。</li>
+          <li><strong>盤前焦點指向 48K 與台積電法說：</strong>熱門新聞包括台指期夜盤下跌 853 點、台積電法說會今日登場、法人看好第 3 季毛利率上看 68%，以及 CPI 升溫造成費半重挫 4.3%。</li>
+          <li><strong>強勢股仍有局部行情：</strong>頁面漲幅排行包括台郡 6269（+9.87%）、隴華 2424（+9.65%）、佳大 2033（+8.08%）；成交金額則集中在台積電、聯發科、台光電、緯穎與台達電。</li>
+          <li><strong>權值與 ETF 報價呈現分化：</strong>頁面顯示台積電 2,435 元、上漲 2.21%，聯發科上漲 5.36%，元大台灣 50（0050）上漲約 3.01%；這些欄位與指數跌幅的時間差需留意，不能直接視為收盤表現。</li>
+          <li><strong>外部市場仍偏緊：</strong>台積電 ADR 下跌 3.40%、輝達下跌 3.16%，美元／新台幣約 32.07、上漲 0.26%；台股能否穩住，仍取決於法說指引與外資風險偏好。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA</div>
+        <h2>CNA 中央社｜股市</h2>
+        <ul class="list">
+          <li><strong>美國 CPI 高於預期：</strong>9 月 CPI 年增率升至 3.7%，主要受燃料成本上漲影響；市場因此提高對 Fed 進一步升息的疑慮，美股主要指數收黑、那指跌逾 1.8%。</li>
+          <li><strong>能源供應風險回來：</strong>中東與俄烏衝突加劇，剛恢復接近戰前水準的石油供應再次面臨威脅，國際油價小幅上漲。</li>
+          <li><strong>半導體業組研發聯盟：</strong>應用材料在加州為 EPIC 中心揭幕，三星、SK 海力士與台積電等大廠參與，目標是對抗中國記憶體廠長鑫存儲的崛起；供應鏈競爭與設備需求仍是中長線主題。</li>
+          <li><strong>Netflix 傳裁員約千人：</strong>串流龍頭因成長減緩傳出裁員，顯示即使大型科技與平台企業仍受 AI、廣告與消費成長放緩的成本紀律約束。</li>
+          <li><strong>能源緊張可能延續：</strong>國際能源署表示柴油供應緊張將持續至 2027 年，若與 CPI、油價同時上行，將使運輸、製造與消費端的通膨風險更難快速消退。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Cnyes</div>
+        <h2>鉅亨網</h2>
+        <ul class="list">
+          <li><strong>「雙倍超配」AI 建設：</strong>大摩認為 AI 產業年度開支有望維持 1 兆美元水準，基礎建設與資本支出仍是最強長線敘事，但高殖利率也讓融資效率成為估值關鍵。</li>
+          <li><strong>第二波通膨浪潮風險：</strong>IMF 警告食品與能源價格波動可能常態化，全球通膨降溫路徑增加變數；這與美國 CPI 超預期的訊號互相呼應。</li>
+          <li><strong>英特爾以色列工廠爆炸：</strong>鉅亨報導現場冒出濃密黑煙、3 人重傷；在晶片股普遍走弱的背景下，地緣與供應鏈事件再提高半導體板塊的風險溢價。</li>
+          <li><strong>Vera Rubin 機櫃設計競爭提前：</strong>輝達開放 Vera Rubin 機櫃設計，AI 資料中心標準之爭升溫；同頁報價顯示輝達跌 3.16%、超微電腦跌 8.42%、CoreWeave 跌 15.46%。</li>
+          <li><strong>日韓半導體先反映壓力：</strong>KOSPI 開盤重挫 6% 並觸發 Sidecar，三星、SK 海力士與鎧俠成為拋售焦點；鉅亨 StockQ 同時顯示台積電 ADR 跌 3.4%、美元／台幣約 32.196。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT Stock</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>熱門文章清單</h3>
+          <ul class="list">
+            <li><strong>本次無法產生入選文章。</strong> 依 runbook 執行指定 PyPtt helper 後，程式在登入階段回報「登入失敗」，沒有取得標題、推文數、作者、發文時間、文章內文或推文原料。</li>
+            <li><strong>抓取狀態：</strong>helper 於 2026-10-15 09:00 時段執行並嘗試以帳號 <code>seagal</code> 登入；程式隨後正常登出，但沒有成功取得 PTT Stock 資料。</li>
+            <li><strong>內容完整性：</strong>沒有可入選的熱門文章，因此不臆測文章清單，也不把 Yahoo、CNA 或鉅亨的市場敘事冒充成 PTT 內容。</li>
+          </ul>
+          <div class="ptt-note">PTT source failed：PyPtt 登入失敗。依規則未使用 browser 或 web_fetch 開啟 PTT 看板；下次執行仍應優先重跑指定 helper。</div>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <ul class="list">
+            <li><strong>無法建立主題一：</strong>沒有文章內文與推文資料，無法判定版上最熱門的市場事件或情緒。</li>
+            <li><strong>無法建立主題二：</strong>沒有支持、質疑、噓文或爭議觀點可供交叉整理，因此不輸出推測性結論。</li>
+            <li><strong>無法建立主題三：</strong>本次 PTT section 僅回報來源失敗狀態；其他來源的通膨、AI、油價與記憶體敘事不代替 PTT 摘要。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>共同主線是「高 CPI → 高利率 → 科技估值重估」：</strong>美股 Nasdaq、費半與台積電 ADR 同步承壓，台股早盤則先面臨期貨下挫與整數關卡保衛戰。</li>
+          <li><strong>AI 需求與 AI 估值正在分離：</strong>大摩仍看好 1 兆美元級別的 AI 建設支出，Anthropic 營收與 Vera Rubin 題材也支持長線需求；但 CoreWeave、Dell、半導體設備股的跌幅顯示市場更在意融資、交付與獲利轉換。</li>
+          <li><strong>能源與地緣政治提高整體折價率：</strong>中東、俄烏、以色列工廠事件與柴油供應緊張，讓油價不只是商品行情，而是通膨、運輸成本與央行政策的共同變數。</li>
+          <li><strong>台股仍是指數弱、族群分化：</strong>指數欄位偏弱，但部分大型股、ETF 與個別題材股仍有正報價；今日最重要的確認點是台積電法說能否改善市場對需求、毛利率與資本支出的預期。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li>美國 CPI 若持續高於預期，市場可能進一步押注 Fed 延後寬鬆甚至升息；殖利率上行會優先壓縮高估值科技股。</li>
+          <li>台積電法說若無法提供足夠的毛利率、先進製程、CoWoS／AI 訂單或資本支出能見度，台股反彈可能只剩題材輪動。</li>
+          <li>中東與俄烏衝突若擴大到能源設施、航運或柴油供應，油價與通膨預期可能二次上修，並推升全球股債波動。</li>
+          <li>半導體拋售若從高估值 AI 股擴散至記憶體、設備與台灣供應鏈，台股的盤面廣度與外資風險偏好會是重要警訊。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Source links</div>
+        <h2>來源連結</h2>
+        <div class="source-block">
+          <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance Global</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo 股市台灣</a>
+          <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+          <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 股市 RSS</a>
+          <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+          <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+          <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="kicker">Method note</div>
+        <h2>抓取與解讀備註</h2>
+        <ul class="list">
+          <li>Yahoo Finance Global、Yahoo 股市台灣、Yahoo 台股新聞依共享行為設定的來源特例直接使用 browser，等待主要內容渲染後整理。</li>
+          <li>CNA 與鉅亨先使用 web_fetch；鉅亨首頁與頭條頁因可讀內容不足，再依規則改用 browser。</li>
+          <li>PTT 僅使用 runbook 指定的 PyPtt helper；本次登入失敗，未用 browser 或 web_fetch 補抓，也未將其他來源內容冒充 PTT 摘要。</li>
+          <li>市場數字是頁面抓取當下的快照，不是收盤結算；不同網站的報價時間與商品合約可能不同，解讀時以來源標示為準。</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div>
+      <div><strong>Generated：</strong><code>2026-10-15 09:00 Asia/Taipei</code></div>
+      <div><strong>Fetcher：</strong><code>browser for Yahoo; web_fetch first with browser fallback; PyPtt helper for PTT</code></div>
+    </footer>
+  </main>
+</body>
+</html>
