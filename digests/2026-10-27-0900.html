@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-10-27 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.75);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(37,99,235,.11),transparent 28%),
+        radial-gradient(circle at top right,rgba(15,118,110,.10),transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{
+      position:relative;overflow:hidden;padding:34px;
+      border:1px solid rgba(255,255,255,.6);border-radius:var(--radius-xl);
+      background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(240,247,255,.86));
+      backdrop-filter:blur(12px);box-shadow:var(--shadow)
+    }
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%)}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:850px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.7);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px)}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Morning Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">2026-10-27</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">今天的市場主線是<strong>AI 熱情重新升溫，但資金開始檢驗融資、資本支出與估值</strong>：Anthropic 遞交 IPO 申請帶動美股科技與台股半導體，台股盤中上漲；另一方面，10 年期美債殖利率接近 5%、油價仍在百美元附近，巴西股市因政治結果劇烈下挫，風險沒有消失。</p>
+      <p class="meta"><strong>時間：</strong><time datetime="2026-10-27T09:00:00+08:00">2026 年 10 月 27 日 09:00（Asia/Taipei）</time></p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">全球市場</div>
+        <strong>Anthropic IPO 重燃 AI 交易</strong>
+        <p>美股頁面顯示 S&amp;P、道瓊與 Nasdaq 期貨走高，科技焦點集中在 Anthropic、Meta、Microsoft 與 AI 基建融資。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股盤中</div>
+        <strong>加權 46,429.99，漲 388.56 點</strong>
+        <p>上市、上櫃、電子與金融同步上漲；聯茂漲停至 854 元，台積電報 2,385 元、暫持平。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">主要變數</div>
+        <strong>AI 資本支出與高利率同時拉扯</strong>
+        <p>CoreWeave 債務疑慮、Meta 股權融資、近 5% 美債殖利率與百美元油價，會限制追價的安全邊際。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>AI 重新成為風險偏好的催化劑：</strong>Anthropic 公開遞交 IPO 申請，Yahoo Finance、CNA 與鉅亨均把它列為美股主線；Yahoo 頁面提到公司計畫以「ANT」掛牌，並揭示約 163 億美元營收的市場焦點。</li>
+          <li><strong>台股盤中偏多但不是全面無風險：</strong>加權指數報 46,429.99、漲 0.84%，上櫃漲 1.76%，電子與金融同步上行；聯茂、同泰、南電等強勢股漲幅接近或達到漲停，資金明顯集中在半導體與電子材料。</li>
+          <li><strong>AI 故事的下一個檢驗點是資金來源：</strong>Meta 計畫最高籌資 950 億美元，SpaceX 鎖定 400 億美元 GPU 融資，鉅亨則提示 CoreWeave 債務保險成本升至歷史高點；需求強不代表股東稀釋與信用風險可以忽略。</li>
+          <li><strong>總體環境仍偏緊：</strong>10 年期美債殖利率接近 4.99%，油價約 101 美元，巴西因魯拉連任出現股匯雙殺；因此今天比較像「AI／半導體帶動的風險偏好反彈」，不是所有資產同步轉為 risk-on。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>先看五個風險訊號</h2>
+        <ul class="list">
+          <li><strong>AI 融資：</strong>Meta 的大額股權融資可能帶來稀釋，CoreWeave 的債務與信用保護成本則提醒市場，AI 基建投資的回收期與融資條件正在被重新定價。</li>
+          <li><strong>利率：</strong>10 年債殖利率接近 5%，若通膨或 Fed 政策預期再偏鷹，高本益比科技股的折現率會繼續上升。</li>
+          <li><strong>能源：</strong>WTI 約 101.10 美元、布蘭特約 115.09 美元；中東談判若反覆，油價可能再次成為通膨與企業成本的上行催化劑。</li>
+          <li><strong>台股集中度：</strong>指數與電子同步上漲，但注意股、個別高本益比標的與槓桿 ETF 的波動很大，不能把族群強勢直接等同於大盤趨勢確立。</li>
+          <li><strong>政治衝擊：</strong>巴西股市收盤跌近 14%、貨幣一度大貶，提醒投資人選舉結果可能迅速透過匯率、債券與 ETF 傳導到全球風險資產。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance Global</div>
+        <h2>Yahoo Finance (Global)｜全球市場</h2>
+        <ul class="list">
+          <li>頁面報價顯示美股期貨偏正面：S&amp;P 500 期貨 <strong>7,728.00（+0.17%）</strong>、道瓊期貨 <strong>52,576.00（+0.05%）</strong>、Nasdaq 期貨 <strong>29,549.00（+0.38%）</strong>；Russell 2000 期貨則約 2,797.20、微跌 0.01%。</li>
+          <li>風險指標略有緩和但仍在高位：10 年期美債殖利率 <strong>4.9860%</strong>，VIX <strong>18.39、下跌 5.45%</strong>，黃金 <strong>4,023.90 美元、跌 0.36%</strong>，比特幣約 <strong>80,087 美元</strong>；油價仍在 <strong>101.24 美元</strong>附近。</li>
+          <li>最強新聞主軸是 Anthropic 公開遞交 S-1：Yahoo 頁面以「ANT」掛牌與約 <strong>163 億美元營收</strong>為焦點，市場把 IPO 視為 AI 產業需求與估值的最新公開測試。</li>
+          <li>AI 基建的另一面是融資與信用：SpaceX 鎖定 <strong>400 億美元 GPU 融資</strong>，Meta 計畫最高籌資 <strong>950 億美元</strong>，CoreWeave 與 AI landlord 股票則被報導出現債務保險成本上升。</li>
+          <li>個股分化很明顯：Tesla 上漲 <strong>5.21%</strong>，Lumentum 上漲 8.19%；但巴西 ETF <strong>EWZ 下跌 19.82%</strong>、Nu Holdings 下跌 16.95%，顯示政治與融資風險仍能造成局部急跌。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance Taiwan</div>
+        <h2>Yahoo Finance (台灣)｜台灣市場</h2>
+        <ul class="list">
+          <li>Yahoo 股市首頁盤中顯示上市加權指數 <strong>46,429.99（+388.56、+0.84%）</strong>、成交 584.47 億；上櫃 <strong>388.39（+6.70、+1.76%）</strong>，電子 <strong>2,885.23（+0.65%）</strong>，金融 <strong>3,778.04（+0.94%）</strong>。</li>
+          <li>強勢股集中在電子材料與半導體：同泰與聯茂漲幅均約 9.91%，AMAX-KY、冠西電、南電也位居漲幅榜前段；聯茂報 854 元、成交金額約 26.15 億元。</li>
+          <li>成交金額榜由台積電領先，報 <strong>2,385 元、暫持平</strong>，成交金額約 140.67 億元；聯發科、聯茂、欣興、台達電也在前列，權值與 AI／電子供應鏈同時吸收資金。</li>
+          <li>新聞頁的台股焦點包括川普再批台灣晶片產業、玉晶光 60 天上漲 140% 與聯茂高本益比被列注意股；這反映多頭題材很強，但估值、監管與短線過熱也同步浮現。</li>
+          <li>台股新聞還把 Meta 籌資、銀行以逾 2% 存款利率向科技廠吸收資金、馬斯克示警雲端業洗牌與工具機復甦放在同一頁，市場正在把 AI 需求延伸到融資、記憶體與製造設備的第二層受惠鏈。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li><strong>AI 交易回暖：</strong>中央社指出 Anthropic 遞交 IPO 申請帶動 AI 交易回溫，美國主要指數收高；IPO 不只是公司事件，也成為市場重新評估 AI 需求與資本市場承接力的參考。</li>
+          <li><strong>中東與油價：</strong>土耳其、沙烏地阿拉伯與巴基斯坦官員前往德黑蘭推動安全談判，市場對局勢進一步升溫的擔憂緩和，國際油價因此回落；但這條風險尚未消失。</li>
+          <li><strong>巴西股匯震盪：</strong>魯拉連任讓投資人擔心債務壓力，Bovespa 收盤重挫近 14%；盤初股市一度跌近 17%，雷亞爾兌美元則重貶近 12%，是今天最劇烈的政治風險案例。</li>
+          <li><strong>科技公司成本調整：</strong>Microsoft 同時大舉投資 AI、又向約 6 萬名員工提供自願離職方案，約占員工總數四分之一，顯示 AI 資本支出與組織效率正在同步進行。</li>
+          <li><strong>產業鏈與終端需求：</strong>ASML 對荷蘭經濟的直接貢獻估達 1.6%，Apple 發表首款 OLED iPad mini；半導體設備與 AI 終端仍有需求，但企業對成本與區域布局的取捨更值得追蹤。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Cnyes 鉅亨網</div>
+        <h2>5 則最值得看的重點</h2>
+        <ul class="list">
+          <li><strong>Anthropic 七名創辦人身價全破 130 億美元：</strong>鉅亨以創辦人財富與員工選擇權潛在獲利約 980 億美元凸顯 IPO 規模，說明 AI 私募估值正在快速轉化為公開市場議題。</li>
+          <li><strong>歐盟 11 月 1 日起對境外小包裹收手續費：</strong>對中國來源的低價包裹加收處理費，可能影響跨境電商成本、消費者價格與物流業者的年終旺季策略。</li>
+          <li><strong>CoreWeave 債務疑慮升至歷史高點：</strong>鉅亨引述市場甚至出現「雷曼」的低聲比較，提醒 AI 算力需求很旺不代表所有雲端基建公司的資產負債表都安全。</li>
+          <li><strong>業績愈好股價愈跌？台股超跌機會浮現：</strong>鉅亨盤前把台股估值與個股基本面背離列為焦點，投資人要區分短線情緒修正、注意股過熱與真正的獲利趨勢。</li>
+          <li><strong>川普任內汽油均價超越拜登、柴油價格創高：</strong>能源價格與期中選舉壓力重新連結，若油價高檔維持，通膨與政策風險會繼續影響美股估值。</li>
+        </ul>
+        <div class="ptt-note">鉅亨首頁市場焦點：台積電 2,385 元（持平）、台積電 ADR 424.37 美元（+1.4%）、輝達 215.95 美元（+2.37%）、10 年美債殖利率 4.991%、美元／台幣 32.485、WTI 101.10 美元、現貨黃金 4,008.63 美元、比特幣 80,237.76 美元；各項更新時間不同，數字以來源頁面為準。</div>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT Stock</div>
+      <h2>PTT 股市版</h2>
+      <ul class="list">
+        <li>已依 runbook 執行指定 PyPtt helper；程式回報 <strong>「PTT 摘要抓取失敗：登入失敗」</strong>，因此本次沒有可驗證的文章內文或推文原料。</li>
+        <li>依共享行為規則，本次不使用 browser 或 web_fetch 開啟 PTT 頁面補救，也不以其他平台內容代替 PTT 版資料。</li>
+        <li>為保持固定格式，以下仍分成「熱門文章清單」與「熱門主題總結」兩層；因來源失敗，不虛構文章、作者、時間、推文數或版上情緒。</li>
+      </ul>
+      <div class="two-col" style="margin-top:18px">
+        <div>
+          <h3>熱門文章清單</h3>
+          <p><strong>PTT source failed</strong>：PyPtt v2.0.9 在 09:00 時段登入帳號 <code>seagal</code> 失敗，未能取得熱門文章、作者、發文時間、文章內容或推文重點，因此本次不產生文章條目。</p>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <p>因 helper 登入失敗，本次沒有足夠的一手內文與推文資料，無法可靠整理三個熱門主題；請勿以本節推論 PTT 股市版的實際情緒。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>AI 風險偏好回來了，但市場開始問「誰來付錢」。</strong> Anthropic IPO、Meta 籌資、SpaceX GPU 融資與台股半導體上漲串成同一條主線；CoreWeave 債務與高利率則是這條主線的反證。</li>
+          <li><strong>台股是族群輪動，而非無差別上漲。</strong> 指數、上櫃、電子、金融同步走高，但聯茂等注意股與高本益比標的波動更大，後續需要成交量與獲利預期確認，而不是只看漲幅。</li>
+          <li><strong>能源與政治把全球風險切成兩半。</strong> 中東談判讓油價短線回落，但油價仍在百美元附近；巴西選舉衝擊則顯示匯率與股市可能迅速脫鉤，全球 risk-on 仍不完整。</li>
+          <li><strong>亞洲資金仍看半導體，利率卻限制估值擴張。</strong> 台積電 ADR 上漲 1.4%、輝達上漲 2.37%，但 10 年債接近 5%；短線可交易，長線仍要回到現金流、資本效率與政策路徑。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>今天要追蹤什麼</h2>
+        <ul class="list">
+          <li>Anthropic IPO 文件揭露的營收成長、虧損、算力支出與客戶集中度，能否支持目前 AI 估值；若市場只交易故事，波動會放大。</li>
+          <li>Meta、SpaceX 與其他 AI 基建公司的融資條件，特別是股權稀釋、債務利差與 GPU 租金／算力回收期。</li>
+          <li>10 年美債殖利率能否回到 5% 以下，以及油價是否因中東談判再度轉強；兩者若同時上升，科技股估值壓力會增加。</li>
+          <li>台股漲勢能否從少數半導體與電子材料股擴散到更廣泛的市場；若只剩注意股與高波動標的領漲，應把反彈視為選股盤。</li>
+          <li>巴西股匯債後續是否止穩，以及政治結果是否透過新興市場 ETF、美元與原物料價格擴散。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance Global</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo 股市台灣</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 財經 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock（本次未開頁抽取）</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>GPT-5</code></div>
+      <div><strong>Fetcher：</strong><code>Yahoo: agent-browser; CNA: web_fetch; Cnyes: web_fetch first, browser fallback; PTT: PyPtt helper only</code></div>
+      <div><strong>PTT status：</strong><code>source failed - login failed</code></div>
+    </footer>
+  </main>
+</body>
+</html>
