@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yahoo Finance Digest｜2026-11-06 09:00</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --panel-soft:rgba(255,255,255,.74);
+      --text:#132033;
+      --muted:#607086;
+      --line:#d8e1ec;
+      --accent:#2563eb;
+      --accent-2:#0f766e;
+      --danger:#b91c1c;
+      --shadow:0 18px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left,rgba(37,99,235,.11),transparent 28%),
+        radial-gradient(circle at top right,rgba(15,118,110,.10),transparent 26%),
+        linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);
+      line-height:1.72;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .shell{max-width:var(--max);margin:0 auto;padding:28px 18px 72px}
+    .hero{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.6);background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(240,247,255,.86));backdrop-filter:blur(12px);border-radius:var(--radius-xl);box-shadow:var(--shadow);padding:34px}
+    .hero:before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:999px;background:radial-gradient(circle,rgba(37,99,235,.16),transparent 68%)}
+    .eyebrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);color:#28425f;font-size:.87rem;font-weight:700;letter-spacing:.01em}
+    h1,h2,h3{margin:0;line-height:1.18}
+    h1{font-size:clamp(2.15rem,5vw,3.5rem);letter-spacing:-.03em;margin-bottom:14px}
+    h2{font-size:1.38rem;letter-spacing:-.02em;margin-bottom:16px}
+    h3{font-size:1rem;margin:0 0 12px;color:#28425f}
+    .lead{max-width:850px;font-size:1.08rem;color:#213246;margin:0}
+    .meta{margin-top:16px;color:var(--muted);font-size:.96rem}
+    .meta strong{color:var(--text)}
+    .summary-grid,.top-grid,.section-grid{display:grid;gap:18px;margin-top:22px}
+    .summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .top-grid{grid-template-columns:1.15fr .85fr}
+    .section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:var(--panel-soft);border:1px solid rgba(255,255,255,.7);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:24px;backdrop-filter:blur(10px)}
+    .card.compact{padding:20px}
+    .kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-2);font-weight:800;margin-bottom:10px}
+    .summary-item strong{display:block;font-size:1.08rem;margin-bottom:8px;letter-spacing:-.01em}
+    .summary-item p{margin:0;color:#33465d}
+    .list{margin:0;padding-left:22px}
+    .list li{margin:0 0 12px}
+    .list li:last-child{margin-bottom:0}
+    .source-block{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#24415f;font-size:.93rem;box-shadow:0 8px 22px rgba(15,23,42,.05)}
+    .risk{border:1px solid #fecdd3;background:linear-gradient(180deg,#fff8f8,#fff1f2)}
+    .risk h2{color:var(--danger)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .ptt-note{margin-top:14px;padding:12px 14px;border-radius:14px;background:#f8fbff;border:1px solid #dbe7f5;color:#526579;font-size:.92rem}
+    .footer{margin-top:28px;padding:18px 22px;border-radius:18px;background:rgba(255,255,255,.74);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;color:var(--muted);font-size:.92rem}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#194170}
+    @media (max-width:900px){.summary-grid,.top-grid,.section-grid,.two-col{grid-template-columns:1fr}.hero{padding:26px}}
+    @media (max-width:640px){.shell{padding:18px 14px 56px}.hero,.card{padding:20px}h1{font-size:2rem}.lead{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">
+        <span class="pill">Morning Digest</span>
+        <span class="pill">Asia/Taipei 09:00</span>
+        <span class="pill">2026-11-06</span>
+      </div>
+      <h1>Yahoo Finance Digest</h1>
+      <p class="lead">市場從「期中選舉後的樂觀」急轉為<strong>AI 資本支出與資料中心監管疑慮主導的全面拋售</strong>：美股科技與半導體重挫，台股開盤後跌幅擴大至約 9%，融資與權值股壓力成為早盤核心。</p>
+      <p class="meta"><strong>時間：</strong>2026 年 11 月 6 日 09:00（Asia/Taipei）｜頁面資料約更新至 09:01</p>
+    </section>
+
+    <section class="summary-grid">
+      <article class="card summary-item compact">
+        <div class="kicker">市場輪廓</div>
+        <strong>AI 交易遭遇估值與政策雙重重估</strong>
+        <p>Nasdaq 跌 5.52%、費半跌 12.25%，VIX 升至 28.18；市場開始質疑資料中心擴建能否照原計畫推進。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">台股焦點</div>
+        <strong>早盤跌約 9%，台積電與大型 ETF 同步承壓</strong>
+        <p>上市指數約 37,842 點、較前收跌 8.98%；台積電約 2,020 元，成交金額與融資壓力是今日關鍵。</p>
+      </article>
+      <article class="card summary-item compact">
+        <div class="kicker">今日變數</div>
+        <strong>非農、資料中心政策與去槓桿是否延續</strong>
+        <p>若就業數據或政策消息再度推高利率與 AI 需求疑慮，科技股賣壓可能從估值修正擴大成基本面重估。</p>
+      </article>
+    </section>
+
+    <section class="top-grid">
+      <article class="card">
+        <div class="kicker">Executive summary</div>
+        <h2>重點摘要</h2>
+        <ul class="list">
+          <li><strong>美股由選後反彈急轉為 AI 交易崩跌：</strong>道瓊跌 3.44%、S&amp;P 500 跌 4.36%、Nasdaq 跌 5.52%，費城半導體指數更跌 12.25%；輝達跌 8.13%、AMD 跌 14.47%、美光跌 14.06%、SanDisk 跌 18.55%。</li>
+          <li><strong>政策與資本支出疑慮互相放大：</strong>美國多州可能重新審查資料中心計畫，德州政治變化與 13GW 容量的監管風險，讓市場從追逐 AI 需求改為檢驗建設能否落地。</li>
+          <li><strong>台股進入急跌與去槓桿階段：</strong>上市指數約 37,842 點、跌 8.98%，電子指數跌 9.57%、金融指數跌 7.10%；台積電、聯發科、鴻海、台達電均跌約 9% 至 10%。</li>
+          <li><strong>跨資產風險訊號偏防禦：</strong>VIX 單日升 69.66% 至 28.18，比特幣跌逾 5%，美元／台幣在鉅亨頁面約升至 33.012；油價約 91 美元，油輪遇襲又把供應風險拉回市場。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk radar</div>
+        <h2>風險雷達</h2>
+        <ul class="list">
+          <li><strong>AI 資料中心政策：</strong>觀察美國州政府對用電、土地與資料中心許可的實際審查，是否導致資本支出遞延或供應鏈訂單下修。</li>
+          <li><strong>台股融資斷頭：</strong>前一日台股已跌 1,374 點、融資餘額減少 274.18 億元；若今日跌停家數與融資賣壓擴大，指數可能出現非線性波動。</li>
+          <li><strong>利率與就業數據：</strong>10 年期美債殖利率約 4.84%，今日非農就業報告若推升降息延後預期，將對高估值科技股再施壓。</li>
+          <li><strong>能源與地緣政治：</strong>油輪遇襲使布蘭特原油上漲逾 3 美元；若供應風險擴大，通膨與利率交易可能同時回來。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Yahoo Finance (Global)</div>
+        <h2>全球市場</h2>
+        <ul class="list">
+          <li><strong>主要指數急跌：</strong>Yahoo 頁面以「Nasdaq enters correction in AI trade meltdown」為主軸；Nasdaq Composite 24,315 點、跌 5.52%，S&amp;P 500 7,353.73 點、跌 4.36%，道瓊跌 3.44%。</li>
+          <li><strong>半導體與 AI 供應鏈成為主要賣壓：</strong>費半跌 12.25%，輝達跌 8.13%、Intel 跌 9.27%、Palantir 跌 9.73%、CrowdStrike 跌 8.75%；Yahoo 亦指出 Nvidia 自 10 月高點已蒸發近 1.4 兆美元市值。</li>
+          <li><strong>市場情緒快速惡化：</strong>VIX 28.18、升 69.66%，Yahoo 報導散戶拋售約 2.65 億美元股票，創 2020 年以來最大單日賣出之一；這反映「逢低買進」策略正在退潮。</li>
+          <li><strong>盤前仍有分歧：</strong>S&amp;P 500 期貨約 7,393.75、升 0.15%，Nasdaq 期貨升 0.54%，但道瓊期貨跌 0.21%；10 年期殖利率約 4.837%，黃金約 4,104.70 美元、比特幣約 76,243 美元且跌 5.41%。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Yahoo Finance (台灣)</div>
+        <h2>台灣市場</h2>
+        <ul class="list">
+          <li><strong>早盤跌幅擴大：</strong>09:01 上市指數約 37,841.75 點，較昨收 41,574.72 點下跌 3,732.97 點、8.98%；櫃買約跌 8.36%，電子跌 9.57%，金融跌 7.10%。</li>
+          <li><strong>權值股全面承壓：</strong>台積電 2,020 元、跌約 9.82%；聯發科 3,115 元、跌約 9.97%；鴻海 213.5 元、跌約 9.15%；台達電 1,020 元、跌約 9.73%。</li>
+          <li><strong>新聞焦點轉向護盤與槓桿：</strong>首頁聚焦「國安基金何時到」、限空令條件、約 600 億元融資壓力、穩懋第三次違約交割，以及國家隊買進 0050 與主動式 ETF 的消息。</li>
+          <li><strong>外部市場同步惡化：</strong>台積電 ADR 跌 10.78%、日月光 ADR 跌 20.77%、慧榮 ADR 跌 14.12%；台指期近月約 37,706 點，跌幅接近 10%，顯示賣壓不只集中現貨。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">CNA 中央社｜股市</div>
+        <h2>今日市場重點</h2>
+        <ul class="list">
+          <li><strong>AI 資料中心政策疑慮引爆科技股：</strong>中央社指出，美國期中選舉後多州資料中心政策可能調整，華爾街拋售 AI 股；Nasdaq 跌 5.52%、費半跌 12.25%，單日市值蒸發約 2.5 兆美元。</li>
+          <li><strong>台股前一日已出現嚴重去槓桿：</strong>11 月 5 日加權指數跌 1,374.19 點至 41,574.72 點，從 10 月高點 49,968.92 點回檔逾 8,000 點；上市櫃融資餘額合計減少 274.18 億元。</li>
+          <li><strong>能源供應風險重新升溫：</strong>油輪遇襲推升布蘭特原油收盤上漲逾 3 美元，市場重新評估中東衝突與石油供應，能源價格可能再度牽動通膨和利率。</li>
+          <li><strong>匯率與企業消息增加台灣市場的不確定性：</strong>新台幣 11 月 5 日收 32.876 元，富邦金分析認為在地緣政治與 AI 資本支出疑慮未解前仍偏弱；美光桃園廠則因勞資協商傳出停工，但公司表示在台營運正常。</li>
+          <li><strong>全球利率背景仍偏緊：</strong>英國央行升息 1 碼至 4%，為逾 3 年來首度升息；另有報導指出北京暫緩大量 Nvidia H200 進口許可，約 60 萬顆晶片暫存香港，增添 AI 供應鏈的政策風險。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">鉅亨網</div>
+        <h2>5 則最值得看的重點</h2>
+        <ul class="list">
+          <li><strong>德州變天，SpaceX 買地案將受審查：</strong>新科州長上任前喊停並要求審查馬斯克 SpaceX 買地案，市場解讀為資料中心土地、用電與 AI 基建許可的監管風險升高。</li>
+          <li><strong>AI 拋售潮擴散至亞洲：</strong>鉅亨指出日經 225 跌破 57,000 點並進入技術性熊市，韓股盤中跌幅擴大至 8.8% 且觸發熔斷，顯示美國科技股重挫已傳導至亞股。</li>
+          <li><strong>道瓊狂瀉 1,833 點：</strong>鉅亨整理道瓊跌 3.44% 的選後反轉行情，市場從政治利多快速切換到 AI 資本支出、資料中心前景與去槓桿交易。</li>
+          <li><strong>台股融資全面斷頭：</strong>「台股一個月崩一萬點」專家觀點把焦點放在融資斷頭與 AI 股何時能買，提醒即使估值下修，底部仍需等待賣壓與籌碼穩定。</li>
+          <li><strong>資料中心建設是 AI 估值最大變數：</strong>克雷默警示賣壓可能未結束；頁面列出的 Sandisk 跌 22.26%、美光跌 17.46%、AMD 跌 17.26%、輝達跌 9.26%，說明市場正在重估 AI 基建的需求能見度。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">PTT 股市版</div>
+      <h2>PTT 股市版</h2>
+      <div class="two-col">
+        <div>
+          <h3>熱門文章清單</h3>
+          <ul class="list">
+            <li><strong>PTT source failed：</strong>指定 PyPtt helper 已於本次 09:00 run 執行，但 PTT WebSocket 連線遭伺服器以 HTTP 404 拒絕，沒有取得任何文章或推文原料。</li>
+            <li><strong>入選文章：無。</strong>因此沒有可可靠填寫的標題、推文數、作者、發文時間、文章內容重點、推文重點或綜合摘要。</li>
+            <li><strong>資料處理：</strong>依行為設定，helper 失敗後不改用 browser 或 web_fetch 開啟 PTT 頁面代替。</li>
+          </ul>
+          <div class="ptt-note">PTT source failed：PyPtt 連線失敗（server rejected WebSocket connection: HTTP 404）。下次排程可再嘗試 helper。</div>
+        </div>
+        <div>
+          <h3>熱門主題總結</h3>
+          <ul class="list">
+            <li><strong>本次無法建立三個熱門主題：</strong>helper 未輸出文章內文與推文資料，不能以其他來源推論 PTT 版上的熱門討論。</li>
+            <li><strong>情緒與爭議點待下次補齊：</strong>沒有取得推文／噓文，故不推測支持、質疑、吵點或社群情緒。</li>
+            <li><strong>資料完整性優先：</strong>本節保留明確的 source failed 狀態，避免把未驗證的市場新聞誤寫成 PTT 觀點。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article class="card">
+        <div class="kicker">Cross-market takeaways</div>
+        <h2>跨市場觀察</h2>
+        <ul class="list">
+          <li><strong>市場主線從「選後利多」切換成「AI 建設能否落地」。</strong>政策不確定性、用電與土地限制、資本支出回收期同時被交易，先打擊晶片與資料中心，再波及台灣權值股。</li>
+          <li><strong>台股是全球 AI 風險的高 Beta 反應器。</strong>台積電 ADR、台指期、電子與 ETF 同步大跌；即使有國家隊或 ETF 買盤，短線也要先消化融資與被動賣壓。</li>
+          <li><strong>能源與利率是第二條風險線。</strong>油輪遇襲支撐油價、10 年期殖利率仍約 4.84%，若非農數據強於預期，高估值科技股會同時面對通膨與折現率壓力。</li>
+          <li><strong>市場進入「先看現金流、再看題材」階段。</strong>能證明 AI 需求、訂單與自由現金流的公司可能相對抗跌；單靠資料中心擴建敘事的標的，估值波動會最大。</li>
+        </ul>
+      </article>
+      <article class="card risk">
+        <div class="kicker">Risk watch</div>
+        <h2>風險／變數</h2>
+        <ul class="list">
+          <li><strong>美國資料中心審查：</strong>追蹤德州及其他州的土地、用電、電網與許可政策，確認是短期政治噪音還是實際延後資本支出。</li>
+          <li><strong>今日非農與美債：</strong>若就業強、殖利率再升，Nasdaq／費半跌勢可能延續；若數據轉弱，也要觀察是否只是衰退交易而非科技股立即反彈。</li>
+          <li><strong>台股跌停與融資：</strong>觀察 37,000 點附近能否止跌、外資現貨與期貨是否收斂，以及融資餘額是否出現第二波減碼。</li>
+          <li><strong>能源與匯率：</strong>油輪遇襲若擴大，油價與通膨預期會回升；新台幣走弱則可能進一步增加外資撤出與進口成本壓力。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Source links</div>
+      <h2>來源連結</h2>
+      <div class="source-block">
+        <a class="chip" href="https://finance.yahoo.com/">Yahoo Finance (Global)</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/">Yahoo Finance (台灣)</a>
+        <a class="chip" href="https://tw.stock.yahoo.com/news">Yahoo 台股新聞</a>
+        <a class="chip" href="https://feeds.feedburner.com/rsscna/finance">CNA 股市 RSS</a>
+        <a class="chip" href="https://www.cnyes.com/">鉅亨首頁</a>
+        <a class="chip" href="https://news.cnyes.com/news/cat/headline">鉅亨頭條</a>
+        <a class="chip" href="https://www.ptt.cc/bbs/Stock/index.html">PTT Stock（本次 helper failed）</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div><strong>Model：</strong><code>openai-codex/gpt-5.4</code></div>
+      <div><strong>Fetcher：</strong><code>browser for Yahoo Finance and dynamic Cnyes; web_fetch for CNA RSS; PyPtt helper for PTT (connection failed)</code></div>
+    </footer>
+  </main>
+</body>
+</html>
