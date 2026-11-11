@@ -2,6 +2,12 @@
 
 Repository path: `/Users/minim4/.openclaw/workspace/yahoo-finance-pages`
 
+## Startup context
+
+- Workspace context lives under `/Users/minim4/.openclaw/workspace`; use absolute paths or an explicit working directory.
+- Daily notes (`memory/YYYY-MM-DD.md` for today and yesterday) are optional. Check each file with `test -f` before reading it, and skip missing notes. Do not combine optional daily notes with required configuration files in one `cat` command: a missing note would make a successful digest run report a command failure.
+- Read the required runbook, source configuration, and behavior configuration separately so actual configuration errors remain visible.
+
 ## Goal
 For each scheduled run:
 
