@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import os
+import re
 import sys
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
@@ -14,6 +15,8 @@ TIME_FORMATS = (
 )
 
 import PyPtt
+from PyPtt import _api_util, connect_core, screens
+from PyPtt.data_type import BoardField
 
 PTT_ID = os.environ.get("PTT_ID", "seagal")
 PTT_PW = os.environ.get("PTT_PW", "5256012")
@@ -22,6 +25,66 @@ DEFAULT_MAX_POSTS = 8
 DEFAULT_MAX_PUSHES = 12
 DEFAULT_BODY_CHARS = 1200
 BOARD = "Stock"
+# PyPtt 2.0.9 defaults to /bbs/, which PTT rejects with HTTP 404.
+# A custom host preserves the official WebSocket path without a trailing slash.
+PTT_WEBSOCKET_HOST = "ws.ptt.cc/bbs"
+
+
+def normalize_ptt_screen(screen: str) -> str:
+    lines = screen.split("\n")
+    for index, line in enumerate(lines):
+        if index > 0 and lines[index - 1].lstrip().startswith("時間  "):
+            if re.fullmatch(r"[\s─]{10,}", line):
+                lines[index] = screens.Target.content_start
+        # PyPtt uses the article-info box borders to locate the source URL.
+        lines[index] = re.sub(r"^(\s*[┌└])[─ ]+", r"\1──", lines[index])
+        lines[index] = re.sub(
+            r"^\s*※\s+(發信站|文章網址|編輯):", r"※ \1:", lines[index]
+        )
+    return "\n".join(lines)
+
+
+class PttConnection(connect_core.API):
+    def connect(self) -> None:
+        original_host = self.config.host
+        try:
+            self.config.host = PTT_WEBSOCKET_HOST
+            super().connect()
+        finally:
+            # Keep PTT1 article/comment parsing when overriding the endpoint.
+            self.config.host = original_host
+
+    def get_screen_queue(self) -> list:
+        return [normalize_ptt_screen(screen) for screen in super().get_screen_queue()]
+
+
+def create_ptt_bot() -> PyPtt.API:
+    # PTT's new status bar no longer contains PyPtt's "人, 我是" / "[呼叫器]".
+    # Match the main menu commands, which are independent of status bar layout.
+    screens.Target.MainMenu = ["(A)nnounce", "(C)lass", "(G)oodbye"]
+    screens.Target.CursorToGoodbye = screens.Target.MainMenu.copy()
+    screens.Target.InBoard = ["看板《", "文章列表"]
+    screens.Target.InBoardWithCursor = screens.Target.InBoard.copy()
+    screens.Target.InBoardWithCursorLen = len(screens.Target.InBoardWithCursor)
+    bot = PyPtt.API()
+    bot.connect_core = PttConnection(bot)
+    return bot
+
+
+def prepare_read_only_board(ptt_bot: PyPtt.API, board: str) -> None:
+    # PyPtt's board-settings parser expects the retired settings screen. This
+    # reader only needs to verify the board and cache its actual moderators.
+    _api_util.goto_board(ptt_bot, board, refresh=True)
+    screen = ptt_bot.connect_core.get_screen_queue()[-1]
+    match = re.search(r"看板《([^》]+)》", screen)
+    if not match or match.group(1).lower() != board.lower():
+        raise RuntimeError(f"無法確認已進入 PTT 看板：{board}")
+    match = re.search(r"【板主:([^】]+)】", screen)
+    moderators = match.group(1).split("/") if match else []
+    key = board.lower()
+    ptt_bot._exist_board_list.add(key)
+    ptt_bot._board_info_list[key] = {BoardField.moderators: moderators}
+    ptt_bot._moderators[key] = [name.lower() for name in moderators]
 
 
 def get_run_config(now: Optional[datetime] = None):
@@ -147,13 +210,20 @@ def fetch_recent_posts(
     body_chars: int,
     max_pushes: int,
 ) -> List[Dict[str, Any]]:
+    prepare_read_only_board(ptt_bot, board)
     newest_index = ptt_bot.get_newest_index(PyPtt.NewIndex.BOARD, board)
     results: List[Dict[str, Any]] = []
+    fetched_count = 0
+    last_error: Optional[Exception] = None
 
     for index in range(newest_index, max(newest_index - max_check_count, 0), -1):
         try:
             post = ptt_bot.get_post(board=board, index=index)
-        except Exception:
+            if not post.get("pass_format_check"):
+                raise RuntimeError(f"PTT 文章格式無法解析：{board} #{index}")
+            fetched_count += 1
+        except Exception as exc:
+            last_error = exc
             continue
 
         post_time = parse_ptt_date(post.get("date"))
@@ -187,6 +257,8 @@ def fetch_recent_posts(
             }
         )
 
+    if newest_index > 0 and max_check_count > 0 and fetched_count == 0:
+        raise RuntimeError(f"PTT 文章全部讀取失敗：{last_error}") from last_error
     results.sort(key=lambda x: (x["push_number"], x["dt"]), reverse=True)
     return results
 
@@ -264,7 +336,7 @@ def main() -> int:
         print("PTT_ID / PTT_PW 未設定。", file=sys.stderr)
         return 1
 
-    ptt_bot = PyPtt.API()
+    ptt_bot = create_ptt_bot()
     try:
         ptt_bot.login(PTT_ID, PTT_PW)
         posts = fetch_recent_posts(

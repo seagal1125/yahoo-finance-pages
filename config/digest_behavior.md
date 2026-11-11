@@ -31,6 +31,7 @@
   - 輸出每篇文章的 **內文重點原料** 與 **推文重點原料**
 - digest 在整理 PTT section 時，必須以這支程式輸出的內容為準，不要退回瀏覽器頁面抽取。
 - 若程式失敗，請在 digest 裡明確標示 PTT source failed；不要默默改用 browser 假裝成功。
+- 連線維護：官方 WebSocket 使用 `wss://ws.ptt.cc/bbs`（尾端不要加 `/`，否則回 HTTP 404）。helper 已內建 PyPtt 2.0.9 對新版主選單、看板列表、文章分隔線及頁尾的相容處理，保留 PTT1 的內文與推文解析；不要直接改回裸用 `PyPtt.API()`。
 
 ## 2) 摘要輸出規則（HTML 內容層）
 
